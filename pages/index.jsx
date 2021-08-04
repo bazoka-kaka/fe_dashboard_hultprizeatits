@@ -55,10 +55,8 @@ export default function Home() {
         </section>
         <section id='timeline' className={`relative ${styles.thirdSection}`}>
           <article className='flex flex-col justify-center items-left gap-2 text-white md:gap-24 min-h-screen layout'>
-              <div className='relative pl-10 md:pl-28'>
-                <h1 className='font-bold top-1/2 absolute text-3xl text-left'>PROGRAM<br />TIMELINE</h1>
-              </div>
-              <div className=' pl-10 md:pl-28'>
+              <div className='pl-10 relative md:pl-28'>
+                <h1 className='font-bold absolute -top-24 text-3xl text-left'>PROGRAM<br />TIMELINE</h1>
                 <div className='flex relative' style={{width: '1300px'}}>
                   <div className={`relative w-80 ${styles.box1}`}>
                     <h1 className='relative text-black left-5 top-3 font-bold text-2xl'>00 - 00<br/>September</h1>
@@ -82,9 +80,9 @@ export default function Home() {
                   </div>
                   <div className={styles.horizontal}></div>
                 </div>
-              </div>
-              <div className='flex relative justify-center align-center'>
-                <UnstyledLink href='#' className={`absolute bottom-1 rounded-lg px-5 py-1 ${styles.fourthBtn}`}>Competition Guideline</UnstyledLink>
+                <div className='absolute flex flex-row justify-center w-full left-0 -bottom-20'>
+                  <UnstyledLink href='#' className={`rounded-lg px-3 py-1 ${styles.fourthBtn}`}>Competition Guideline</UnstyledLink>
+                </div>
               </div>
           </article>          
         </section>
