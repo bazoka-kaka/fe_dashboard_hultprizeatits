@@ -11,7 +11,7 @@ export default function Home() {
         <meta name='keywords' content='web development, programming' />
       </Head>
       <main className='overflow-hidden'>
-        <section className={`relative ${styles.firstSection}`}>
+        <section id='home' className={`relative ${styles.firstSection}`}>
           <article className={`flex justify-center px-6 md:px-24 flex-col items-left gap-8 text-white py-6 md:py-12 md:gap-12 ${styles.minScreenHeader} layout`}>
             <div>
               <img src='/logo-1.png' className='w-64 lg:w-80 h-auto' />
@@ -29,7 +29,7 @@ export default function Home() {
             <ScrollDownArrow />
           </div>
         </section>
-        <section id='home' className={styles.secondSection}>
+        <section className={styles.secondSection}>
           <div className='relative'>
             <img className='w-52 -z-1 h-auto mt-5 absolute' src='/ellipse2.png' alt='' />
           </div>
