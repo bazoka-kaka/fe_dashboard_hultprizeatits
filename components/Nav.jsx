@@ -4,7 +4,9 @@ import UnstyledLink from './UnstyledLink'
 const Nav = () => {
     return (
         <nav className={navStyles.nav}>
-            <img className={`left-3 md:left-16 ${navStyles.logo}`} src='/hultprize-logo.png' alt='hultprize logo'/>
+            <UnstyledLink href='/'>
+                <img className={`left-3 select-none bottom-1 md:left-16 ${navStyles.logo}`} src='/hultprize-logo.png' alt='hultprize logo'/>
+            </UnstyledLink>
             <ul>
                 <li>
                     <UnstyledLink key='#home' href='#home'>HOME</UnstyledLink>
