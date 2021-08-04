@@ -193,22 +193,12 @@
   .firstBtn {
     background: linear-gradient(80.86deg, #DB0A7F -9.3%, #EC83BD 125.39%);
     color: black;
-    padding: 6px;
-    padding-left: 39px;
-    padding-right: 39px;
-    border-radius: 9px;
-    align-self: start;
   }
 
   .secondBtn {
     background: black;
     color: white;
-    padding: 6px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 9px;
     border: 1px solid #DB0A7F;
-    align-self: start;
   }
 
   .thirdBtn {

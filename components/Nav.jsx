@@ -9,16 +9,16 @@ const Nav = () => {
             </UnstyledLink>
             <ul>
                 <li>
-                    <UnstyledLink key='#home' href='#home'>HOME</UnstyledLink>
+                    <UnstyledLink className='hidden sm:block' key='#home' href='#home'>HOME</UnstyledLink>
                 </li>
                 <li>
-                    <UnstyledLink key='#timeline' href='#timeline'>TIMELINE</UnstyledLink>
+                    <UnstyledLink className='hidden sm:block' key='#timeline' href='#timeline'>TIMELINE</UnstyledLink>
                 </li>
                 <li>
-                    <UnstyledLink key='#about' href='#about'>ABOUT</UnstyledLink>
+                    <UnstyledLink className='hidden sm:block' key='#about' href='#about'>ABOUT</UnstyledLink>
                 </li>
                 <li className={navStyles.selected}>
-                    <UnstyledLink key='#register' href='#register'>REGISTER</UnstyledLink>
+                    <UnstyledLink className='hidden sm:block' key='#register' href='#register'>REGISTER</UnstyledLink>
                 </li>
             </ul>
         </nav>
