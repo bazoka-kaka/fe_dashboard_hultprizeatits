@@ -17,6 +17,33 @@
     min-height: calc(100vh - 70px);
   }
 
+  .floatAnim1 {
+    animation-name: floating1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+
+  .right {
+    background: linear-gradient(270deg, #120F0D 0%, rgba(18, 15, 13, 0) 100%);
+  }
+
+  .left {
+    background: linear-gradient(270deg, #120F0D 0%, rgba(18, 15, 13, 0) 100%);
+    transform: rotate(-180deg);
+  }
+
+  @keyframes floating1 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(24px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
   .floatAnim {
     animation-name: floating;
     animation-duration: 3s;
