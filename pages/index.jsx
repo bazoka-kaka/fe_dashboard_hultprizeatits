@@ -54,41 +54,47 @@ export default function Home() {
           </article>
         </section>
         <section id='timeline' className={`relative ${styles.thirdSection}`}>
-          <article className='flex relative flex-col pl-10 md:pl-28 justify-center items-left gap-2 text-white md:gap-24 min-h-screen layout'>
-              <h1 className='top-8 absolute font-bold text-3xl text-left'>PROGRAM<br />TIMELINE</h1>
-              <div className='flex relative' style={{width: '1300px'}}>
-                <div className={`relative w-80 ${styles.box1}`}>
-                  <h1 className='relative text-black left-5 top-3 font-bold text-2xl'>00 - 00<br/>September</h1>
-                  <h1 className='absolute bottom-3 text-md right-5 text-right text-black font-semibold'>Preliminary<br/><span className='text-2xl font-bold'>Abstract Submission</span></h1>
-                </div>
-                <div className={`relative w-80 ${styles.box2}`}>
-                  <h1 className='relative left-5 top-3 font-semibold text-2xl'>00 - 00<br/>October</h1>
-                  <h1 className='absolute bottom-3 text-md right-5 text-right font-semibold'>Preliminary<br/><span className='text-2xl font-bold'>Abstract Submission</span></h1>
-                </div>
-                <div className={`relative w-80 ${styles.box2}`}>
-                  <h1 className='relative left-5 top-3 font-semibold text-2xl'>00 - 00<br/>November</h1>
-                  <h1 className='absolute bottom-3 text-md right-5 text-right font-semibold'>Preliminary<br/><span className='text-2xl font-bold'>Abstract Submission</span></h1>
-                </div>
-                <div className={`relative w-80 ${styles.box2}`}>
-                  <h1 className='relative left-5 top-3 font-semibold text-2xl'>00 - 00<br/>December</h1>
-                  <h1 className='absolute bottom-3 text-md right-5 text-right font-semibold'>Preliminary<br/><span className='text-2xl font-bold'>Abstract Submission</span></h1>
-                </div>
-                <div className={`relative w-80 ${styles.box2}`}>
-                  <h1 className='relative left-5 top-3 font-semibold text-2xl'>00 - 00<br/>January</h1>
-                  <h1 className='absolute bottom-3 text-lg right-5 text-right font-semibold'>Preliminary<br/><span className='text-2xl font-bold'>Abstract Submission</span></h1>
-                </div>
-                <div className={styles.horizontal}></div>
+          <article className='flex flex-col justify-center items-left gap-2 text-white md:gap-24 min-h-screen layout'>
+              <div className='relative pl-10 md:pl-28'>
+                <h1 className='font-bold top-1/2 absolute text-3xl text-left'>PROGRAM<br />TIMELINE</h1>
               </div>
-          </article>
-          <UnstyledLink href='#' className={`absolute bottom-10 left-10 md:left-28 rounded-lg px-5 py-1 ${styles.fourthBtn}`}>Competition Guideline</UnstyledLink>
+              <div className=' pl-10 md:pl-28'>
+                <div className='flex relative' style={{width: '1300px'}}>
+                  <div className={`relative w-80 ${styles.box1}`}>
+                    <h1 className='relative text-black left-5 top-3 font-bold text-2xl'>00 - 00<br/>September</h1>
+                    <h1 className='absolute bottom-3 text-md right-5 text-right text-black font-semibold'>Preliminary<br/><span className='text-2xl font-bold'>Abstract Submission</span></h1>
+                  </div>
+                  <div className={`relative w-80 ${styles.box2}`}>
+                    <h1 className='relative left-5 top-3 font-semibold text-2xl'>00 - 00<br/>October</h1>
+                    <h1 className='absolute bottom-3 text-md right-5 text-right font-semibold'>Preliminary<br/><span className='text-2xl font-bold'>Abstract Submission</span></h1>
+                  </div>
+                  <div className={`relative w-80 ${styles.box2}`}>
+                    <h1 className='relative left-5 top-3 font-semibold text-2xl'>00 - 00<br/>November</h1>
+                    <h1 className='absolute bottom-3 text-md right-5 text-right font-semibold'>Preliminary<br/><span className='text-2xl font-bold'>Abstract Submission</span></h1>
+                  </div>
+                  <div className={`relative w-80 ${styles.box2}`}>
+                    <h1 className='relative left-5 top-3 font-semibold text-2xl'>00 - 00<br/>December</h1>
+                    <h1 className='absolute bottom-3 text-md right-5 text-right font-semibold'>Preliminary<br/><span className='text-2xl font-bold'>Abstract Submission</span></h1>
+                  </div>
+                  <div className={`relative w-80 ${styles.box2}`}>
+                    <h1 className='relative left-5 top-3 font-semibold text-2xl'>00 - 00<br/>January</h1>
+                    <h1 className='absolute bottom-3 text-lg right-5 text-right font-semibold'>Preliminary<br/><span className='text-2xl font-bold'>Abstract Submission</span></h1>
+                  </div>
+                  <div className={styles.horizontal}></div>
+                </div>
+              </div>
+              <div className='flex relative justify-center align-center'>
+                <UnstyledLink href='#' className={`absolute bottom-1 rounded-lg px-5 py-1 ${styles.fourthBtn}`}>Competition Guideline</UnstyledLink>
+              </div>
+          </article>          
         </section>
         <section id='register' className={styles.fourthSection}>
           <article className='relative flex lg:flex-row justify-between px-0 flex-col lg:items-center text-black lg:h-screen min-h-screen layout'>
-            <div className='py-20 lg:py-0 px-10 sm:px-24 lg:px-5 m-auto w-full lg:w-1/2'>
+            <div className='py-20 lg:py-0 px-10 md:px-24 lg:pl-20 m-auto w-full lg:w-1/2'>
                 <div>
                   <h1 className='text-lg text-left'>Elevate your experience by joining the</h1>
-                  <img className='mt-2 -ml-1 w-80 h-auto' src='/impact.png' alt='' />
-                  <p className='text-lg w-50 lg:w-80 leading-6'>A platform for ITS students who are highly motivated in making an impact.</p>
+                  <img className='mt-2 -ml-1 w-80 h-auto' src='/impact.png' alt='impact community' />
+                  <p className='text-lg sm:w-80 leading-6'>A platform for ITS students who are highly motivated in making an impact.</p>
                 </div>
                 <div className='flex align-center mt-7 w-full'>
                   <UnstyledLink href='#' className={`${styles.fifthBtn} rounded-lg px-5 py-2`}>Join the Community!</UnstyledLink>
