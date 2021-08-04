@@ -14,14 +14,16 @@ export default function Home() {
         <section id='home' className={`relative ${styles.firstSection}`}>
           <article className={`flex justify-center px-10 md:px-24 flex-col items-left gap-8 text-white py-6 md:py-12 md:gap-12 ${styles.minScreenHeader} layout`}>
             <div>
-              <img src='/logo-1.png' className='w-56 select-none sm:w-56 md:w-64 lg:w-80 h-auto' />
-              <h1 className='text-3xl md:text-4xl lg:text-5xl mb-5 mt-3 md:mt-6 font-bold text-left'>WIN THE MOST PRESTIGIOUS<br />BUSINESS IDEA COMPETITION!</h1>
-              <p className={`text-lg md:text-xl ${styles.firstP}`}>For ITS students of <span className='font-bold'>ALL</span> study programs & batches</p>
+              <div className='flex flex-col'>
+                <img src='/logo-1.png' className='w-56 self-center sm:self-start select-none sm:w-56 md:w-64 lg:w-80 h-auto' />  
+              </div>
+              <h1 className='text-3xl md:text-4xl lg:text-5xl mb-5 mt-3 md:mt-6 font-bold text-center sm:text-left'>WIN THE MOST PRESTIGIOUS<br />BUSINESS IDEA COMPETITION!</h1>
+              <p className={`text-lg text-center sm:text-left md:text-xl ${styles.firstP}`}>For ITS students of <span className='font-bold'>ALL</span> study programs & batches</p>
             </div>
             <div className='mt-1 md:-mt-4'>
               <div className='flex flex-col md:flex-row gap-4 md:gap-10'>
-                <UnstyledLink href='#' className={`px-6 self-center text-lg sm:self-start rounded-lg py-1 ${styles.firstBtn}`}>Register Your Team!</UnstyledLink>
-                <UnstyledLink href='#' className={`px-5 self-center text-lg sm:self-start rounded-lg py-1 ${styles.secondBtn}`}>Submit your Abstract!</UnstyledLink>
+                <UnstyledLink href='#' className={`px-5 self-center text-lg sm:self-start rounded-lg py-1 ${styles.firstBtn}`}>Register Your Team!</UnstyledLink>
+                <UnstyledLink href='#' className={`px-3 self-center text-lg sm:self-start rounded-lg py-1 ${styles.secondBtn}`}>Submit Your Abstract!</UnstyledLink>
               </div>
             </div>
           </article>
@@ -41,8 +43,8 @@ export default function Home() {
                   <h1 className='text-2xl md:text-3xl mb-5 text-left'>THE 2022 CHALLENGE<br /><span className='font-bold text-4xl md:truncate md:text-5xl'>LOREM IPSUM D</span></h1>
                   <p className='text-lg md:text-xl leading-5'>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
                 </div>
-                <div className='z-10 mt-10 self-center lg:self-start'>
-                  <UnstyledLink href='#' className={`text-lg rounded-lg px-7 py-2 md:text-xl ${styles.thirdBtn}`}>Join the Community!</UnstyledLink>
+                <div className='z-10 w-full flex flex-col mt-10'>
+                  <UnstyledLink href='#' className={`self-center sm:self-start text-lg rounded-lg px-7 py-2 md:text-xl ${styles.thirdBtn}`}>Join the Community!</UnstyledLink>
                 </div>
               </div>
               <div className='top-10 lg:pl-5 md:w-1/2 self-center relative'>
@@ -96,7 +98,7 @@ export default function Home() {
                 <img className='mt-2 select-none -ml-1 w-80 h-auto' src='/impact.png' alt='impact community' />
                 <p className='text-lg sm:w-80 leading-6'>A platform for ITS students who are highly motivated in making an impact.</p>
               </div>
-              <div className='flex align-center mt-7 w-full'>
+              <div className='flex mt-7 w-full'>
                 <UnstyledLink href='#' className={`${styles.fifthBtn} rounded-lg px-5 py-2`}>Join the Community!</UnstyledLink>
               </div>
             </div>
