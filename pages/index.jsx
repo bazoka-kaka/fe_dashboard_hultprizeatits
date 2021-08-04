@@ -18,10 +18,10 @@ export default function Home() {
               <h1 className='text-3xl md:text-4xl lg:text-5xl mb-5 mt-3 md:mt-6 font-bold text-left'>WIN THE MOST PRESTIGIOUS<br />BUSINESS IDEA COMPETITION!</h1>
               <p className={`text-lg md:text-xl ${styles.firstP}`}>For ITS students of <span className='font-bold'>ALL</span> study programs & batches</p>
             </div>
-            <div className='-mt-2'>
-              <div className='flex flex-col md:flex-row gap-5 md:gap-10'>
-                <UnstyledLink href='#' className={`${styles.firstBtn}`}>Register Your Team!</UnstyledLink>
-                <UnstyledLink href='#' className={`${styles.secondBtn}`}>Submit your Abstract!</UnstyledLink>
+            <div className='mt-1 md:-mt-4'>
+              <div className='flex flex-col md:flex-row gap-4 md:gap-10'>
+                <UnstyledLink href='#' className={`px-6 self-center text-lg sm:self-start rounded-lg py-1 ${styles.firstBtn}`}>Register Your Team!</UnstyledLink>
+                <UnstyledLink href='#' className={`px-5 self-center text-lg sm:self-start rounded-lg py-1 ${styles.secondBtn}`}>Submit your Abstract!</UnstyledLink>
               </div>
             </div>
           </article>
