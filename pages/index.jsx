@@ -31,7 +31,7 @@ export default function Home() {
         </section>
         <section className={styles.secondSection}>
           <div className='relative'>
-            <img className='w-52 -z-1 h-auto mt-5 absolute' src='/ellipse2.png' alt='' />
+            <img className={`w-52 -z-1 h-auto ${styles.floatAnim2} mt-5 absolute`} src='/ellipse2.png' alt='' />
           </div>
           <article className='relative flex justify-center px-10 lg:px-28 flex-col items-left gap-8 text-white py-14 md:gap-12 min-h-screen layout'>
             <img className={`w-64 ${styles.floatAnim1} h-auto right-0 -bottom-32 absolute`} src='/ellipse1.png' alt='' />

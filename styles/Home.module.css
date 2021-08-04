@@ -61,6 +61,24 @@
       transform: translateY(0px);
     }
   }
+
+  .floatAnim2 {
+    animation-name: floating2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes floating2 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(16px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
   
   .main {
     padding: 5rem 0;
@@ -253,7 +271,7 @@
   }
 
   .fourthSection {
-    background-color: #E5E5E5;
+    background-color: white;
     z-index: 5;
   }
 
