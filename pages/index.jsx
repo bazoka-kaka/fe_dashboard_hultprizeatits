@@ -14,7 +14,7 @@ export default function Home() {
         <section id='home' className={`relative ${styles.firstSection}`}>
           <article className={`flex justify-center px-10 md:px-24 flex-col items-left gap-8 text-white py-6 md:py-12 md:gap-12 ${styles.minScreenHeader} layout`}>
             <div>
-              <img src='/logo-1.png' className='w-56 sm:w-56 md:w-64 lg:w-80 h-auto' />
+              <img src='/logo-1.png' className='w-56 select-none sm:w-56 md:w-64 lg:w-80 h-auto' />
               <h1 className='text-3xl md:text-4xl lg:text-5xl mb-5 mt-3 md:mt-6 font-bold text-left'>WIN THE MOST PRESTIGIOUS<br />BUSINESS IDEA COMPETITION!</h1>
               <p className={`text-lg md:text-xl ${styles.firstP}`}>For ITS students of <span className='font-bold'>ALL</span> study programs & batches</p>
             </div>
@@ -31,15 +31,15 @@ export default function Home() {
         </section>
         <section className={styles.secondSection}>
           <div className='relative'>
-            <img className={`w-52 -z-1 h-auto ${styles.floatAnim2} mt-5 absolute`} src='/ellipse2.png' alt='' />
+            <img className={`w-52 select-none -z-1 h-auto ${styles.floatAnim2} mt-5 absolute`} src='/ellipse2.png' alt='' />
           </div>
           <article className='relative flex justify-center px-10 lg:px-28 flex-col items-left gap-8 text-white py-14 md:gap-12 min-h-screen layout'>
-            <img className={`w-64 ${styles.floatAnim1} h-auto right-0 -bottom-32 absolute`} src='/ellipse1.png' alt='' />
+            <img className={`w-64 select-none ${styles.floatAnim1} h-auto right-0 -bottom-32 absolute`} src='/ellipse1.png' alt='' />
             <div className='flex flex-col lg:flex-row'>
               <div className='lg:w-1/2'>
                 <div>
-                  <h1 className='text-xl md:text-4xl mb-8 text-left'>THE 2022 CHALLENGE<br /><span className='font-bold text-3xl md:truncate md:text-6xl'>LOREM IPSUM D</span></h1>
-                  <p className='text-lg md:text-xl leading-6'>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+                  <h1 className='text-2xl md:text-3xl mb-5 text-left'>THE 2022 CHALLENGE<br /><span className='font-bold text-4xl md:truncate md:text-5xl'>LOREM IPSUM D</span></h1>
+                  <p className='text-lg md:text-xl leading-5'>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
                 </div>
                 <div className='z-10 mt-10 self-center lg:self-start'>
                   <UnstyledLink href='#' className={`text-lg rounded-lg px-7 py-2 md:text-xl ${styles.thirdBtn}`}>Join the Community!</UnstyledLink>
@@ -66,15 +66,15 @@ export default function Home() {
                   </div>
                   <div className={`relative w-80 ${styles.box2}`}>
                     <h1 className='relative left-5 top-3 font-semibold text-2xl'>00 - 00<br/>October</h1>
-                    <h1 className='absolute bottom-3 text-md right-5 text-right font-semibold'>Preliminary<br/><span className='text-2xl font-bold'>Abstract Submission</span></h1>
+                    <h1 className='absolute bottom-3 text-md right-5 text-right font-semibold'>Semi Final<br/><span className='text-2xl font-bold'>Video Pitching Presentation</span></h1>
                   </div>
                   <div className={`relative w-80 ${styles.box2}`}>
                     <h1 className='relative left-5 top-3 font-semibold text-2xl'>00 - 00<br/>November</h1>
-                    <h1 className='absolute bottom-3 text-md right-5 text-right font-semibold'>Preliminary<br/><span className='text-2xl font-bold'>Abstract Submission</span></h1>
+                    <h1 className='absolute bottom-3 text-md right-5 text-right font-semibold'>Road to Final<br/><span className='text-2xl font-bold'>Incubation Program</span></h1>
                   </div>
                   <div className={`relative w-80 ${styles.box2}`}>
-                    <h1 className='relative left-5 top-3 font-semibold text-2xl'>00 - 00<br/>December</h1>
-                    <h1 className='absolute bottom-3 text-md right-5 text-right font-semibold'>Preliminary<br/><span className='text-2xl font-bold'>Abstract Submission</span></h1>
+                    <h1 className='relative left-5 top-3 font-semibold text-2xl'>4 December</h1>
+                    <h1 className='absolute bottom-3 text-md right-5 text-right font-semibold'>Final<br/><span className='text-2xl font-bold'>Award Ceremony & Gala</span></h1>
                   </div>
                   <div className={`relative w-80 ${styles.box2}`}>
                     <h1 className='relative left-5 top-3 font-semibold text-2xl'>00 - 00<br/>January</h1>
@@ -93,7 +93,7 @@ export default function Home() {
             <div className='py-20 lg:py-0 px-10 md:px-24 lg:pl-20 m-auto w-full lg:w-1/2'>
               <div>
                 <h1 className='text-lg text-left'>Elevate your experience by joining the</h1>
-                <img className='mt-2 -ml-1 w-80 h-auto' src='/impact.png' alt='impact community' />
+                <img className='mt-2 select-none -ml-1 w-80 h-auto' src='/impact.png' alt='impact community' />
                 <p className='text-lg sm:w-80 leading-6'>A platform for ITS students who are highly motivated in making an impact.</p>
               </div>
               <div className='flex align-center mt-7 w-full'>
@@ -101,7 +101,7 @@ export default function Home() {
               </div>
             </div>
             <div className='h-auto lg:h-full w-full lg:w-auto'>
-              <img className='w-auto right-0 h-full' src='/poster1.png' alt='hultprize at its poster' />
+              <img className='w-auto select-none right-0 h-full' src='/poster1.png' alt='hultprize at its poster' />
             </div>
           </article>
         </section>
@@ -142,9 +142,9 @@ export default function Home() {
           <div className={styles.footer2}>
             <h1 className='text-3xl md:text-4xl font-bold text-center'>Stay Connected!</h1>
             <div className={styles.connect}>
-              <UnstyledLink href='#' ><img src='/instagram.png'/></UnstyledLink>
-              <UnstyledLink href='#' ><img src='/linkedin.png'/></UnstyledLink>
-              <UnstyledLink href='#' className='' ><img src='/mail.png'/></UnstyledLink>
+              <UnstyledLink href='#' ><img className='select-none' src='/instagram.png'/></UnstyledLink>
+              <UnstyledLink href='#' ><img className='select-none' src='/linkedin.png'/></UnstyledLink>
+              <UnstyledLink href='#' ><img className='select-none' src='/mail.png'/></UnstyledLink>
             </div>
           </div>
         </div>
