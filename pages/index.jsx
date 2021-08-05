@@ -18,7 +18,7 @@ export default function Home() {
                 <img src='/logo-1.png' className='w-56 self-center sm:self-start select-none sm:w-56 md:w-64 lg:w-80 h-auto' />  
               </div>
               <h1 className='text-3xl md:text-4xl lg:text-5xl mb-5 mt-3 md:mt-6 font-bold text-center sm:text-left'>WIN THE MOST PRESTIGIOUS<br />BUSINESS IDEA COMPETITION!</h1>
-              <p className={`text-lg text-center sm:text-left md:text-xl ${styles.firstP}`}>For ITS students of <span className='font-bold'>ALL</span> study programs & batches</p>
+              <p className={`text-xl text-center sm:text-left md:text-2xl ${styles.firstP}`}>For ITS students of <span className='font-bold'>ALL</span> study programs & batches</p>
             </div>
             <div className='mt-1 md:-mt-4'>
               <div className='flex flex-col md:flex-row gap-4 md:gap-10'>
@@ -41,7 +41,7 @@ export default function Home() {
               <div className='lg:w-1/2'>
                 <div>
                   <h1 className='text-2xl md:text-3xl mb-5 text-left'>THE 2022 CHALLENGE<br /><span className='font-bold text-4xl md:truncate md:text-5xl'>LOREM IPSUM D</span></h1>
-                  <p className='text-lg md:text-xl leading-5'>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+                  <p className='text-lg md:text-xl leading-6'>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
                 </div>
                 <div className='z-10 w-full flex flex-col mt-10'>
                   <UnstyledLink href='#' className={`self-center sm:self-start text-lg rounded-lg px-7 py-2 md:text-xl ${styles.thirdBtn}`}>Join the Community!</UnstyledLink>
@@ -60,50 +60,46 @@ export default function Home() {
           <div className={`w-16 md:w-20 h-full right-0 z-10 absolute ${styles.right}`}></div>
           <article className='flex flex-col justify-center items-left gap-2 text-white md:gap-24 min-h-screen layout'>
               <div className='pl-10 relative md:pl-28'>
-                <h1 className='font-bold absolute -top-24 text-3xl text-left'>PROGRAM<br />TIMELINE</h1>
+                <h1 className='font-bold absolute -top-24 text-3xl md:text-4xl text-left'>PROGRAM<br />TIMELINE</h1>
                 <div className='flex relative' style={{width: '1300px'}}>
                   <div className={`relative w-80 ${styles.box1}`}>
-                    <h1 className='relative text-black left-5 top-3 font-bold text-2xl'>00 - 00<br/>September</h1>
-                    <h1 className='absolute bottom-3 text-md right-5 text-right text-black font-semibold'>Preliminary<br/><span className='text-2xl font-bold'>Abstract Submission</span></h1>
+                    <h1 className='relative text-black left-5 top-3 font-bold text-4xl'>00 - 00<br/>September</h1>
+                    <h1 className='absolute bottom-3 text-xl right-5 text-right text-black font-semibold'>Preliminary<br/><span className='text-3xl font-bold'>Abstract Submission</span></h1>
                   </div>
                   <div className={`relative w-80 ${styles.box2}`}>
-                    <h1 className='relative left-5 top-3 font-semibold text-2xl'>00 - 00<br/>October</h1>
-                    <h1 className='absolute bottom-3 text-md right-5 text-right font-semibold'>Semi Final<br/><span className='text-2xl font-bold'>Video Pitching Presentation</span></h1>
+                    <h1 className='relative left-5 top-3 font-semibold text-4xl'>00 - 00<br/>October</h1>
+                    <h1 className='absolute bottom-3 text-xl right-5 text-right font-semibold'>Semi Final<br/><span className='text-3xl font-bold'>Video Pitching Presentation</span></h1>
                   </div>
                   <div className={`relative w-80 ${styles.box2}`}>
-                    <h1 className='relative left-5 top-3 font-semibold text-2xl'>00 - 00<br/>November</h1>
-                    <h1 className='absolute bottom-3 text-md right-5 text-right font-semibold'>Road to Final<br/><span className='text-2xl font-bold'>Incubation Program</span></h1>
+                    <h1 className='relative left-5 top-3 font-semibold text-4xl'>00 - 00<br/>November</h1>
+                    <h1 className='absolute bottom-3 text-xl right-5 text-right font-semibold'>Road to Final<br/><span className='text-3xl font-bold'>Incubation Program</span></h1>
                   </div>
                   <div className={`relative w-80 ${styles.box2}`}>
-                    <h1 className='relative left-5 top-3 font-semibold text-2xl'>4 December</h1>
-                    <h1 className='absolute bottom-3 text-md right-5 text-right font-semibold'>Final<br/><span className='text-2xl font-bold'>Award Ceremony & Gala</span></h1>
-                  </div>
-                  <div className={`relative w-80 ${styles.box2}`}>
-                    <h1 className='relative left-5 top-3 font-semibold text-2xl'>00 - 00<br/>January</h1>
-                    <h1 className='absolute bottom-3 text-lg right-5 text-right font-semibold'>Preliminary<br/><span className='text-2xl font-bold'>Abstract Submission</span></h1>
+                    <h1 className='relative left-5 top-3 font-semibold text-4xl'>4 December</h1>
+                    <h1 className='absolute bottom-3 text-xl right-5 text-right font-semibold'>Final<br/><span className='text-3xl font-bold'>Award Ceremony & Gala</span></h1>
                   </div>
                   <div className={styles.horizontal}></div>
                 </div>
                 <div className='absolute flex flex-row justify-center w-full left-0 -bottom-20'>
-                  <UnstyledLink href='#' className={`rounded-lg px-3 py-1 ${styles.fourthBtn}`}>Competition Guideline</UnstyledLink>
+                  <UnstyledLink href='#' className={`text-xl font-semibold rounded-lg px-4 py-2 ${styles.fourthBtn}`}>Competition Guideline</UnstyledLink>
                 </div>
               </div>
           </article>          
         </section>
         <section id='register' className={styles.fourthSection}>
           <article className='relative flex lg:flex-row justify-between px-0 flex-col lg:items-center text-black lg:h-screen layout'>
-            <div className='py-20 lg:py-0 px-10 md:px-24 lg:pl-20 m-auto w-full lg:w-1/2'>
-              <div>
+            <div className='py-20 flex flex-col w-full lg:w-1/2 lg:py-0'>
+              <div className='self-center w-80'>
                 <h1 className='text-lg text-left'>Elevate your experience by joining the</h1>
                 <img className='mt-2 select-none -ml-1 w-80 h-auto' src='/impact.png' alt='impact community' />
                 <p className='text-lg sm:w-80 leading-6'>A platform for ITS students who are highly motivated in making an impact.</p>
-              </div>
-              <div className='flex mt-7 w-full'>
-                <UnstyledLink href='#' className={`${styles.fifthBtn} rounded-lg px-5 py-2`}>Join the Community!</UnstyledLink>
+                <div className='flex mt-7 w-full'>
+                  <UnstyledLink href='#' className={`${styles.fifthBtn} rounded-lg px-5 py-2`}>Join the Community!</UnstyledLink>
+                </div>
               </div>
             </div>
             <div className='h-auto lg:h-full w-full lg:w-auto'>
-              <img className='w-auto select-none right-0 h-full' src='/poster1.png' alt='hultprize at its poster' />
+              <img className='w-auto relative lg:absolute select-none right-0 h-full' src='/poster1.png' alt='hultprize at its poster' />
             </div>
           </article>
         </section>
