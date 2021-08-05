@@ -60,27 +60,27 @@ export default function Home() {
           <div className={`w-16 md:w-20 h-full right-0 z-10 absolute ${styles.right}`}></div>
           <article className='flex flex-col justify-center items-left gap-2 text-white md:gap-24 min-h-screen layout'>
               <div className='pl-10 relative md:pl-28'>
-                <h1 className='font-bold absolute -top-24 text-3xl md:text-4xl text-left'>PROGRAM<br />TIMELINE</h1>
+                <h1 className='font-bold absolute -top-28 text-3xl md:text-4xl text-left'>PROGRAM<br />TIMELINE</h1>
                 <div className='flex relative' style={{width: '1300px'}}>
-                  <div className={`relative w-80 ${styles.box1}`}>
-                    <h1 className='relative text-black left-5 top-3 font-bold text-4xl'>00 - 00<br/>September</h1>
+                  <div className={`relative ${styles.box1}`}>
+                    <h1 className='relative text-black left-5 top-3 font-bold text-3xl'>00 - 00<br/>September</h1>
                     <h1 className='absolute bottom-3 text-xl right-5 text-right text-black font-semibold'>Preliminary<br/><span className='text-3xl font-bold'>Abstract Submission</span></h1>
                   </div>
-                  <div className={`relative w-80 ${styles.box2}`}>
-                    <h1 className='relative left-5 top-3 font-semibold text-4xl'>00 - 00<br/>October</h1>
+                  <div className={`relative ${styles.box2}`}>
+                    <h1 className='relative left-5 top-3 font-semibold text-3xl'>00 - 00<br/>October</h1>
                     <h1 className='absolute bottom-3 text-xl right-5 text-right font-semibold'>Semi Final<br/><span className='text-3xl font-bold'>Video Pitching Presentation</span></h1>
                   </div>
                   <div className={`relative w-80 ${styles.box2}`}>
-                    <h1 className='relative left-5 top-3 font-semibold text-4xl'>00 - 00<br/>November</h1>
+                    <h1 className='relative left-5 top-3 font-semibold text-3xl'>00 - 00<br/>November</h1>
                     <h1 className='absolute bottom-3 text-xl right-5 text-right font-semibold'>Road to Final<br/><span className='text-3xl font-bold'>Incubation Program</span></h1>
                   </div>
                   <div className={`relative w-80 ${styles.box2}`}>
-                    <h1 className='relative left-5 top-3 font-semibold text-4xl'>4 December</h1>
+                    <h1 className='relative left-5 top-3 font-semibold text-3xl'>4 December</h1>
                     <h1 className='absolute bottom-3 text-xl right-5 text-right font-semibold'>Final<br/><span className='text-3xl font-bold'>Award Ceremony & Gala</span></h1>
                   </div>
                   <div className={styles.horizontal}></div>
                 </div>
-                <div className='absolute flex flex-row justify-center w-full left-0 -bottom-20'>
+                <div className='absolute flex flex-row justify-center w-full left-0 -bottom-24'>
                   <UnstyledLink href='#' className={`text-xl font-semibold rounded-lg px-4 py-2 ${styles.fourthBtn}`}>Competition Guideline</UnstyledLink>
                 </div>
               </div>
