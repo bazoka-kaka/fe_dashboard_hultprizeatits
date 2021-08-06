@@ -195,10 +195,17 @@
     color: black;
   }
 
+  .padding1 {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: linear-gradient(85.66deg, #BF1D76 12.43%, #E65CA8 83.93%);
+  }
+
   .secondBtn {
     background: black;
     color: white;
-    border: 2px solid #DB0A7F;
   }
 
   .thirdBtn {
@@ -284,7 +291,11 @@
   }
 
   .background1 {
-    background: linear-gradient(85.66deg, #BF1D76 12.43%, #E65CA8 83.93%);
+    background: linear-gradient(40.66deg, #460F2C 12.43%, #E65CA8 83.93%);
+  }
+
+  .background2 {
+    background: linear-gradient(30.41deg, #C11873 0%, #EC83BD 100%);
   }
 
   .box1 {
