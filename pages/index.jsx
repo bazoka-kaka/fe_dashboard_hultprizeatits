@@ -22,8 +22,10 @@ export default function Home() {
             </div>
             <div className='mt-1 md:-mt-4'>
               <div className='flex flex-col md:flex-row gap-4 md:gap-10'>
-                <UnstyledLink href='#' className={`px-5 self-center text-lg sm:self-start rounded-lg py-1 ${styles.firstBtn}`}>Register Your Team!</UnstyledLink>
-                <UnstyledLink href='#' className={`px-3 self-center text-lg sm:self-start rounded-lg py-1 ${styles.secondBtn}`}>Submit Your Abstract!</UnstyledLink>
+                <UnstyledLink href='#' className={`px-8 self-center text-lg sm:self-start rounded-lg py-1 ${styles.firstBtn}`}>Register Your Team!</UnstyledLink>
+                <div className={`${styles.padding1} rounded-lg self-center sm:self-start`}>
+                  <UnstyledLink href='#' className={`text-lg px-6 py-1 rounded-lg ${styles.secondBtn}`}>Submit Your Abstract!</UnstyledLink>
+                </div>
               </div>
             </div>
           </article>
@@ -62,7 +64,7 @@ export default function Home() {
               <div className='pl-10 relative md:pl-28'>
                 <h1 className='font-bold absolute -top-28 text-3xl md:text-4xl text-left'>PROGRAM<br />TIMELINE</h1>
                 <div className='flex relative' style={{width: '1300px'}}>
-                  <div className={`px-1 mr-12 rounded-lg ${styles.background1} py-1 bg-black z-10`}>
+                  <div className={`px-1 mr-12 rounded-lg ${styles.background2} py-1 bg-black z-10`}>
                     <div className={`relative ${styles.box1}`}>
                       <h1 className='relative text-black left-5 top-3 font-bold text-3xl'>OO - OO<br/>September</h1>
                       <h1 className='absolute bottom-3 text-xl right-5 text-right text-black font-semibold'>Preliminary<br/><span className='text-3xl font-bold'>Abstract Submission</span></h1>
