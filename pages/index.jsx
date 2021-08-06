@@ -48,7 +48,7 @@ export default function Home() {
                 </div>
               </div>
               <div className='top-10 lg:pl-5 md:w-1/2 self-center relative'>
-                <div className={styles.rectangle1}>
+                <div className={`${styles.rectangle1} rounded-lg px-2 py-2`}>
                   <img src="/youtube.png" className='h-auto m-auto' alt="youtube placeholder" />
                 </div>
               </div>
@@ -62,21 +62,29 @@ export default function Home() {
               <div className='pl-10 relative md:pl-28'>
                 <h1 className='font-bold absolute -top-28 text-3xl md:text-4xl text-left'>PROGRAM<br />TIMELINE</h1>
                 <div className='flex relative' style={{width: '1300px'}}>
-                  <div className={`relative ${styles.box1}`}>
-                    <h1 className='relative text-black left-5 top-3 font-bold text-3xl'>00 - 00<br/>September</h1>
-                    <h1 className='absolute bottom-3 text-xl right-5 text-right text-black font-semibold'>Preliminary<br/><span className='text-3xl font-bold'>Abstract Submission</span></h1>
+                  <div className={`px-1 mr-12 rounded-lg ${styles.background1} py-1 bg-black z-10`}>
+                    <div className={`relative ${styles.box1}`}>
+                      <h1 className='relative text-black left-5 top-3 font-bold text-3xl'>OO - OO<br/>September</h1>
+                      <h1 className='absolute bottom-3 text-xl right-5 text-right text-black font-semibold'>Preliminary<br/><span className='text-3xl font-bold'>Abstract Submission</span></h1>
+                    </div>
                   </div>
-                  <div className={`relative ${styles.box2}`}>
-                    <h1 className='relative left-5 top-3 font-semibold text-3xl'>00 - 00<br/>October</h1>
-                    <h1 className='absolute bottom-3 text-xl right-5 text-right font-semibold'>Semi Final<br/><span className='text-3xl font-bold'>Video Pitching Presentation</span></h1>
+                  <div className={`px-1 mr-12 rounded-lg ${styles.background1} py-1 bg-black z-10`}>
+                    <div className={`relative ${styles.box2}`}>
+                      <h1 className='relative left-5 top-3 font-semibold text-3xl'>OO - OO<br/>October</h1>
+                      <h1 className='absolute bottom-3 text-xl right-5 text-right font-semibold'>Semi Final<br/><span className='text-3xl font-bold'>Video Pitching Presentation</span></h1>
+                    </div>
                   </div>
-                  <div className={`relative w-80 ${styles.box2}`}>
-                    <h1 className='relative left-5 top-3 font-semibold text-3xl'>00 - 00<br/>November</h1>
-                    <h1 className='absolute bottom-3 text-xl right-5 text-right font-semibold'>Road to Final<br/><span className='text-3xl font-bold'>Incubation Program</span></h1>
+                  <div className={`px-1 mr-12 rounded-lg ${styles.background1} py-1 bg-black z-10`}>
+                    <div className={`relative w-80 ${styles.box2}`}>
+                      <h1 className='relative left-5 top-3 font-semibold text-3xl'>OO - OO<br/>November</h1>
+                      <h1 className='absolute bottom-3 text-xl right-5 text-right font-semibold'>Road to Final<br/><span className='text-3xl font-bold'>Incubation Program</span></h1>
+                    </div>
                   </div>
-                  <div className={`relative w-80 ${styles.box2}`}>
-                    <h1 className='relative left-5 top-3 font-semibold text-3xl'>4 December</h1>
-                    <h1 className='absolute bottom-3 text-xl right-5 text-right font-semibold'>Final<br/><span className='text-3xl font-bold'>Award Ceremony & Gala</span></h1>
+                  <div className={`px-1 mr-12 rounded-lg ${styles.background1} py-1 bg-black z-10`}>
+                    <div className={`relative w-80 ${styles.box2}`}>
+                      <h1 className='relative left-5 top-3 font-semibold text-3xl'>4 December</h1>
+                      <h1 className='absolute bottom-3 text-xl right-5 text-right font-semibold'>Final<br/><span className='text-3xl font-bold'>Award Ceremony & Gala</span></h1>
+                    </div>
                   </div>
                   <div className={styles.horizontal}></div>
                 </div>

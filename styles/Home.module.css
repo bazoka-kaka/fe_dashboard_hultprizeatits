@@ -227,6 +227,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    background: linear-gradient(69.94deg, #460F2C 4.32%, #A90C63 97.55%);
   }
 
   .logo1 {
@@ -282,23 +283,21 @@
     background: linear-gradient(90deg, #C11873 0%, rgba(193, 24, 115, 0) 100%);
   }
 
+  .background1 {
+    background: linear-gradient(85.66deg, #BF1D76 12.43%, #E65CA8 83.93%);
+  }
+
   .box1 {
     height: 310px;
     width: 240px;
-    background: linear-gradient(30.41deg, #C11873 0%, #EC83BD 100%);
-    border-radius: 10px;
     z-index: 2;
-    margin-right: 50px;
   }
 
   .box2 {
     height: 310px;
     width: 240px;
     background: black;
-    border: 5px solid #A90C63;
-    border-radius: 10px;
     z-index: 2;
-    margin-right: 50px;
   }
 
   .horizontal {
