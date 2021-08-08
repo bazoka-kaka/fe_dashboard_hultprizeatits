@@ -190,16 +190,30 @@
     margin-left: 0.5rem;
   }
 
+  .boxed {
+    width: 350px;
+  }
+
+  @media (max-width: 600px) {
+    .boxed {
+      width: 270px;
+    }
+  }
+
   .firstBtn {
     background: linear-gradient(80.86deg, #DB0A7F -9.3%, #EC83BD 125.39%);
     color: black;
   }
 
+  .boxDecoration {
+    background: #C11873;
+  }
+
   .padding1 {
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-left: 0.13em;
+    padding-right: 0.13em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
     background: linear-gradient(85.66deg, #BF1D76 12.43%, #E65CA8 83.93%);
   }
 
@@ -286,8 +300,14 @@
     top: 10px;
     left: 30px;
     height: 25px;
-    width: 50%;
+    width: 275px;
     background: linear-gradient(90deg, #C11873 0%, rgba(193, 24, 115, 0) 100%);
+  }
+
+  @media(max-width: 500px) {
+    .line1 {
+      width: 200px;
+    }
   }
 
   .background1 {
@@ -338,8 +358,8 @@
   }
 
   .connect {
-    width: 221px;
-    height: 47px;
+    width: 200px;
+    height: 43px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
@@ -349,7 +369,7 @@
   }
 
   .connect img {
-    width: 40px;
+    width: 35px;
     height: auto;
   }
   
