@@ -49,7 +49,7 @@ export default function Home() {
                   <UnstyledLink href='#' className={`self-center sm:self-start text-lg rounded-lg px-7 py-2 md:text-xl ${styles.thirdBtn}`}>Join the Community!</UnstyledLink>
                 </div>
               </div>
-              <div className='relative self-center top-10 lg:pl-5 md:w-1/2'>
+              <div className='relative self-center top-7 lg:top-0 lg:pl-5 md:w-1/2'>
                 <div className={`${styles.rectangle1} rounded-lg px-2 py-2`}>
                   <img src="/youtube.png" className='h-auto m-auto' alt="youtube placeholder" />
                 </div>
@@ -98,9 +98,9 @@ export default function Home() {
         </section>
         <section id='register' className={styles.fourthSection}>
           <article className='relative flex flex-col justify-between px-0 text-black lg:flex-row lg:items-center lg:h-screen layout'>
-            <div className='flex flex-col w-full py-20 lg:w-1/2 lg:py-0'>
-              <div className='self-center sm:w-1/2 w-80'>
-                <h1 className='text-lg text-left'>Elevate your experience by joining the</h1>
+            <div className='flex flex-col self-center justify-center py-20 lg:w-1/2 lg:py-0'>
+              <div className='flex flex-col self-center justify-center px-0 sm:px-8 lg:px-0 sm:w-full lg:w-3/4 w-80'>
+                <h1 className='mb-3 text-lg text-left sm:text-xl'>Elevate your experience by joining the</h1>
                 <div className={`${styles.boxed}`}>
                   <div className='flex gap-3'>
                     <h1 className='text-4xl font-bold sm:text-5xl'>IMPACT</h1>
@@ -111,8 +111,8 @@ export default function Home() {
                     <h1 className='text-4xl font-bold sm:text-5xl'>COMMUNITY</h1>
                   </div>
                 </div>
-                <p className='mt-4 text-lg leading-7 sm:w-80'>A platform for ITS students who are highly motivated in making an impact.</p>
-                <div className='flex w-full mt-7'>
+                <p className='mt-5 text-lg leading-7 sm:w-80'>A platform for ITS students who are highly motivated in making an impact.</p>
+                <div className='flex w-full mt-12'>
                   <UnstyledLink href='#' className={`${styles.fifthBtn} rounded-lg px-5 py-2`}>Join the Community!</UnstyledLink>
                 </div>
               </div>
@@ -120,45 +120,45 @@ export default function Home() {
             <div className='flex flex-col w-full h-full lg:h-full lg:w-1/2'>
               <div className='flex flex-row h-1/6'>
                 <div className="flex justify-center w-1/3 overflow-hidden align-center">
-                  <img className='flex-shrink-0 min-w-full min-h-full' src="/hultprize1.png" alt="hultprize1" />
+                  <img className='flex-shrink-0 min-w-full min-h-full select-none' src="/hultprize1.png" alt="hultprize1" />
                 </div>
                 <div className='w-2/3' style={{background: '#790E48'}}></div>
               </div>
               <div className="flex h-1/4">
                 <div className='flex justify-center w-1/3 overflow-hidden align-center'>
-                  <img src="/what.png" alt="what will you get" className='w-auto h-full px-4 py-8' />  
+                  <img src="/what.png" alt="what will you get" className='w-auto h-full px-4 py-8 select-none' />  
                 </div>
                 <div className='relative flex justify-center w-2/3 overflow-hidden align-center'>
-                  <img className='flex-shrink-0 min-w-full min-h-full' src="/hultprize2.png" alt="hultprize 2" />
-                  <div className='absolute bottom-0 flex flex-col justify-center w-full px-4 py-1 font-light tracking-wider text-white align-center h-1/3' style={{background: 'linear-gradient(270deg, rgba(219, 10, 127, 0) 1.02%, #BF1D76 100%)'}}>
+                  <img className='flex-shrink-0 min-w-full min-h-full select-none' src="/hultprize2.png" alt="hultprize 2" />
+                  <div className='absolute bottom-0 flex flex-col justify-center w-full h-12 px-4 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center' style={{background: 'linear-gradient(270deg, rgba(219, 10, 127, 0) 1.02%, #BF1D76 100%)'}}>
                     <h1 className='text-xs leading-4 sm:text-base'>Network with like-minded<br />individuals</h1>
                   </div>
                 </div>
               </div>
               <div className="flex h-1/4">
                 <div className="relative flex justify-center w-1/2 overflow-hidden sm:w-2/5 align-center">
-                  <img className='flex-shrink-0 min-w-full min-h-full' src="hultprize3.png" alt="hultprize3" />
-                  <div className='absolute bottom-0 flex flex-col justify-center w-full px-3 py-1 font-light tracking-wider text-white align-center h-1/3' style={{background: '#C11873'}}>
-                    <h1 className='text-xs leading-4 sm:text-base'>Create your dream team through pairing service</h1>
+                  <img className='flex-shrink-0 min-w-full min-h-full select-none' src="hultprize3.png" alt="hultprize3" />
+                  <div className='absolute bottom-0 flex flex-col justify-center w-full h-12 px-3 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center' style={{background: '#C11873'}}>
+                    <h1 className='text-xs sm:text-md xl:text-base'>Create your dream team through pairing service</h1>
                   </div>
                 </div>
                 <div className="relative flex justify-center w-1/2 sm:w-3/5 overlow-hidden align-center">
-                  <img className='z-0 flex-shrink-0 min-w-full min-h-full' src="hultprize4.png" alt="hultprize3" />
-                  <div className='absolute bottom-0 flex flex-col justify-center w-full px-3 py-1 font-light tracking-wider text-white align-center h-1/3' style={{background: 'linear-gradient(90deg, rgba(230, 92, 168, 0) 0%, #E65CA8 100%)'}}>
+                  <img className='z-0 flex-shrink-0 min-w-full min-h-full select-none' src="hultprize4.png" alt="hultprize3" />
+                  <div className='absolute bottom-0 flex flex-col justify-center w-full h-12 px-3 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center' style={{background: 'linear-gradient(90deg, rgba(230, 92, 168, 0) 0%, #E65CA8 100%)'}}>
                     <h1 className='text-xs leading-4 text-right sm:text-base'>Get information on<br />Hult Prize at ITS faster</h1>
                   </div>
                 </div>
               </div>
               <div className="flex h-1/3">
                 <div className="relative flex justify-center w-1/2 overflow-hidden align-center">
-                  <img className='flex-shrink-0 min-w-full min-h-full' src="hultprize5.png" alt="hultprize3" />
-                  <div className='absolute bottom-0 flex flex-col justify-center w-full px-3 py-1 font-light tracking-wider text-white align-center h-1/3' style={{background: 'linear-gradient(269.93deg, rgba(219, 10, 127, 0) 0.09%, #BF1D76 99.96%)'}}>
+                  <img className='flex-shrink-0 min-w-full min-h-full select-none' src="hultprize5.png" alt="hultprize3" />
+                  <div className='absolute bottom-0 flex flex-col justify-center w-full h-12 px-3 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center' style={{background: 'linear-gradient(269.93deg, rgba(219, 10, 127, 0) 0.09%, #BF1D76 99.96%)'}}>
                     <h1 className='text-xs leading-5 sm:text-base'>Exclusive Q&A session</h1>
                   </div>
                 </div>
                 <div className="relative flex justify-center w-1/2 overflow-hidden align-center">
-                  <img className='flex-shrink-0 min-w-full min-h-full' src="hultprize6.png" alt="hultprize3" />
-                  <div className='absolute bottom-0 flex flex-col justify-center w-full px-3 py-1 font-light tracking-wider text-white align-center h-1/3' style={{background: '#BF1D76'}}>
+                  <img className='flex-shrink-0 min-w-full min-h-full select-none' src="hultprize6.png" alt="hultprize3" />
+                  <div className='absolute bottom-0 flex flex-col justify-center w-full h-12 px-3 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center' style={{background: '#BF1D76'}}>
                     <h1 className='text-xs leading-5 text-right sm:text-base'>Exclusive coaching</h1>
                   </div>
                 </div>
