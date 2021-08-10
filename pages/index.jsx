@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import ScrollDownArrow from '../components/ScrollDown'
 import UnstyledLink from '../components/UnstyledLink'
+import ImageSlider from '../components/Slider'
 
 export default function Home() {
   return (
@@ -55,44 +56,21 @@ export default function Home() {
             </div>
           </article>
         </section>
-        <section id='timeline' className={`relative ${styles.thirdSection}`}>
-          <div className={`w-16 md:w-20 h-full absolute z-20 ${styles.left}`}></div>
-          <div className={`w-16 md:w-20 h-full right-0 z-20 absolute ${styles.right}`}></div>
-          <article className='flex flex-col justify-center min-h-screen gap-2 text-white items-left md:gap-24 layout'>
-              <div className='relative pl-10 md:pl-28'>
-                <h1 className='absolute text-3xl font-bold text-left -top-24 md:text-4xl'>PROGRAM<br />TIMELINE</h1>
-                <div className='relative flex' style={{width: '1300px'}}>
-                  <div className={`px-1 mr-12 rounded-lg ${styles.background2} py-1 bg-black z-10`}>
-                    <div className={`relative ${styles.box1}`}>
-                      <h1 className='relative text-3xl font-bold text-black left-5 top-3'>OO - OO<br/>September</h1>
-                      <h1 className='absolute text-xl font-semibold text-right text-black bottom-3 right-5'>Preliminary<br/><span className='text-3xl font-bold'>Abstract Submission</span></h1>
-                    </div>
-                  </div>
-                  <div className={`px-1 mr-12 rounded-lg ${styles.background1} py-1 bg-black z-10`}>
-                    <div className={`relative rounded-lg ${styles.box2}`}>
-                      <h1 className='relative text-3xl font-semibold left-5 top-3'>OO - OO<br/>October</h1>
-                      <h1 className='absolute text-xl font-semibold text-right bottom-3 right-5'>Semi Final<br/><span className='text-3xl font-bold'>Video Pitching Presentation</span></h1>
-                    </div>
-                  </div>
-                  <div className={`px-1 mr-12 rounded-lg ${styles.background1} py-1 bg-black z-10`}>
-                    <div className={`relative rounded-lg w-80 ${styles.box2}`}>
-                      <h1 className='relative text-3xl font-semibold left-5 top-3'>OO - OO<br/>November</h1>
-                      <h1 className='absolute text-xl font-semibold text-right bottom-3 right-5'>Road to Final<br/><span className='text-3xl font-bold'>Incubation Program</span></h1>
-                    </div>
-                  </div>
-                  <div className={`px-1 mr-12 rounded-lg ${styles.background1} py-1 bg-black z-10`}>
-                    <div className={`relative rounded-lg w-80 ${styles.box2}`}>
-                      <h1 className='relative text-3xl font-semibold left-5 top-3'>4 December</h1>
-                      <h1 className='absolute text-xl font-semibold text-right bottom-3 right-5'>Final<br/><span className='text-3xl font-bold'>Award Ceremony & Gala</span></h1>
-                    </div>
-                  </div>
-                  <div className={styles.horizontal}></div>
-                </div>
-                <div className='absolute left-0 flex flex-row justify-center w-full -bottom-20'>
-                  <UnstyledLink href='#' className={`text-xl font-semibold rounded-lg px-4 py-2 ${styles.fourthBtn}`}>Competition Guideline</UnstyledLink>
-                </div>
-              </div>
-          </article>          
+        <section id='timeline' className={`relative ${styles.thirdSection} min-h-screen`}>
+          <div className={`w-16 pl-6 flex flex-col justify-center align-center md:w-20 h-full absolute z-20 ${styles.left}`}>
+            <img className='h-auto w-7' src="/vector.png" alt="" />
+          </div>
+          <div className={`w-16 pl-6 flex flex-col align-center justify-center md:w-20 h-full right-0 z-20 absolute ${styles.right}`}>
+            <img className='h-auto w-7' src="/vector.png" alt="" />
+          </div>
+          <h1 className='relative text-3xl font-bold text-white uppercase sm:text-4xl top-12 left-10 sm:left-16'>Program<br />Timeline</h1>
+          <div className='relative px-10 py-24 sm:px-16 align-center' style={{width: '1500px'}}>
+            <ImageSlider />
+          </div>
+          <div className={`left-20 relative bottom-72 ${styles.horizontal}`}></div>
+          <div className='relative left-0 z-10 flex flex-row justify-center w-full bottom-10'>
+            <UnstyledLink href='#' className={`text-xl font-semibold rounded-lg px-4 py-2 ${styles.fourthBtn}`}>Competition Guideline</UnstyledLink>
+          </div>
         </section>
         <section id='register' className={styles.fourthSection}>
           <article className='relative flex flex-col justify-between px-0 text-black lg:flex-row lg:items-center lg:h-screen layout'>

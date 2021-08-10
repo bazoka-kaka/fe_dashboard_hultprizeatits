@@ -305,7 +305,7 @@
 
   @media(max-width: 500px) {
     .line1 {
-      width: 200px;
+      width: 120px;
     }
   }
 
@@ -324,8 +324,6 @@
   }
 
   .box2 {
-    height: 310px;
-    width: 240px;
     background: black;
     z-index: 2;
   }
@@ -334,8 +332,6 @@
     width: 100%;
     height: 10px;
     background: linear-gradient(69.94deg, #460F2C 4.32%, #A90C63 97.55%);
-    position: absolute;
-    top: 50%;
   }
 
   .footer1 {
