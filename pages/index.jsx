@@ -81,8 +81,8 @@ export default function Home() {
           <article className='relative flex flex-col justify-between px-0 text-black lg:flex-row lg:items-center lg:h-screen layout'>
             <div className='flex flex-col self-center justify-center py-20 lg:w-1/2 lg:py-0'>
               <div className='flex flex-col self-center justify-center px-0 sm:px-8 lg:px-0 sm:w-full lg:w-3/4 w-80'>
-                <h1 className='mb-3 text-lg sm:text-xl'>Elevate your experience by joining the</h1>
-                <div className={`${styles.boxed}`}>
+                <h1 className='mb-3 text-lg text-center sm:text-left sm:text-xl'>Elevate your experience by joining the</h1>
+                <div className={`self-center sm:self-start ${styles.boxed}`}>
                   <div className='flex gap-3'>
                     <h1 className='text-4xl font-bold sm:text-5xl'>IMPACT</h1>
                     <div className={`${styles.boxDecoration} mt-2 w-full h-7 sm:h-10`}></div>
@@ -92,8 +92,8 @@ export default function Home() {
                     <h1 className='text-4xl font-bold sm:text-5xl'>COMMUNITY</h1>
                   </div>
                 </div>
-                <p className='mt-5 text-lg leading-7 sm:w-80'>A platform for ITS students who are highly motivated in making an impact.</p>
-                <div className='flex w-full mt-12'>
+                <p className='mt-5 text-lg leading-7 text-center sm:text-left sm:w-80'>A platform for ITS students who are highly motivated in making an impact.</p>
+                <div className='flex justify-center w-full mt-12 sm:justify-start'>
                   <UnstyledLink href='#' className={`${styles.fifthBtn} rounded-lg px-5 py-2`}>Join the Community!</UnstyledLink>
                 </div>
               </div>
