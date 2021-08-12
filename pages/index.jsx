@@ -1,22 +1,25 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 import ScrollDownArrow from '../components/ScrollDown'
 import UnstyledLink from '../components/UnstyledLink'
 import ImageSlider from '../components/Slider'
+
+
 
 export default function Home() {
   return (
     <div>
       <Head>
         <title>Hult Prize at Institut Teknologi Sepuluh Nopember</title>
-        <meta name='keywords' content='web development, programming' />
+        <meta name='keywords' content='hultprizeatits' />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"></link>
       </Head>
       <main className='overflow-hidden'>
         <section id='home' className={`relative ${styles.firstSection}`}>
           <article className={`flex justify-center px-10 md:px-24 flex-col items-left gap-8 text-white py-6 md:py-12 md:gap-12 ${styles.minScreenHeader} layout`}>
             <div>
               <div className='flex flex-col'>
-                <img src='/logo-1.png' className='self-center w-56 h-auto select-none sm:self-start sm:w-56 md:w-64 lg:w-80' />  
+                <img alt='' src='/logo-1.png' className='self-center w-56 h-auto select-none sm:self-start sm:w-56 md:w-64 lg:w-80' />  
               </div>
               <h1 className='mt-3 mb-5 text-3xl font-bold text-center md:text-4xl lg:text-5xl md:mt-6 sm:text-left'>WIN THE MOST PRESTIGIOUS<br />BUSINESS IDEA COMPETITION!</h1>
               <p className={`text-xl text-center sm:text-left md:text-2xl ${styles.firstP}`}>For ITS students of <span className='font-bold'>ALL</span> study programs & batches</p>
@@ -56,19 +59,21 @@ export default function Home() {
             </div>
           </article>
         </section>
-        <section id='timeline' className={`relative ${styles.thirdSection} min-h-screen`}>
-          <div className={`w-16 pl-6 flex flex-col justify-center align-center md:w-20 h-full absolute z-20 ${styles.left}`}>
-            <img className='h-auto w-7' src="/vector.png" alt="" />
+        <section id='timeline' className={`relative w-full ${styles.thirdSection} min-h-screen`}>
+          {/* <div className={`w-16 pl-6 flex flex-col justify-center align-center md:w-20 h-full absolute z-20 ${styles.left}`}>
+            
           </div>
           <div className={`w-16 pl-6 flex flex-col align-center justify-center md:w-20 h-full right-0 z-20 absolute ${styles.right}`}>
-            <img className='h-auto w-7' src="/vector.png" alt="" />
-          </div>
+            
+          </div> */}
           <h1 className='relative text-3xl font-bold text-white uppercase sm:text-4xl top-12 left-10 sm:left-16'>Program<br />Timeline</h1>
-          <div className='relative px-10 py-24 sm:px-16 align-center' style={{width: '1500px'}}>
-            <ImageSlider />
+          <div className='relative' style={{width: '100vw'}}>
+            <div className={`px-10 py-24 carousel sm:px-20 align-center`} style={{width: '1400px'}}>
+              <ImageSlider />
+            </div>
           </div>
           <div className={`left-20 relative bottom-72 ${styles.horizontal}`}></div>
-          <div className='relative left-0 z-10 flex flex-row justify-center w-full bottom-10'>
+          <div className='relative left-0 z-30 flex flex-row justify-center w-full bottom-10'>
             <UnstyledLink href='#' className={`text-xl font-semibold rounded-lg px-4 py-2 ${styles.fourthBtn}`}>Competition Guideline</UnstyledLink>
           </div>
         </section>
@@ -179,9 +184,9 @@ export default function Home() {
           <div className={styles.footer2}>
             <h1 className='text-3xl font-bold text-center md:text-4xl'>Stay Connected!</h1>
             <div className={styles.connect}>
-              <UnstyledLink href='#' ><img className='select-none' src='/instagram.png'/></UnstyledLink>
-              <UnstyledLink href='#' ><img className='select-none' src='/linkedin.png'/></UnstyledLink>
-              <UnstyledLink href='#' ><img className='select-none' src='/mail.png'/></UnstyledLink>
+              <UnstyledLink href='#' ><img alt='' className='select-none' src='/instagram.png'/></UnstyledLink>
+              <UnstyledLink href='#' ><img alt='' className='select-none' src='/linkedin.png'/></UnstyledLink>
+              <UnstyledLink href='#' ><img alt='' className='select-none' src='/mail.png'/></UnstyledLink>
             </div>
           </div>
         </div>
