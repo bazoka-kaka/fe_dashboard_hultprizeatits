@@ -3,10 +3,14 @@ import styles from '../styles/Home.module.scss'
 import ScrollDownArrow from '../components/ScrollDown'
 import UnstyledLink from '../components/UnstyledLink'
 import ImageSlider from '../components/Slider'
+import Nav from '../components/Nav'
 
 export default function Home() {
   return (
     <div>
+      <div className='fixed z-50 w-full'>
+        <Nav />
+      </div>
       <Head>
         <title>Hult Prize at Institut Teknologi Sepuluh Nopember</title>
         <meta name='keywords' content='hultprizeatits' />
@@ -14,7 +18,7 @@ export default function Home() {
       </Head>
       <main className='overflow-hidden'>
         <section id='home' className={`relative ${styles.firstSection}`}>
-          <article className={`flex justify-center px-10 md:px-24 flex-col items-left gap-8 text-white py-6 md:py-12 md:gap-12 ${styles.minScreenHeader} layout`}>
+          <article className={`flex justify-center px-10 md:px-24 flex-col items-left gap-8 text-white py-6 md:pt-12 md:gap-12 min-h-screen layout`}>
             <div>
               <div className='flex flex-col'>
                 <img alt='' src='/logo-1.png' className='self-center w-56 h-auto select-none sm:self-start sm:w-56 md:w-64 lg:w-80' />  
@@ -64,14 +68,14 @@ export default function Home() {
           <div className={`w-16 pl-6 flex flex-col align-center justify-center md:w-20 h-full right-0 z-20 absolute ${styles.right}`}>
             
           </div> */}
-          <h1 className='relative text-3xl font-bold text-white uppercase sm:text-4xl top-12 left-10 sm:left-16'>Program<br />Timeline</h1>
+          <h1 className='relative text-3xl font-bold text-white uppercase sm:text-4xl top-20 left-10 sm:left-16'>Program<br />Timeline</h1>
           <div className='relative' style={{width: '100vw'}}>
-            <div className={`px-10 py-24 carousel sm:px-20 align-center`} style={{width: '1400px'}}>
+            <div className={`px-10 py-32 carousel sm:px-16 align-center`} style={{width: '1400px'}}>
               <ImageSlider />
             </div>
           </div>
           <div className={`left-20 relative bottom-72 ${styles.horizontal}`}></div>
-          <div className='relative left-0 z-30 flex flex-row justify-center w-full bottom-10'>
+          <div className='relative left-0 z-30 flex flex-row justify-center w-full bottom-16'>
             <UnstyledLink href='#' className={`text-xl truncate font-semibold rounded-lg px-4 py-2 ${styles.fourthBtn}`}>Competition Guideline</UnstyledLink>
           </div>
         </section>
@@ -97,13 +101,13 @@ export default function Home() {
               </div>
             </div>
             <div className='flex flex-col w-full h-full lg:h-full lg:w-1/2'>
-              <div className='flex flex-row h-1/6'>
+              <div className='flex flex-row h-1/5 sm:h-1/6'>
                 <div className="flex justify-center w-1/3 overflow-hidden align-center">
                   <img className='flex-shrink-0 min-w-full min-h-full select-none' src="/hultprize1.png" alt="hultprize1" />
                 </div>
                 <div className='w-2/3' style={{background: '#790E48'}}></div>
               </div>
-              <div className="flex h-1/4">
+              <div className="flex h-1/5 sm:h-1/4">
                 <div className='flex justify-center w-1/3 overflow-hidden align-center'>
                   <img src="/what.png" alt="what will you get" className='w-auto h-full px-4 py-8 select-none' />  
                 </div>
