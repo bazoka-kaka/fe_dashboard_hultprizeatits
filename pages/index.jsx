@@ -3,12 +3,14 @@ import styles from '../styles/Home.module.scss'
 import ScrollDownArrow from '../components/ScrollDown'
 import UnstyledLink from '../components/UnstyledLink'
 import ImageSlider from '../components/Slider'
-
-
+import Nav from '../components/Nav'
 
 export default function Home() {
   return (
     <div>
+      <div className='fixed z-50 w-full'>
+        <Nav />
+      </div>
       <Head>
         <title>Hult Prize at Institut Teknologi Sepuluh Nopember</title>
         <meta name='keywords' content='hultprizeatits' />
@@ -16,7 +18,7 @@ export default function Home() {
       </Head>
       <main className='overflow-hidden'>
         <section id='home' className={`relative ${styles.firstSection}`}>
-          <article className={`flex justify-center px-10 md:px-24 flex-col items-left gap-8 text-white py-6 md:py-12 md:gap-12 ${styles.minScreenHeader} layout`}>
+          <article className={`flex justify-center px-10 md:px-24 flex-col items-left gap-8 text-white py-6 md:pt-12 md:gap-12 min-h-screen layout`}>
             <div>
               <div className='flex flex-col'>
                 <img alt='' src='/logo-1.png' className='self-center w-56 h-auto select-none sm:self-start sm:w-56 md:w-64 lg:w-80' />  
@@ -26,8 +28,8 @@ export default function Home() {
             </div>
             <div className='mt-1 md:-mt-4'>
               <div className='flex flex-col gap-4 md:flex-row md:gap-10'>
-                <UnstyledLink href='#' className={`px-8 self-center text-lg sm:self-start rounded-lg py-1 ${styles.firstBtn}`}>Register Your Team!</UnstyledLink>
-                <UnstyledLink href='#' className={`text-lg px-6 rounded-lg border-2 ${styles.secondBtn} self-center sm:self-start py-1 rounded-lg bg-black text-white`}>Submit Your Abstract!</UnstyledLink>
+                <UnstyledLink href='#' className={`px-8 truncate self-center text-lg sm:self-start rounded-lg py-1 ${styles.firstBtn}`}>Register Your Team!</UnstyledLink>
+                <UnstyledLink href='#' className={`text-lg truncate px-6 rounded-lg border-2 ${styles.secondBtn} self-center sm:self-start py-1 rounded-lg bg-black text-white`}>Submit Your Abstract!</UnstyledLink>
               </div>
             </div>
           </article>
@@ -48,7 +50,7 @@ export default function Home() {
                   <p className='text-lg leading-6 md:text-xl'>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
                 </div>
                 <div className='z-10 flex flex-col w-full mt-10'>
-                  <UnstyledLink href='#' className={`self-center sm:self-start text-lg rounded-lg px-7 py-2 md:text-xl ${styles.thirdBtn}`}>Join the Community!</UnstyledLink>
+                  <UnstyledLink href='#' className={`self-center truncate sm:self-start text-lg rounded-lg px-7 py-2 md:text-xl ${styles.thirdBtn}`}>Join the Community!</UnstyledLink>
                 </div>
               </div>
               <div className='relative self-center top-7 lg:top-0 lg:pl-5 md:w-1/2'>
@@ -66,22 +68,22 @@ export default function Home() {
           <div className={`w-16 pl-6 flex flex-col align-center justify-center md:w-20 h-full right-0 z-20 absolute ${styles.right}`}>
             
           </div> */}
-          <h1 className='relative text-3xl font-bold text-white uppercase sm:text-4xl top-12 left-10 sm:left-16'>Program<br />Timeline</h1>
+          <h1 className='relative text-3xl font-bold text-white uppercase sm:text-4xl top-20 left-10 sm:left-16'>Program<br />Timeline</h1>
           <div className='relative' style={{width: '100vw'}}>
-            <div className={`px-10 py-24 carousel sm:px-20 align-center`} style={{width: '1400px'}}>
+            <div className={`px-10 py-32 carousel sm:px-16 align-center`} style={{width: '1400px'}}>
               <ImageSlider />
             </div>
           </div>
           <div className={`left-20 relative bottom-72 ${styles.horizontal}`}></div>
-          <div className='relative left-0 z-30 flex flex-row justify-center w-full bottom-10'>
-            <UnstyledLink href='#' className={`text-xl font-semibold rounded-lg px-4 py-2 ${styles.fourthBtn}`}>Competition Guideline</UnstyledLink>
+          <div className='relative left-0 z-30 flex flex-row justify-center w-full bottom-16'>
+            <UnstyledLink href='#' className={`text-xl truncate font-semibold rounded-lg px-4 py-2 ${styles.fourthBtn}`}>Competition Guideline</UnstyledLink>
           </div>
         </section>
         <section id='register' className={styles.fourthSection}>
           <article className='relative flex flex-col justify-between px-0 text-black lg:flex-row lg:items-center lg:h-screen layout'>
             <div className='flex flex-col self-center justify-center py-20 lg:w-1/2 lg:py-0'>
               <div className='flex flex-col self-center justify-center px-0 sm:px-8 lg:px-0 sm:w-full lg:w-3/4 w-80'>
-                <h1 className='mb-3 text-lg text-center sm:text-left sm:text-xl'>Elevate your experience by joining the</h1>
+                <h1 className='mb-3 text-lg text-center truncate sm:text-left sm:text-xl'>Elevate your experience by joining the</h1>
                 <div className={`self-center sm:self-start ${styles.boxed}`}>
                   <div className='flex gap-3'>
                     <h1 className='text-4xl font-bold sm:text-5xl'>IMPACT</h1>
@@ -92,27 +94,27 @@ export default function Home() {
                     <h1 className='text-4xl font-bold sm:text-5xl'>COMMUNITY</h1>
                   </div>
                 </div>
-                <p className='mt-5 text-lg leading-7 text-center sm:text-left sm:w-80'>A platform for ITS students who are highly motivated in making an impact.</p>
+                <p className='mt-5 text-lg leading-7 text-center truncate sm:text-left sm:w-80'>A platform for ITS students who are <br /> highly motivated in making an impact.</p>
                 <div className='flex justify-center w-full mt-12 sm:justify-start'>
-                  <UnstyledLink href='#' className={`${styles.fifthBtn} rounded-lg px-5 py-2`}>Join the Community!</UnstyledLink>
+                  <UnstyledLink href='#' className={`${styles.fifthBtn} truncate rounded-lg px-5 py-2`}>Join the Community!</UnstyledLink>
                 </div>
               </div>
             </div>
             <div className='flex flex-col w-full h-full lg:h-full lg:w-1/2'>
-              <div className='flex flex-row h-1/6'>
+              <div className='flex flex-row h-1/5 sm:h-1/6'>
                 <div className="flex justify-center w-1/3 overflow-hidden align-center">
                   <img className='flex-shrink-0 min-w-full min-h-full select-none' src="/hultprize1.png" alt="hultprize1" />
                 </div>
                 <div className='w-2/3' style={{background: '#790E48'}}></div>
               </div>
-              <div className="flex h-1/4">
+              <div className="flex h-1/5 sm:h-1/4">
                 <div className='flex justify-center w-1/3 overflow-hidden align-center'>
                   <img src="/what.png" alt="what will you get" className='w-auto h-full px-4 py-8 select-none' />  
                 </div>
                 <div className='relative flex justify-center w-2/3 overflow-hidden align-center'>
                   <img className='flex-shrink-0 min-w-full min-h-full select-none' src="/hultprize2.png" alt="hultprize 2" />
                   <div className='absolute bottom-0 flex flex-col justify-center w-full h-12 px-4 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center' style={{background: 'linear-gradient(270deg, rgba(219, 10, 127, 0) 1.02%, #BF1D76 100%)'}}>
-                    <h1 className='text-xs leading-4 sm:text-base'>Network with like-minded<br />individuals</h1>
+                    <h1 style={{lineHeight: '18px'}} className='text-xs sm:text-base'>Network with like-minded<br />individuals</h1>
                   </div>
                 </div>
               </div>
@@ -120,13 +122,13 @@ export default function Home() {
                 <div className="relative flex justify-center w-1/2 overflow-hidden sm:w-2/5 align-center">
                   <img className='flex-shrink-0 min-w-full min-h-full select-none' src="hultprize3.png" alt="hultprize3" />
                   <div className='absolute bottom-0 flex flex-col justify-center w-full h-12 px-3 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center' style={{background: '#C11873'}}>
-                    <h1 className='text-xs sm:text-md xl:text-base'>Create your dream team through pairing service</h1>
+                    <h1 style={{lineHeight: '18px'}} className='text-xs sm:text-md xl:text-base'>Create your dream team through pairing service</h1>
                   </div>
                 </div>
                 <div className="relative flex justify-center w-1/2 sm:w-3/5 overlow-hidden align-center">
                   <img className='z-0 flex-shrink-0 min-w-full min-h-full select-none' src="hultprize4.png" alt="hultprize3" />
                   <div className='absolute bottom-0 flex flex-col justify-center w-full h-12 px-3 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center' style={{background: 'linear-gradient(90deg, rgba(230, 92, 168, 0) 0%, #E65CA8 100%)'}}>
-                    <h1 className='text-xs leading-4 text-right sm:text-base'>Get information on<br />Hult Prize at ITS faster</h1>
+                    <h1 style={{lineHeight: '18px'}} className='text-xs leading-4 text-right sm:text-base'>Get information on<br />Hult Prize at ITS faster</h1>
                   </div>
                 </div>
               </div>
@@ -168,7 +170,7 @@ export default function Home() {
                 <div className='gap-10 mt-7'>
                   <p className='mb-5 text-lg'>Spread the word about Hult Prize at ITS!</p>
                   <div className='flex flex-col gap-6 md:flex-row'>
-                    <UnstyledLink href='#' className={`self-start rounded-lg px-5 py-1 ${styles.fifthBtn}`}>Download the video</UnstyledLink>
+                    <UnstyledLink href='#' className={`self-start truncate rounded-lg px-5 py-1 ${styles.fifthBtn}`}>Download the video</UnstyledLink>
                     <p className='md:mt-3'>..and share on your Instagram story!</p>
                   </div>
                 </div>
@@ -184,7 +186,7 @@ export default function Home() {
           <div className={styles.footer2}>
             <h1 className='text-3xl font-bold text-center md:text-4xl'>Stay Connected!</h1>
             <div className={styles.connect}>
-              <UnstyledLink href='#' ><img alt='' className='select-none' src='/instagram.png'/></UnstyledLink>
+              <UnstyledLink href='#' ><img alt='' className='truncate transition duration-500 select-none hover:scale-110' src='/instagram.png'/></UnstyledLink>
               <UnstyledLink href='#' ><img alt='' className='select-none' src='/linkedin.png'/></UnstyledLink>
               <UnstyledLink href='#' ><img alt='' className='select-none' src='/mail.png'/></UnstyledLink>
             </div>

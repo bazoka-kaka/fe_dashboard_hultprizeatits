@@ -37,12 +37,11 @@ a {
     user-select: auto;
   }
   
-  .slick-prev {
+  .slick-prev, .slick-next {
     position: absolute;
-    z-index: 30;
+    z-index: 999 !important;
     right: 10px;
   }
-  $slick-prev-character: "f053";
   .slick-next:before {
     color: white;
     font-family: "FontAwesome";
