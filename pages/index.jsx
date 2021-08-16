@@ -3,13 +3,13 @@ import styles from '../styles/Home.module.scss'
 import ScrollDownArrow from '../components/ScrollDown'
 import UnstyledLink from '../components/UnstyledLink'
 import ImageSlider from '../components/Slider'
-import Nav from '../components/Nav'
+import Navbar from '../components/Navbar/Navbar'
 
 export default function Home() {
   return (
     <div>
       <div className='fixed z-50 w-full'>
-        <Nav />
+        <Navbar />
       </div>
       <Head>
         <title>Hult Prize at Institut Teknologi Sepuluh Nopember</title>
@@ -101,13 +101,13 @@ export default function Home() {
               </div>
             </div>
             <div className='flex flex-col w-full h-full lg:h-full lg:w-1/2'>
-              <div className='flex flex-row h-1/5 sm:h-1/6'>
-                <div className="flex justify-center w-1/3 overflow-hidden align-center">
-                  <img className='flex-shrink-0 min-w-full min-h-full select-none' src="/hultprize1.png" alt="hultprize1" />
+              <div className='flex flex-row' style={{height: '15vh'}}>
+                <div className="relative flex w-1/3 overflow-hidden">
+                  <img className='absolute h-full select-none w-80' src="/hultprize1.jpg" alt="hultprize1" />
                 </div>
                 <div className='w-2/3' style={{background: '#790E48'}}></div>
               </div>
-              <div className="flex h-1/5 sm:h-1/4">
+              <div className="flex" style={{height: '25vh'}}>
                 <div className='flex justify-center w-1/3 overflow-hidden align-center'>
                   <img src="/what.png" alt="what will you get" className='w-auto h-full px-4 py-8 select-none' />  
                 </div>
@@ -118,7 +118,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="flex h-1/4">
+              <div className="flex" style={{height: '30vh'}}> 
                 <div className="relative flex justify-center w-1/2 overflow-hidden sm:w-2/5 align-center">
                   <img className='flex-shrink-0 min-w-full min-h-full select-none' src="hultprize3.png" alt="hultprize3" />
                   <div className='absolute bottom-0 flex flex-col justify-center w-full h-12 px-3 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center' style={{background: '#C11873'}}>
@@ -132,7 +132,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="flex h-1/3">
+              <div className="flex" style={{height: '30vh'}}>
                 <div className="relative flex justify-center w-1/2 overflow-hidden align-center">
                   <img className='flex-shrink-0 min-w-full min-h-full select-none' src="hultprize5.png" alt="hultprize3" />
                   <div className='absolute bottom-0 flex flex-col justify-center w-full h-12 px-3 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center' style={{background: 'linear-gradient(269.93deg, rgba(219, 10, 127, 0) 0.09%, #BF1D76 99.96%)'}}>
@@ -165,7 +165,7 @@ export default function Home() {
                     <div className={`${styles.line1}`}></div>
                   </div>
                   <h1 className='text-5xl font-bold text-left uppercase'>HULT PRIZE AT ITS</h1>
-                  <p className='text-lg leading-6 md:w-5/6 mt-7'>Hult Prize at ITS is part of the OnCampus Program of Hult Prize where ITS students (of ALL study programs) are given the chance to tackle the world's problems in the form of a startup competition. You will get to ideate your own business for a better world (in accordance to the case given) and receive exclusive training and incubation from professionals to develop it.</p>
+                  <p className='text-lg leading-6 md:w-5/6 mt-7'>Hult Prize at ITS is part of the OnCampus Program of Hult Prize where ITS students (of ALL study programs) are given the chance to tackle the world&apos;s problems in the form of a startup competition. You will get to ideate your own business for a better world (in accordance to the case given) and receive exclusive training and incubation from professionals to develop it.</p>
                 </div>
                 <div className='gap-10 mt-7'>
                   <p className='mb-5 text-lg'>Spread the word about Hult Prize at ITS!</p>
@@ -184,9 +184,9 @@ export default function Home() {
             <h1 className='text-2xl font-bold text-center text-white sm:text-3xl md:text-4xl lg:text-4xl'>ARE YOU READY TO #CreateTheChange?</h1>
           </div>
           <div className={styles.footer2}>
-            <h1 className='text-3xl font-bold text-center md:text-4xl'>Stay Connected!</h1>
+            <h1 className='text-2xl font-bold text-center md:text-3xl'>Stay Connected!</h1>
             <div className={styles.connect}>
-              <UnstyledLink href='#' ><img alt='' className='truncate transition duration-500 select-none hover:scale-110' src='/instagram.png'/></UnstyledLink>
+              <UnstyledLink href='#' ><img alt='' className='select-none' src='/instagram.png'/></UnstyledLink>
               <UnstyledLink href='#' ><img alt='' className='select-none' src='/linkedin.png'/></UnstyledLink>
               <UnstyledLink href='#' ><img alt='' className='select-none' src='/mail.png'/></UnstyledLink>
             </div>
