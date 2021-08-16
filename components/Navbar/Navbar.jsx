@@ -12,10 +12,12 @@ class Navbar extends React.Component {
         return (
             <nav className='relative flex items-center justify-center h-16 bg-white shadow-md'>
                 <div className="navbar-logo">
-                    <img src='/hultprize-logo.png' alt='' className='absolute w-10 cursor-pointer top-2 left-12 sm:left-24'></img>
+                    <a href='#'>
+                        <img src='/hultprize-logo.png' alt='' className='absolute w-10 cursor-pointer top-2 left-8 sm:left-24'></img>
+                    </a>
                 </div>
                 <div className="menu-icon" onClick={this.handleClick}>
-                    <i className={`right-12 block sm:hidden top-3 absolute text-4xl  ${this.state.clicked ? 'fa fa-times': 'fa fa-bars'}`}></i>
+                    <i className={`right-8 block sm:hidden top-4 absolute text-3xl  ${this.state.clicked ? 'fa fa-times': 'fa fa-bars'}`}></i>
                 </div>
                 <ul className={`${this.state.clicked ? 
                     'flex right-0 flex-col justify-center text-center py-5 self-center bg-black text-white w-full top-16': 

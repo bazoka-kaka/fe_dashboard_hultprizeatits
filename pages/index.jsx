@@ -103,16 +103,16 @@ export default function Home() {
             <div className='flex flex-col w-full h-full lg:h-full lg:w-1/2'>
               <div className='flex flex-row' style={{height: '15vh'}}>
                 <div className="relative flex w-1/3 overflow-hidden">
-                  <img className='absolute h-full select-none w-80' src="/hultprize1.jpg" alt="hultprize1" />
+                  <img className='top-0 left-0 object-cover w-full select-none' src="/hultprize1.jpg" alt="hultprize1" />
                 </div>
                 <div className='w-2/3' style={{background: '#790E48'}}></div>
               </div>
               <div className="flex" style={{height: '25vh'}}>
-                <div className='flex justify-center w-1/3 overflow-hidden align-center'>
-                  <img src="/what.png" alt="what will you get" className='w-auto h-full px-4 py-8 select-none' />  
+                <div className='flex justify-center w-1/3 px-4 py-8 overflow-hidden align-center'>
+                  <img src="/what.png" alt="what will you get" className='object-scale-down h-full select-none' />  
                 </div>
                 <div className='relative flex justify-center w-2/3 overflow-hidden align-center'>
-                  <img className='flex-shrink-0 min-w-full min-h-full select-none' src="/hultprize2.png" alt="hultprize 2" />
+                  <img className='object-cover w-full select-none ' src="/hultprize2.png" alt="hultprize 2" />
                   <div className='absolute bottom-0 flex flex-col justify-center w-full h-12 px-4 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center' style={{background: 'linear-gradient(270deg, rgba(219, 10, 127, 0) 1.02%, #BF1D76 100%)'}}>
                     <h1 style={{lineHeight: '18px'}} className='text-xs sm:text-base'>Network with like-minded<br />individuals</h1>
                   </div>
@@ -120,13 +120,13 @@ export default function Home() {
               </div>
               <div className="flex" style={{height: '30vh'}}> 
                 <div className="relative flex justify-center w-1/2 overflow-hidden sm:w-2/5 align-center">
-                  <img className='flex-shrink-0 min-w-full min-h-full select-none' src="hultprize3.png" alt="hultprize3" />
+                  <img className='object-cover w-full select-none ' src="hultprize3.png" alt="hultprize3" />
                   <div className='absolute bottom-0 flex flex-col justify-center w-full h-12 px-3 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center' style={{background: '#C11873'}}>
                     <h1 style={{lineHeight: '18px'}} className='text-xs sm:text-md xl:text-base'>Create your dream team through pairing service</h1>
                   </div>
                 </div>
                 <div className="relative flex justify-center w-1/2 sm:w-3/5 overlow-hidden align-center">
-                  <img className='z-0 flex-shrink-0 min-w-full min-h-full select-none' src="hultprize4.png" alt="hultprize3" />
+                  <img className='object-cover w-full select-none' src="hultprize4.png" alt="hultprize3" />
                   <div className='absolute bottom-0 flex flex-col justify-center w-full h-12 px-3 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center' style={{background: 'linear-gradient(90deg, rgba(230, 92, 168, 0) 0%, #E65CA8 100%)'}}>
                     <h1 style={{lineHeight: '18px'}} className='text-xs leading-4 text-right sm:text-base'>Get information on<br />Hult Prize at ITS faster</h1>
                   </div>
@@ -134,13 +134,13 @@ export default function Home() {
               </div>
               <div className="flex" style={{height: '30vh'}}>
                 <div className="relative flex justify-center w-1/2 overflow-hidden align-center">
-                  <img className='flex-shrink-0 min-w-full min-h-full select-none' src="hultprize5.png" alt="hultprize3" />
+                  <img className='object-cover w-full select-none ' src="hultprize5.png" alt="hultprize3" />
                   <div className='absolute bottom-0 flex flex-col justify-center w-full h-12 px-3 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center' style={{background: 'linear-gradient(269.93deg, rgba(219, 10, 127, 0) 0.09%, #BF1D76 99.96%)'}}>
                     <h1 className='text-xs leading-5 sm:text-base'>Exclusive Q&A session</h1>
                   </div>
                 </div>
                 <div className="relative flex justify-center w-1/2 overflow-hidden align-center">
-                  <img className='flex-shrink-0 min-w-full min-h-full select-none' src="hultprize6.png" alt="hultprize3" />
+                  <img className='object-cover w-full select-none' src="hultprize6.png" alt="hultprize3" />
                   <div className='absolute bottom-0 flex flex-col justify-center w-full h-12 px-3 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center' style={{background: '#BF1D76'}}>
                     <h1 className='text-xs leading-5 text-right sm:text-base'>Exclusive coaching</h1>
                   </div>
@@ -185,7 +185,7 @@ export default function Home() {
           </div>
           <div className={styles.footer2}>
             <h1 className='text-2xl font-bold text-center md:text-3xl'>Stay Connected!</h1>
-            <div className={styles.connect}>
+            <div className={`${styles.connect}`}>
               <UnstyledLink href='#' ><img alt='' className='select-none' src='/instagram.png'/></UnstyledLink>
               <UnstyledLink href='#' ><img alt='' className='select-none' src='/linkedin.png'/></UnstyledLink>
               <UnstyledLink href='#' ><img alt='' className='select-none' src='/mail.png'/></UnstyledLink>
