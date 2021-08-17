@@ -412,6 +412,42 @@
     gap: 16px;
   }
 
+  #home {
+    animation-play-state: paused;
+  }
+
+  #home:visited {
+    animation-play-state: running;
+  }
+
+  .anim1 {
+    animation: transitionIn .75s;
+  }
+
+  .anim2 {
+    animation: transitionIn 1.25s;
+  }
+
+  .anim3 {
+    animation: transitionIn 1.5s;
+  }
+
+  .anim4 {
+    animation: transitionIn 1.5s;
+    animation-timing-function: ease-out;
+  }
+
+  @keyframes transitionIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   .connect {
     width: 160px;
     height: 43px;
