@@ -69,19 +69,19 @@ export default function Home() {
           </article>
         </section>
         <section id='timeline' className={`relative w-full ${styles.thirdSection} min-h-screen`}>
-          {/* <div className={`w-16 pl-6 flex flex-col justify-center align-center md:w-20 h-full absolute z-20 ${styles.left}`}>
+          <div className={`w-16 pl-6 flex flex-col justify-center align-center md:w-20 h-full absolute z-20 ${styles.left}`}>
             
           </div>
           <div className={`w-16 pl-6 flex flex-col align-center justify-center md:w-20 h-full right-0 z-20 absolute ${styles.right}`}>
             
-          </div> */}
-          <h1 data-aos='fade-up' className='relative text-3xl font-bold text-white uppercase sm:text-4xl top-20 left-10 sm:left-16'>Program<br />Timeline</h1>
+          </div>
+          <h1 data-aos='fade-up' className='relative text-3xl font-bold text-white uppercase sm:text-4xl top-20 left-10 sm:left-20'>Program<br />Timeline</h1>
           <div data-aos='fade-right'>
             <div className='relative' style={{width: '100vw'}}>
-              <div className={`px-10 py-32 carousel sm:px-16 align-center`} style={{width: '1400px'}}>
+              <div className={`px-10 py-32 carousel sm:px-16 align-center`} style={{maxWidth: '1300px'}}>
                 <ImageSlider />
               </div>
-              <div className={`left-20 relative bottom-80 ${styles.horizontal}`}></div>
+              <div className={`left-32 relative bottom-80 ${styles.horizontal}`}></div>
             </div>
             <div className='relative left-0 z-30 flex flex-row justify-center w-full bottom-16'>
               <UnstyledLink href='#' className={`text-xl truncate font-semibold rounded-lg px-4 py-2 ${styles.fourthBtn}`}>Competition Guideline</UnstyledLink>
@@ -92,7 +92,7 @@ export default function Home() {
           <article className='relative flex flex-col justify-between px-0 text-black lg:flex-row lg:items-center lg:h-screen layout'>
             <div className='flex flex-col self-center justify-center py-20 lg:w-1/2 lg:py-0'>
               <div className='flex flex-col self-center justify-center px-0 w-80 sm:w-auto sm:px-8 lg:px-0 '>
-                <div data-aos='fade-right'>
+                <div data-aos='fade-right' className='flex flex-col'>
                   <h1 className='mb-3 text-lg text-center truncate sm:text-left sm:text-xl'>Elevate your experience by joining the</h1>
                   <div className={`self-center sm:self-start ${styles.boxed}`}>
                     <div className='flex gap-3'>
