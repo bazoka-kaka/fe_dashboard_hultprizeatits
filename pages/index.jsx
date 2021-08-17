@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
 
 export default function Home() {
   useEffect(() => {
-    Aos.init({ duration: 2000, once: true });
+    Aos.init({ duration: 1500, once: true });
   }, []);
   return (
     <div>
@@ -76,34 +76,40 @@ export default function Home() {
             
           </div> */}
           <h1 data-aos='fade-up' className='relative text-3xl font-bold text-white uppercase sm:text-4xl top-20 left-10 sm:left-16'>Program<br />Timeline</h1>
-          <div data-aos='fade-right' className='relative' style={{width: '100vw'}}>
-            <div className={`px-10 py-32 carousel sm:px-16 align-center`} style={{width: '1400px'}}>
-              <ImageSlider />
+          <div data-aos='fade-right'>
+            <div className='relative' style={{width: '100vw'}}>
+              <div className={`px-10 py-32 carousel sm:px-16 align-center`} style={{width: '1400px'}}>
+                <ImageSlider />
+              </div>
+              <div className={`left-20 relative bottom-80 ${styles.horizontal}`}></div>
             </div>
-            <div className={`left-20 relative bottom-80 ${styles.horizontal}`}></div>
-          </div>
-          <div data-aos='fade-up' className='relative left-0 z-30 flex flex-row justify-center w-full bottom-16'>
-            <UnstyledLink href='#' className={`text-xl truncate font-semibold rounded-lg px-4 py-2 ${styles.fourthBtn}`}>Competition Guideline</UnstyledLink>
+            <div className='relative left-0 z-30 flex flex-row justify-center w-full bottom-16'>
+              <UnstyledLink href='#' className={`text-xl truncate font-semibold rounded-lg px-4 py-2 ${styles.fourthBtn}`}>Competition Guideline</UnstyledLink>
+            </div>
           </div>
         </section>
         <section id='register' className={styles.fourthSection}>
           <article className='relative flex flex-col justify-between px-0 text-black lg:flex-row lg:items-center lg:h-screen layout'>
             <div className='flex flex-col self-center justify-center py-20 lg:w-1/2 lg:py-0'>
               <div className='flex flex-col self-center justify-center px-0 w-80 sm:w-auto sm:px-8 lg:px-0 '>
-                <h1 data-aos='fade-right' className='mb-3 text-lg text-center truncate sm:text-left sm:text-xl'>Elevate your experience by joining the</h1>
-                <div data-aos='fade-right' className={`self-center sm:self-start ${styles.boxed}`}>
-                  <div className='flex gap-3'>
-                    <h1 className='text-4xl font-bold sm:text-5xl'>IMPACT</h1>
-                    <div className={`${styles.boxDecoration} mt-2 w-full h-7 sm:h-10`}></div>
-                  </div>
-                  <div className='flex gap-3'>
-                    <div className={`${styles.boxDecoration} mt-2 w-full h-7 sm:h-10`}></div>
-                    <h1 className='text-4xl font-bold sm:text-5xl'>COMMUNITY</h1>
+                <div data-aos='fade-right'>
+                  <h1 className='mb-3 text-lg text-center truncate sm:text-left sm:text-xl'>Elevate your experience by joining the</h1>
+                  <div className={`self-center sm:self-start ${styles.boxed}`}>
+                    <div className='flex gap-3'>
+                      <h1 className='text-4xl font-bold sm:text-5xl'>IMPACT</h1>
+                      <div className={`${styles.boxDecoration} mt-2 w-full h-7 sm:h-10`}></div>
+                    </div>
+                    <div className='flex gap-3'>
+                      <div className={`${styles.boxDecoration} mt-2 w-full h-7 sm:h-10`}></div>
+                      <h1 className='text-4xl font-bold sm:text-5xl'>COMMUNITY</h1>
+                    </div>
                   </div>
                 </div>
-                <p data-aos='fade-right' className='mt-5 text-lg leading-7 text-center truncate sm:text-left sm:w-80'>A platform for ITS students who are <br /> highly motivated in making an impact.</p>
-                <div data-aos='fade-right' className='flex justify-center w-full mt-12 sm:justify-start'>
-                  <UnstyledLink href='#' className={`${styles.fifthBtn} truncate rounded-lg px-5 py-2`}>Join the Community!</UnstyledLink>
+                <div data-aos='fade-right'>
+                  <p className='mt-5 text-lg leading-7 text-center truncate sm:text-left sm:w-80'>A platform for ITS students who are <br /> highly motivated in making an impact.</p>
+                  <div className='flex justify-center w-full mt-12 sm:justify-start'>
+                    <UnstyledLink href='#' className={`${styles.fifthBtn} truncate rounded-lg px-5 py-2`}>Join the Community!</UnstyledLink>
+                  </div>
                 </div>
               </div>
             </div>
