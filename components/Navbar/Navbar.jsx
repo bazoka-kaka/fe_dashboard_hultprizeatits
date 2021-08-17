@@ -23,11 +23,13 @@ class Navbar extends React.Component {
                     'flex right-0 flex-col justify-center text-center py-5 self-center bg-black text-white w-full top-16': 
                     'hidden sm:block'
                 }
-                sm:flex gap-10 sm:right-10 justify-self-end block absolute uppercase`}>
+                sm:flex gap-10 sm:gap-5 sm:right-10 justify-self-end block absolute uppercase`}>
                     {MenuItems.map((item, index) => {
                         return (
                             <li key={index}>
-                                <a href={item.url} className={`hover:text-gray-600 ${item.cName}`}>
+                                <a href={item.url} className={`hover:text-gray-600 ${item.cName}
+                                sm:hover:bg-black sm:hover:text-white sm:px-3 sm:py-2 sm:rounded-3xl
+                                `}>
                                     {item.title}
                                 </a>
                             </li>

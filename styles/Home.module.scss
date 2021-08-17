@@ -289,18 +289,6 @@
     color: white;
   }
 
-  .fourthBtn:hover {
-    animation-name: hover4;
-    animation-duration: .1s;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes hover4 {
-    100% {
-      background:  #d8268b;
-    }
-  }
-
   .rectangle1 {
     display: flex;
     justify-items: center;

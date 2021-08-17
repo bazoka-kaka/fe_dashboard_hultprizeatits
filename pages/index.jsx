@@ -84,7 +84,7 @@ export default function Home() {
               <div className={`left-32 relative bottom-80 ${styles.horizontal}`}></div>
             </div>
             <div className='relative left-0 z-30 flex flex-row justify-center w-full bottom-16'>
-              <UnstyledLink href='#' className={`text-xl truncate font-semibold rounded-lg px-4 py-2 ${styles.fourthBtn}`}>Competition Guideline</UnstyledLink>
+              <UnstyledLink href='#' className={`text-xl transform duration-150 hover:scale-110 truncate font-semibold rounded-lg px-4 py-2 ${styles.fourthBtn}`}>Competition Guideline</UnstyledLink>
             </div>
           </div>
         </section>
@@ -199,9 +199,9 @@ export default function Home() {
           <div data-aos='fade-zoom-in' className={styles.footer2}>
             <h1 className='-mb-2 text-2xl font-bold text-center md:text-3xl'>Stay Connected!</h1>
             <div className={`${styles.connect}`}>
-              <UnstyledLink href='#' ><img alt='' className='select-none' src='/instagram.png'/></UnstyledLink>
-              <UnstyledLink href='#' ><img alt='' className='select-none' src='/linkedin.png'/></UnstyledLink>
-              <UnstyledLink href='#' ><img alt='' className='select-none' src='/mail.png'/></UnstyledLink>
+              <UnstyledLink href='#' ><img alt='' className='duration-200 transform select-none hover:scale-125' src='/instagram.png'/></UnstyledLink>
+              <UnstyledLink href='#' ><img alt='' className='duration-200 transform select-none hover:scale-125' src='/linkedin.png'/></UnstyledLink>
+              <UnstyledLink href='#' ><img alt='' className='duration-200 transform select-none hover:scale-125' src='/mail.png'/></UnstyledLink>
             </div>
           </div>
         </div>
