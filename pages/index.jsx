@@ -35,8 +35,8 @@ export default function Home() {
             </div>
             <div className={`mt-1 md:-mt-4 ${styles.anim4}`}>
               <div className='flex flex-col gap-4 md:flex-row md:gap-10'>
-                <UnstyledLink href='#' className={`px-8 truncate self-center text-lg sm:self-start rounded-lg py-1 ${styles.firstBtn}`}>Register Your Team!</UnstyledLink>
-                <UnstyledLink href='#' className={`text-lg truncate px-6 rounded-lg border-2 ${styles.secondBtn} self-center sm:self-start py-1 rounded-lg bg-black text-white`}>Submit Your Abstract!</UnstyledLink>
+                <a href='https://bit.ly/HPITS_RegisterTeam' className={`px-8 truncate ${styles.firstBtn} transition duration-100 self-center text-lg text-black sm:self-start rounded-lg py-1`}>Register Your Team!</a>
+                <a href='https://bit.ly/HPITS_SubmitAbstract' className={`text-lg truncate ${styles.secondBtn} px-6 rounded-lg border-2 self-center sm:self-start py-1 bg-black text-white`}>Submit Your Abstract!</a>
               </div>
             </div>
           </article>
@@ -48,16 +48,26 @@ export default function Home() {
           <div className='relative'>
             <img className={`w-52 select-none -z-1 h-auto ${styles.floatAnim2} mt-5 absolute`} src='/ellipse2.png' alt='' />
           </div>
-          <article className='relative flex flex-col justify-center min-h-screen gap-8 px-10 text-white lg:px-28 items-left py-14 md:gap-12 layout'>
+          <article className='relative flex flex-col justify-center min-h-screen gap-8 px-10 py-20 text-white lg:px-28 items-left md:gap-12 layout'>
             <img className={`w-64 select-none ${styles.floatAnim1} h-auto right-0 -bottom-32 absolute`} src='/ellipse1.png' alt='' />
             <div className='flex flex-col lg:flex-row'>
-              <div className='lg:w-1/2' data-aos='fade-right'>
+              <div className='lg:w-1/2'>
                 <div>
-                  <h1 className='mb-5 text-2xl text-left md:text-3xl'>THE 2022 CHALLENGE<br /><span className='text-4xl font-bold md:truncate md:text-5xl'>LOREM IPSUM D</span></h1>
-                  <p className='text-lg leading-6 md:text-xl'>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
-                </div>
-                <div className='z-10 flex flex-col w-full mt-10'>
-                  <UnstyledLink href='#' className={`self-center truncate sm:self-start text-lg rounded-lg px-7 py-2 md:text-xl ${styles.thirdBtn}`}>Join the Community!</UnstyledLink>
+                  <h1 data-aos='fade-right' className='mb-5 text-2xl text-left md:text-3xl'>THE 2022 CHALLENGE<br /><span className='text-4xl font-bold md:text-5xl'>GETTING THE WORLD BACK TO WORK</span></h1>
+                  <div data-aos='fade-right'>
+                    <p className='text-lg leading-6 md:text-xl'>
+                      Your 2022 challenge is to create two-thousand jobs by 2024
+                      by thinking global and acting local! The innovation we seek to
+                      inspire for this year&apos;s challenge is all about execution.
+                      Forget about being clever and &quot;inventing&quot; the next big thing.
+                      The global economy is coming back, and you may never find a better
+                      time than now to create a high-impact, job-creating enterprise that
+                      brings your own community back to life.
+                    </p>
+                    <div className='z-20 flex flex-col w-full mt-10'>
+                      <a href='https://bit.ly/HPITS_ChallengeGuide' className={`self-center truncate sm:self-start text-lg rounded-lg px-7 py-2 md:text-xl ${styles.thirdBtn}`}>Challenge Guidebook</a>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div data-aos='fade-left' className='relative self-center top-7 lg:top-0 lg:pl-5 md:w-1/2'>
@@ -68,7 +78,7 @@ export default function Home() {
             </div>
           </article>
         </section>
-        <section id='timeline' className={`relative w-full ${styles.thirdSection} min-h-screen`}>
+        <section id='timeline' className={`relative flex flex-col justify-center align-center w-full ${styles.thirdSection} min-h-screen`}>
           <div className={`w-16 pl-6 flex flex-col justify-center align-center md:w-20 h-full absolute z-20 ${styles.left}`}>
             
           </div>
@@ -84,7 +94,7 @@ export default function Home() {
               <div className={`left-32 relative bottom-80 ${styles.horizontal}`}></div>
             </div>
             <div className='relative left-0 z-30 flex flex-row justify-center w-full bottom-16'>
-              <UnstyledLink href='#' className={`text-xl transform duration-150 hover:scale-110 truncate font-semibold rounded-lg px-4 py-2 ${styles.fourthBtn}`}>Competition Guideline</UnstyledLink>
+              <UnstyledLink href='https://bit.ly/HPITS_CompGuide' className={`text-xl transform duration-150 hover:scale-110 truncate font-semibold rounded-lg px-4 py-2 ${styles.fourthBtn}`}>Competition Guidebook</UnstyledLink>
             </div>
           </div>
         </section>
@@ -106,9 +116,9 @@ export default function Home() {
                   </div>
                 </div>
                 <div data-aos='fade-right'>
-                  <p className='mt-5 text-lg leading-7 text-center truncate sm:text-left sm:w-80'>A platform for ITS students who are <br /> highly motivated in making an impact.</p>
+                  <p className='mt-5 text-lg leading-7 text-center truncate sm:text-left sm:w-80'>A platform for ITS students who are <br /> highly motivated in making an impact<br />through Hult Prize and beyond.</p>
                   <div className='flex justify-center w-full mt-12 sm:justify-start'>
-                    <UnstyledLink href='#' className={`${styles.fifthBtn} truncate rounded-lg px-5 py-2`}>Join the Community!</UnstyledLink>
+                    <a href='https://bit.ly/HPITS_ImpactComm' className={`${styles.fifthBtn} truncate rounded-lg px-5 py-2`}>Join the Community!</a>
                   </div>
                 </div>
               </div>
@@ -183,7 +193,7 @@ export default function Home() {
                 <div data-aos='fade-up' className='gap-10 mt-7'>
                   <p className='mb-5 text-lg'>Spread the word about Hult Prize at ITS!</p>
                   <div className='flex flex-col gap-6 md:flex-row'>
-                    <UnstyledLink href='#' className={`self-start truncate rounded-lg px-5 py-1 ${styles.fifthBtn}`}>Download the video</UnstyledLink>
+                    <a href='https://bit.ly/HPITS_SpreadTheChange' className={`self-start truncate rounded-lg px-5 py-1 ${styles.fifthBtn}`}>Download the video</a>
                     <p className='md:mt-3'>..and share on your Instagram story!</p>
                   </div>
                 </div>
@@ -199,7 +209,7 @@ export default function Home() {
           <div data-aos='fade-zoom-in' className={styles.footer2}>
             <h1 className='-mb-2 text-2xl font-bold text-center md:text-3xl'>Stay Connected!</h1>
             <div className={`${styles.connect}`}>
-              <UnstyledLink href='#' ><img alt='' className='duration-200 transform select-none hover:scale-125' src='/instagram.png'/></UnstyledLink>
+              <UnstyledLink href='https://www.instagram.com/hultprize_its/' ><img alt='' className='duration-200 transform select-none hover:scale-125' src='/instagram.png'/></UnstyledLink>
               <UnstyledLink href='#' ><img alt='' className='duration-200 transform select-none hover:scale-125' src='/linkedin.png'/></UnstyledLink>
               <UnstyledLink href='#' ><img alt='' className='duration-200 transform select-none hover:scale-125' src='/mail.png'/></UnstyledLink>
             </div>
