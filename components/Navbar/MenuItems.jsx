@@ -16,7 +16,7 @@ export const MenuItems = [
     },
     {
         title: 'Register',
-        url: '#register',
+        url: 'https://bit.ly/HPITS_RegisterTeam',
         cName: 'nav-links-mobile'
     }
 ]

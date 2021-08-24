@@ -193,7 +193,7 @@ export default function Home() {
                 <div data-aos='fade-up' className='gap-10 mt-7'>
                   <p className='mb-5 text-lg'>Spread the word about Hult Prize at ITS!</p>
                   <div className='flex flex-col gap-6 md:flex-row'>
-                    <a href='https://bit.ly/HPITS_SpreadTheChange' className={`self-start truncate rounded-lg px-5 py-1 ${styles.fifthBtn}`}>Download the video</a>
+                    <a href='https://bit.ly/SpreadTheChange' className={`self-start truncate rounded-lg px-5 py-1 ${styles.fifthBtn}`}>Download the video</a>
                     <p className='md:mt-3'>..and share on your Instagram story!</p>
                   </div>
                 </div>
