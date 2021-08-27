@@ -1,17 +1,21 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.scss'
-import ScrollDownArrow from '../components/ScrollDown'
-import UnstyledLink from '../components/UnstyledLink'
-import ImageSlider from '../components/Slider'
-import Navbar from '../components/Navbar/Navbar'
-import React, { useEffect } from 'react'
+import Head from 'next/head';
+import styles from '../styles/Home.module.scss';
+import ScrollDownArrow from '../components/ScrollDown';
+import UnstyledLink from '../components/UnstyledLink';
+import ImageSlider from '../components/Slider';
+import Navbar from '../components/Navbar/Navbar';
+import React, { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Home() {
   useEffect(() => {
     Aos.init({ duration: 1500, once: true });
   }, []);
+
+  let { t } = useTranslation()
+
   return (
     <div>
       <div className='fixed z-50 w-full'>
@@ -30,7 +34,7 @@ export default function Home() {
               <div className={`flex flex-col ${styles.anim1}`}>
                 <img alt='' src='/logo-1.png' className='self-center w-56 h-auto select-none sm:self-start sm:w-56 md:w-64 lg:w-80' />  
               </div>
-              <h1 className={`mt-3 ${styles.anim2} mb-5 text-3xl font-bold text-center md:text-4xl lg:text-5xl md:mt-6 sm:text-left`}>WIN THE MOST PRESTIGIOUS<br />BUSINESS IDEA COMPETITION!</h1>
+              <h1 className={`mt-3 ${styles.anim2} mb-5 text-3xl font-bold text-center md:text-4xl lg:text-5xl md:mt-6 sm:text-left`}>{t("common:title1")}<br />{t("common:title2")}</h1>
               <p className={`text-xl ${styles.anim3} text-center sm:text-left md:text-2xl ${styles.firstP}`}>For ITS students of <span className='font-bold'>ALL</span> study programs & batches</p>
             </div>
             <div className={`mt-1 md:-mt-4 ${styles.anim4}`}>
@@ -85,7 +89,7 @@ export default function Home() {
           <div className={`w-16 pl-6 flex flex-col align-center justify-center md:w-20 h-full right-0 z-20 absolute ${styles.right}`}>
             
           </div>
-          <h1 data-aos='fade-up' className='relative text-3xl font-bold text-white uppercase sm:text-4xl top-20 left-10 sm:left-20'>Program<br />Timeline</h1>
+          <h1 data-aos='fade-up' className='relative text-3xl font-bold text-white uppercase sm:text-4xl top-20 left-10 sm:left-20'>Competition<br />Timeline</h1>
           <div data-aos='fade-right'>
             <div className='relative' style={{width: '100vw'}}>
               <div className={`px-10 py-32 carousel sm:px-16 align-center`} style={{maxWidth: '1300px'}}>
@@ -116,7 +120,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div data-aos='fade-right'>
-                  <p className='mt-5 text-lg leading-7 text-center truncate sm:text-left sm:w-80'>A platform for ITS students who are <br /> highly motivated in making an impact<br />through Hult Prize and beyond.</p>
+                  <p className='mt-5 text-lg leading-7 text-center sm:text-left sm:w-80'>{t('common:impact')}</p>
                   <div className='flex justify-center w-full mt-12 sm:justify-start'>
                     <a href='https://bit.ly/HPITS_ImpactComm' className={`${styles.fifthBtn} truncate rounded-lg px-5 py-2`}>Join the Community!</a>
                   </div>
