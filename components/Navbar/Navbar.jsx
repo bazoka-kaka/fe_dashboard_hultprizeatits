@@ -28,7 +28,7 @@ export default withRouter(class Navbar extends React.Component {
 
         render() {
             return (
-                <nav className='relative flex items-center justify-center h-16 transform bg-white shadow-md'>
+                <nav className='relative flex items-center justify-center h-16 transform bg-white shadow-2xl'>
                     <div className="navbar-logo">
                         <a href='#'>
                             <img src='/hultprize-logo.png' alt='' className='absolute w-10 cursor-pointer top-2 left-8 sm:left-24'></img>
