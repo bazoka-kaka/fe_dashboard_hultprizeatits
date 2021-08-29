@@ -207,11 +207,14 @@
   
   .firstBtn:hover {
     animation-name: hover1;
-    animation-duration: .1s;
+    animation-duration: .2s;
     animation-fill-mode: forwards;
   }
 
   @keyframes hover1 {
+    0% {
+      background: linear-gradient(80.86deg, #DB0A7F -9.3%, #EC83BD 125.39%);
+    }
     100% {
       background: linear-gradient(80.86deg, #ec2094 -9.3%, #ec90c3 125.39%);
     }
