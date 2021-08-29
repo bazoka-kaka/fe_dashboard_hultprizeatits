@@ -8,6 +8,7 @@ import React, { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import useTranslation from 'next-translate/useTranslation';
+import { ReactYouTubeLite } from 'react-youtube-lite';
 
 export default function Home() {
   useEffect(() => {
@@ -39,7 +40,7 @@ export default function Home() {
             </div>
             <div className={`mt-1 md:-mt-4 ${styles.anim4}`}>
               <div className='flex flex-col gap-4 md:flex-row md:gap-10'>
-                <a href='https://bit.ly/HPITS_RegisterTeam' className={`${t('common:register-button') === 'Register Your Team!' ? 'px-8' : 'px-7'} truncate ${styles.firstBtn} transition duration-100 self-center text-lg text-black sm:self-start rounded-lg py-1`}>{t('common:register-button')}</a>
+                <a href='https://bit.ly/HPITS_RegisterTeam' className={`${t('common:register-button') === 'Register Your Team!' ? 'px-8' : 'px-7'} truncate ${styles.firstBtn} self-center text-lg text-black sm:self-start rounded-lg py-1`}>{t('common:register-button')}</a>
                 <a href='https://bit.ly/HPITS_SubmitAbstract' className={`text-lg truncate ${styles.secondBtn} ${t('common:submit-button') === 'Kumpulkan Abstrak!' ? 'px-12' : 'px-6'} rounded-lg border-2 self-center sm:self-start py-1 bg-black text-white`}>{t('common:submit-button')}</a>
               </div>
             </div>
@@ -62,15 +63,21 @@ export default function Home() {
                     <p className='text-lg leading-6 md:text-xl'>
                       {t('common:challenge-text')}
                     </p>
-                    <div className='z-20 flex flex-col w-full mt-10'>
+                    <div className='z-50 flex flex-col w-full mt-10'>
                       <a href='https://bit.ly/HPITS_ChallengeGuide' className={`self-center truncate sm:self-start text-lg rounded-lg px-7 py-2 md:text-xl ${styles.thirdBtn}`}>{t('common:join-guidebook-button')}</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div data-aos='fade-left' className='relative self-center top-7 lg:top-0 lg:pl-5 md:w-1/2'>
+              <div data-aos='fade-left' className='relative self-center w-full top-7 lg:top-0 lg:pl-5 md:w-1/2'>
                 <div className={`${styles.rectangle1} rounded-lg px-2 py-2`}>
-                  <img src="/youtube.png" className='h-auto m-auto' alt="youtube placeholder" />
+                  <div className='w-full h-full'>
+                    <ReactYouTubeLite
+                      url='https://youtu.be/aXS1kWJoTkw'
+                      noCookie={true}
+                      poster='maxresdefault'
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -114,7 +121,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div data-aos='fade-right'>
-                  <p className='mt-5 text-lg leading-7 sm:w-80'>{t('common:impact-lower')}</p>
+                  <p className='mt-5 text-lg leading-7 sm:w-96'>{t('common:impact-lower')}</p>
                   <div className='flex w-full mt-12'>
                     <a href='https://bit.ly/HPITS_ImpactComm' className={`${styles.fifthBtn} truncate rounded-lg px-5 py-2`}>{t('common:join-button')}</a>
                   </div>
@@ -209,7 +216,7 @@ export default function Home() {
             <div className={`${styles.connect}`}>
               <UnstyledLink href='https://www.instagram.com/hultprize_its/' ><img alt='' className='duration-200 transform select-none hover:scale-125' src='/instagram.png'/></UnstyledLink>
               <UnstyledLink href='https://www.linkedin.com/company/hult-prize-at-its' ><img alt='' className='duration-200 transform select-none hover:scale-125' src='/linkedin.png'/></UnstyledLink>
-              <UnstyledLink href='mailto:hultprize@its.ac.id' ><img alt='' className='duration-200 transform select-none hover:scale-125' src='/mail.png'/></UnstyledLink>
+              <a href='mailto:hultprize@its.ac.id'><img alt='' className='duration-200 transform select-none hover:scale-125' src='/mail.png'/></a>
             </div>
           </div>
         </div>

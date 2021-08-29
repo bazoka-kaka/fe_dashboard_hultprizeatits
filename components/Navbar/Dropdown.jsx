@@ -13,7 +13,7 @@ const Dropdown = () => {
                             <Link href={router.asPath} locale={locale}>
                                 <a className='w-full'>
                                     <div className='w-full px-2 py-2 pr-10 text-black duration-200 transform bg-white hover:bg-black hover:text-white'>
-                                        {locale === 'in' ? 'Bahasa Indonesia' : 'English'}
+                                        {locale === 'ina' ? 'Bahasa Indonesia' : 'English'}
                                     </div>
                                 </a>
                             </Link>
