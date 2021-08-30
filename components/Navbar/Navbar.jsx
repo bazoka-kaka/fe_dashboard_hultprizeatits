@@ -70,7 +70,17 @@ export default withRouter(
                                         transform duration-150
                                     `}
                   >
-                    {item.title}
+                    {this.props.router.locale === "en"
+                      ? item.title
+                      : item.title === "Home"
+                      ? "Beranda"
+                      : item.title === "Timeline"
+                      ? "Lini masa"
+                      : item.title === "About"
+                      ? "Tentang"
+                      : item.title === "Register"
+                      ? "Daftar"
+                      : ""}
                   </a>
                 </li>
               );
@@ -84,7 +94,9 @@ export default withRouter(
                   if (locale !== this.props.router.locale) {
                     return (
                       <Link href={this.props.router.asPath} locale={locale}>
-                        <a onClick={this.closeMobileMenu}>{locale}</a>
+                        <a onClick={this.closeMobileMenu}>
+                          {this.props.router.locale}
+                        </a>
                       </Link>
                     );
                   }
