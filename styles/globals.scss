@@ -23,21 +23,22 @@ a {
     z-index: 100;
   }
 
-  .slick-slider{
+  .slick-slider {
     -webkit-user-select: auto;
     -moz-user-select: auto;
     -ms-user-select: auto;
     user-select: auto;
   }
-  
-  .slick-prev, .slick-next {
+
+  .slick-prev,
+  .slick-next {
     position: absolute;
     z-index: 999 !important;
   }
   .slick-next:before {
     color: white;
     font-family: "FontAwesome";
-    content: '\f105';
+    content: "\f105";
     font-size: 3rem;
     @media (max-width: 638px) {
       position: relative;
@@ -45,7 +46,7 @@ a {
     }
   }
   .slick-prev:before {
-    content: '\f104';
+    content: "\f104";
     color: white;
     font-family: "FontAwesome";
     font-size: 3rem;
@@ -53,16 +54,15 @@ a {
       position: relative;
       left: 5px;
     }
-    
   }
 }
 
 .nav-links-mobile {
-  color: #C11873;
+  color: #c11873;
   font-weight: 700;
 }
 
 .nav-links-mobile:hover {
-  background: #C11873 !important;
+  background: #c11873 !important;
   color: white !important;
 }
