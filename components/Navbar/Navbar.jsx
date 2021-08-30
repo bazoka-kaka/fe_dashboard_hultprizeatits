@@ -2,6 +2,7 @@ import React from "react";
 import { MenuItems } from "./MenuItems";
 import { withRouter } from "next/router";
 import Dropdown from "./Dropdown";
+import Link from "next/link";
 
 export default withRouter(
   class Navbar extends React.Component {
@@ -56,7 +57,7 @@ export default withRouter(
                 ? "flex opacity-100 transform duration-500 right-0 flex-col justify-center text-center py-5 self-center bg-black text-white w-full top-16"
                 : "flex transform right-full text-white bg-black py-5 justify-center self-center flex-col top-16 opacity-0 w-full text-center duration-500"
             }
-                    sm:flex sm:flex-row sm:bg-transparent sm:top-0 sm:text-black sm:justify-end sm:opacity-100 gap-10 sm:gap-5 sm:right-10 sm:justify-self-end absolute uppercase`}
+            h-screen sm:h-auto justify-evenly pb-20 sm:pb-0 sm:flex sm:flex-row sm:bg-transparent sm:top-0 sm:text-black sm:justify-end sm:opacity-100 gap-10 sm:gap-5 sm:right-10 sm:justify-self-end absolute uppercase`}
           >
             {MenuItems.map((item, index) => {
               return (
@@ -79,7 +80,16 @@ export default withRouter(
               onMouseLeave={this.onMouseLeave}
             >
               <div className="cursor-pointer">
-                {this.props.router.locale} <i className="fa fa-caret-down" />
+                {this.props.router.locales.map((locale) => {
+                  if (locale !== this.props.router.locale) {
+                    return (
+                      <Link href={this.props.router.asPath} locale={locale}>
+                        <a onClick={this.closeMobileMenu}>{locale}</a>
+                      </Link>
+                    );
+                  }
+                })}{" "}
+                <i className="hidden fa fa-caret-down sm:inline" />
               </div>
               {this.state.dropdown && <Dropdown />}
             </li>

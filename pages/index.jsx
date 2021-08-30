@@ -364,7 +364,7 @@ export default function Home() {
               backgroundImage: "url(/building-bg.png)",
               backgroundRepeat: "no-repeat",
             }}
-            className="relative flex flex-col justify-center min-h-screen gap-8 px-0 py-10 pt-20 text-white bg-center bg-cover items-left md:gap-12 sm:py-0 layout"
+            className="relative flex flex-col justify-center min-h-screen gap-8 px-0 py-10 pt-20 pb-20 text-white bg-center bg-cover items-left md:gap-12 sm:py-0 layout"
           >
             <div className="relative flex">
               <div className="px-4 md:px-28">
