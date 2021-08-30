@@ -108,7 +108,7 @@ export default function Home() {
             <div className='flex flex-col self-center justify-center py-20 lg:w-1/2 lg:py-0'>
               <div className='flex flex-col self-center justify-center px-0 w-80 sm:w-auto sm:px-8 lg:px-0 '>
                 <div data-aos='fade-right' className='flex flex-col'>
-                  <h1 className='mb-3 text-lg sm:truncate sm:text-xl'>{t('common:impact-upper')}<br />{t('common:impact-upper1')}</h1>
+                  <h1 className='mb-3 text-lg text-center sm:text-left sm:truncate sm:text-xl'>{t('common:impact-upper')}<br />{t('common:impact-upper1')}</h1>
                   <div className={`self-center sm:self-start ${styles.boxed}`}>
                     <div className='flex gap-3'>
                       <h1 className='text-4xl font-bold sm:text-5xl'>IMPACT</h1>
@@ -121,8 +121,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div data-aos='fade-right'>
-                  <p className='mt-5 text-lg leading-7 sm:w-96'>{t('common:impact-lower')}</p>
-                  <div className='flex w-full mt-12'>
+                  <p className='mt-5 text-lg leading-7 text-center sm:text-left sm:w-96'>{t('common:impact-lower')}</p>
+                  <div className='flex justify-center w-full mt-12 sm:justify-start'>
                     <a href='https://bit.ly/HPITS_ImpactComm' className={`${styles.fifthBtn} truncate rounded-lg px-5 py-2`}>{t('common:join-button')}</a>
                   </div>
                 </div>
@@ -213,10 +213,11 @@ export default function Home() {
           </div>
           <div data-aos='fade-zoom-in' className={styles.footer2}>
             <h1 className='-mb-2 text-2xl font-bold text-center md:text-3xl'>Stay Connected!</h1>
-            <div className={`${styles.connect}`}>
+            <div className={`${styles.connect} gap-3 px-2`}>
               <UnstyledLink href='https://www.instagram.com/hultprize_its/' ><img alt='' className='duration-200 transform select-none hover:scale-125' src='/instagram.png'/></UnstyledLink>
               <UnstyledLink href='https://www.linkedin.com/company/hult-prize-at-its' ><img alt='' className='duration-200 transform select-none hover:scale-125' src='/linkedin.png'/></UnstyledLink>
               <a href='mailto:hultprize@its.ac.id'><img alt='' className='duration-200 transform select-none hover:scale-125' src='/mail.png'/></a>
+              <UnstyledLink href='https://www.youtube.com/channel/UCqDogFYFLawvmYjnOC2niww' ><i style={{color: '#DF238C'}} className='text-3xl duration-200 transform select-none fa fa-youtube-play hover:scale-125'/></UnstyledLink>
             </div>
           </div>
         </div>

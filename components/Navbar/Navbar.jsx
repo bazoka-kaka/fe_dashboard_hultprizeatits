@@ -10,6 +10,10 @@ export default withRouter(class Navbar extends React.Component {
             this.setState({ clicked: !this.state.clicked })
         }
 
+        closeMobileMenu = () => {
+            this.setState({ clicked: false })
+        }
+
          onMouseEnter = () => {
              if(window.innerWidth < 960) {
                  this.setState({ dropdown: false})
@@ -38,14 +42,14 @@ export default withRouter(class Navbar extends React.Component {
                         <i className={`right-8 block sm:hidden top-4 absolute text-3xl  ${this.state.clicked ? 'fa fa-times': 'fa fa-bars'}`}></i>
                     </div>
                     <ul className={`${this.state.clicked ? 
-                        'flex right-0 flex-col justify-center text-center py-5 self-center bg-black text-white w-full top-16': 
-                        'hidden sm:block'
+                        'flex opacity-100 transform duration-500 right-0 flex-col justify-center text-center py-5 self-center bg-black text-white w-full top-16': 
+                        'flex transform right-full text-white bg-black py-5 justify-center self-center flex-col top-16 opacity-0 w-full text-center duration-500'
                     }
-                    sm:flex gap-10 sm:gap-5 sm:right-10 justify-self-end block absolute uppercase`}>
+                    sm:flex sm:flex-row sm:bg-transparent sm:top-0 sm:text-black sm:justify-end sm:opacity-100 gap-10 sm:gap-5 sm:right-10 sm:justify-self-end absolute uppercase`}>
                         {MenuItems.map((item, index) => {
                             return (
                                 <li key={index}>
-                                    <a href={item.url} className={`hover:text-gray-600 ${item.cName}
+                                    <a onClick={this.closeMobileMenu} href={item.url} className={`hover:text-gray-600 ${item.cName}
                                     sm:hover:bg-black sm:hover:text-white sm:px-3 sm:py-2 sm:rounded-3xl
                                         transform duration-150
                                     `}>

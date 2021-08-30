@@ -36,7 +36,7 @@ function ImageSlider() {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    centerPadding: '-8'
+                    centerPadding: '-16'
                 }
             }
         ]
