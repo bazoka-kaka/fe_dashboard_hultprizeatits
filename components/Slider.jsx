@@ -4,28 +4,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { isSameDay, isWithinInterval } from "date-fns";
 import { MenuItems } from "./MenuItems";
-import { MenuItems1 } from "./MenuItems1";
 import { useRouter } from "next/router";
 
 function ImageSlider() {
   const router = useRouter();
 
   const dataWithSelectedFlag = MenuItems.map(
-    ({ datetime, dateend, ...item }) => {
-      const today = new Date();
-
-      const isSelected = dateend
-        ? isWithinInterval(today, {
-            start: datetime,
-            end: dateend,
-          })
-        : isSameDay(today, datetime);
-
-      return { ...item, datetime, isSelected };
-    }
-  );
-
-  const dataWithSelectedFlag1 = MenuItems1.map(
     ({ datetime, dateend, ...item }) => {
       const today = new Date();
 
