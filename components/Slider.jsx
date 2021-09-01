@@ -83,10 +83,10 @@ function ImageSlider() {
                 <h1 className="text-3xl font-semibold">
                   {router.locale === "en"
                     ? date
-                    : date === "10 September - 7 October"
-                    ? "10 September - 7 Oktober"
-                    : date === "17 October - 7 November"
-                    ? "17 Oktober - 7 November"
+                    : date === "10 September - 16 October"
+                    ? "10 September - 16 Oktober"
+                    : date === "25 October - 12 November"
+                    ? "25 Oktober - 12 November"
                     : date === "4 - 5 December"
                     ? "4 - 5 Desember"
                     : ""}
@@ -129,13 +129,13 @@ function ImageSlider() {
                   <h1 className="text-3xl font-semibold text-white">
                     {router.locale === "en"
                       ? date
-                      : date === "10 September - 7 October"
-                      ? "10 September - 7 Oktober"
-                      : date === "17 October - 7 November"
-                      ? "17 Oktober - 7 November"
+                      : date === "10 September - 16 October"
+                      ? "10 September - 16 Oktober"
+                      : date === "25 October - 12 November"
+                      ? "25 Oktober - 12 November"
                       : date === "4 - 5 December"
                       ? "4 - 5 Desember"
-                      : date}
+                      : ""}
                   </h1>
                   <h1 className="text-lg font-semibold text-right text-white">
                     {target}
