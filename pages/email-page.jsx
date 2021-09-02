@@ -31,7 +31,7 @@ export default function EmailPage() {
   return (
     <div
       className={`bg-black text-white overflox-x-hidden overflow-y-hidden flex flex-col justify-center align-center`}
-      style={{ height: "100vh" }}
+      style={{ minHeight: "100vh" }}
     >
       <Head>
         <title>Hultprize at ITS Contact Form</title>
@@ -99,7 +99,10 @@ export default function EmailPage() {
             </p>
             <p>
               <label htmlFor="comment">{t("email:message")}</label>
-              <textarea className="w-64 text-black text-md" name="comment" />
+              <textarea
+                className="w-64 text-black resize text-md"
+                name="comment"
+              />
             </p>
             <button
               className={`${
