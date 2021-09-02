@@ -1,7 +1,8 @@
 {
-    "locales": ["en", "id"],
-    "defaultLocale": "en",
-    "pages": {
-        "*": ["common"]
-    }
+  "locales": ["en", "id"],
+  "defaultLocale": "en",
+  "pages": {
+    "*": ["common"],
+    "/email-page": ["email"]
+  }
 }
