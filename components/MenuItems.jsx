@@ -3,28 +3,28 @@ export const MenuItems = [
     id: 1,
     target: "Preliminary",
     description: "Abstract Submission",
-    date: "10 September - 7 October",
+    date: "10 September - 16 October",
     // Month starts from 0
     datetime: new Date(2021, 8, 10),
-    dateend: new Date(2021, 9, 7, 23, 59, 59),
+    dateend: new Date(2021, 9, 16, 23, 59, 59),
   },
   {
     id: 2,
     target: "Semi-final",
     description: "Video Pitching Presentation",
-    date: "17 October - 7 November",
+    date: "25 October - 12 November",
     // Month starts from 0
-    datetime: new Date(2021, 9, 17),
-    dateend: new Date(2021, 10, 7, 23, 59, 59),
+    datetime: new Date(2021, 9, 25),
+    dateend: new Date(2021, 10, 12, 23, 59, 59),
   },
   {
     id: 3,
     target: "Road to Final",
     description: "Incubation Program",
-    date: "20 - 21 November",
+    date: "25 October - 12 November",
     // Month starts from 0
-    datetime: new Date(2021, 10, 20),
-    dateend: new Date(2021, 10, 21, 23, 59, 59),
+    datetime: new Date(2021, 9, 25),
+    dateend: new Date(2021, 10, 12, 23, 59, 59),
   },
   {
     id: 4,

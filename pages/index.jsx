@@ -9,6 +9,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import useTranslation from "next-translate/useTranslation";
 import { ReactYouTubeLite } from "react-youtube-lite";
+import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
@@ -433,13 +434,13 @@ export default function Home() {
                   src="/linkedin.png"
                 />
               </UnstyledLink>
-              <a href="mailto:hultprize@its.ac.id">
+              <Link href="/email-page">
                 <img
                   alt=""
-                  className="duration-200 transform select-none hover:scale-125"
+                  className="duration-200 transform cursor-pointer select-none hover:scale-125"
                   src="/mail.png"
                 />
-              </a>
+              </Link>
               <UnstyledLink href="https://www.youtube.com/channel/UCqDogFYFLawvmYjnOC2niww">
                 <i
                   style={{ color: "#DF238C" }}
