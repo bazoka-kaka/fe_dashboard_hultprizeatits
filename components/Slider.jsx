@@ -69,7 +69,7 @@ function ImageSlider() {
           eventIdx
         ) => {
           return isSelected ? (
-            <div className="z-20 card-container">
+            <div className="z-20 card-container" key={id}>
               <div
                 key={eventIdx}
                 className={`flex flex-col justify-between px-4 py-4 rounded-lg`}
@@ -111,7 +111,7 @@ function ImageSlider() {
               </div>
             </div>
           ) : (
-            <div className="container z-20">
+            <div className="container z-20" key={id}>
               <div
                 key={eventIdx}
                 className="px-1 py-1 rounded-lg"
