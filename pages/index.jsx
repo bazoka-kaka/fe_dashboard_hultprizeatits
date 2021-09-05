@@ -434,7 +434,7 @@ export default function Home() {
                   src="/linkedin.png"
                 />
               </UnstyledLink>
-              <Link href="/email-page">
+              <Link href="/email_form" passHref>
                 <img
                   alt=""
                   className="duration-200 transform cursor-pointer select-none hover:scale-125"
