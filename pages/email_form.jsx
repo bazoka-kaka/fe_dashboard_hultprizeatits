@@ -3,12 +3,19 @@ import emailjs from "emailjs-com";
 import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
 import { useRouter } from "next/router";
+import useForm from "../components/Forms/useForm";
+import { useState } from "react";
 
 export default function EmailPage() {
   const router = useRouter();
   const { t } = useTranslation();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  function submitData() {
+    setIsSubmitting(true);
+  }
   async function handleOnSubmit(e) {
-    e.preventDefault();
+    // console.log("test");
+    // e.preventDefault();
 
     emailjs
       .sendForm(
@@ -25,9 +32,12 @@ export default function EmailPage() {
           console.log(error.text);
         }
       );
-    e.target.reset();
+
     alert("Email is sent!");
+    e.target.reset();
   }
+
+  const { handleChange, values, handleSubmit, errors } = useForm(submitData);
   return (
     <div
       className={`bg-black text-white overflox-x-hidden overflow-y-hidden flex flex-col justify-center align-center`}
@@ -79,31 +89,62 @@ export default function EmailPage() {
           <form
             className="self-center px-10 text-left w-80"
             method="post"
-            onSubmit={handleOnSubmit}
+            onSubmit={!isSubmitting ? handleSubmit : handleOnSubmit}
           >
             <p>
               <label htmlFor="name">{t("email:name")}</label>
-              <input className="text-black" type="text" name="name" />
+              <input
+                id="name"
+                className="text-black"
+                type="text"
+                name="name"
+                value={values.name}
+                onChange={handleChange}
+              />
+              {errors.name && (
+                <p className="text-sm text-red-400">{errors.name}</p>
+              )}
             </p>
             <p>
               <label htmlFor="subject">{t("email:subject")}</label>
               <input
+                id="subject"
                 className="text-black text-md"
                 type="text"
                 name="subject"
+                value={values.subject}
+                onChange={handleChange}
               />
+              {errors.subject && (
+                <p className="text-sm text-red-400">{errors.subject}</p>
+              )}
             </p>
             <p>
               <label htmlFor="email">{t("email:user-mail")}</label>
-              <input className="text-black text-md" type="email" name="email" />
+              <input
+                id="email"
+                className="text-black text-md"
+                type="email"
+                name="email"
+                value={values.email}
+                onChange={handleChange}
+              />
+              {errors.email && (
+                <p className="text-sm text-red-400">{errors.email}</p>
+              )}
             </p>
             <p>
               <label htmlFor="comment">{t("email:message")}</label>
               <textarea
+                id="comment"
                 className="w-64 text-black resize text-md"
                 name="comment"
-                required
+                value={values.comment}
+                onChange={handleChange}
               />
+              {errors.comment && (
+                <p className="text-sm text-red-400">{errors.comment}</p>
+              )}
             </p>
             <button
               className={`${
