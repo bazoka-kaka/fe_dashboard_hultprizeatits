@@ -3,6 +3,6 @@
   "defaultLocale": "en",
   "pages": {
     "*": ["common"],
-    "/email-page": ["email"]
+    "/email_form": ["email"]
   }
 }
