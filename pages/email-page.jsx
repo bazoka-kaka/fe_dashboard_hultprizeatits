@@ -98,7 +98,7 @@ export default function EmailPage() {
               <input className="text-black text-md" type="email" name="email" />
             </p>
             <p>
-              <label htmlFor="comment">{t("email:message")}</label>
+              <label htmlFor="comment">s{t("email:message")}</label>
               <textarea
                 className="w-64 text-black resize text-md"
                 name="comment"
