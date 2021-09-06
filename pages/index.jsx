@@ -14,7 +14,7 @@ import Image from "next/image";
 
 export default function Home() {
   useEffect(() => {
-    Aos.init({ duration: 1500, once: true });
+    Aos.init({ duration: 1000, once: true });
   }, []);
 
   let { t } = useTranslation();
@@ -42,8 +42,6 @@ export default function Home() {
             <Image
               layout="fill"
               src="/main-bg.png"
-              width={1441}
-              height={1026}
               alt="Hultprize"
               className="object-cover"
             />
@@ -120,6 +118,7 @@ export default function Home() {
                 <div>
                   <h1
                     data-aos="fade-right"
+                    data-aos-easing="ease-in-out"
                     className="mb-5 text-2xl text-left md:text-3xl"
                   >
                     {t("common:challenge-title")}
@@ -128,7 +127,7 @@ export default function Home() {
                       {t("common:challenge-title1")}
                     </span>
                   </h1>
-                  <div data-aos="fade-right">
+                  <div data-aos="fade-right" data-aos-easing="ease-in-out">
                     <p className="text-lg leading-6 md:text-xl">
                       {t("common:challenge-text")}
                     </p>
@@ -145,6 +144,7 @@ export default function Home() {
               </div>
               <div
                 data-aos="fade-left"
+                data-aos-easing="ease-in-out"
                 className="relative self-center w-full top-7 lg:top-0 lg:pl-5 md:w-1/2"
               >
                 <div className={`${styles.rectangle1} rounded-lg px-2 py-2`}>
@@ -172,13 +172,14 @@ export default function Home() {
           ></div>
           <h1
             data-aos="fade-up"
+            data-aos-easing="ease-in-out"
             className="relative text-3xl font-bold text-white uppercase sm:text-4xl top-20 left-10 sm:left-20"
           >
             {t("common:timeline-title1")}
             <br />
             {t("common:timeline-title2")}
           </h1>
-          <div data-aos="fade-right">
+          <div data-aos="fade-right" data-aos-easing="ease-in-out">
             <div className="relative" style={{ width: "100vw" }}>
               <div
                 className={`px-10 py-32 carousel sm:px-16 align-center`}
@@ -204,7 +205,11 @@ export default function Home() {
           <article className="relative flex flex-col justify-between px-0 text-black lg:flex-row lg:items-center lg:h-screen layout">
             <div className="flex flex-col self-center justify-center py-20 lg:w-1/2 lg:py-0">
               <div className="flex flex-col self-center justify-center px-0 w-80 sm:w-auto sm:px-8 lg:px-0 ">
-                <div data-aos="fade-right" className="flex flex-col">
+                <div
+                  data-aos="fade-right"
+                  data-aos-easing="ease-in-out"
+                  className="flex flex-col"
+                >
                   <h1 className="mb-3 text-lg text-center sm:text-left sm:truncate sm:text-xl">
                     {t("common:impact-upper")}
                     <br />
@@ -227,7 +232,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div data-aos="fade-right">
+                <div data-aos="fade-right" data-aos-easing="ease-in-out">
                   <p className="mt-5 text-lg leading-7 text-center sm:text-left sm:w-96">
                     {t("common:impact-lower")}
                   </p>
@@ -244,16 +249,15 @@ export default function Home() {
             </div>
             <div
               data-aos="fade-left"
+              data-aos-easing="ease-in-out"
               className="flex flex-col w-full h-full lg:h-full lg:w-1/2"
             >
               <div className="flex flex-row" style={{ height: "15vh" }}>
                 <div className="relative flex w-1/3 overflow-hidden">
                   <Image
-                    width={322}
-                    height={120}
                     layout="fill"
                     className="top-0 left-0 object-cover w-full select-none"
-                    src="/hultprize1.jpg"
+                    src="/hultprize1.png"
                     alt="hultprize1"
                   />
                 </div>
@@ -271,8 +275,6 @@ export default function Home() {
                 </div>
                 <div className="relative flex justify-center w-2/3 overflow-hidden align-center">
                   <Image
-                    width={442}
-                    height={169}
                     layout="fill"
                     className="object-cover w-full select-none "
                     src="/hultprize2.png"
@@ -299,8 +301,6 @@ export default function Home() {
               <div className="flex" style={{ height: "30vh" }}>
                 <div className="relative flex justify-center w-1/2 overflow-hidden sm:w-2/5 align-center">
                   <Image
-                    width={331}
-                    height={176}
                     layout="fill"
                     className="object-cover w-full select-none "
                     src="/hultprize3.png"
@@ -320,8 +320,6 @@ export default function Home() {
                 </div>
                 <div className="relative flex justify-center w-1/2 sm:w-3/5 overlow-hidden align-center">
                   <Image
-                    width={371}
-                    height={217}
                     layout="fill"
                     className="object-cover w-full select-none"
                     src="/hultprize4.png"
@@ -348,8 +346,6 @@ export default function Home() {
               <div className="flex" style={{ height: "30vh" }}>
                 <div className="relative flex justify-center w-1/2 overflow-hidden align-center">
                   <Image
-                    width={388}
-                    height={248}
                     layout="fill"
                     className="object-cover w-full select-none "
                     src="/hultprize5.png"
@@ -369,8 +365,6 @@ export default function Home() {
                 </div>
                 <div className="relative flex justify-center w-1/2 overflow-hidden align-center">
                   <Image
-                    width={327}
-                    height={248}
                     layout="fill"
                     className="object-cover w-full select-none"
                     src="/hultprize6.png"
@@ -393,15 +387,13 @@ export default function Home() {
           <article className="relative flex flex-col justify-center min-h-screen gap-8 px-0 py-10 pt-20 pb-20 text-white bg-center bg-cover items-left md:gap-12 sm:py-0 layout">
             <Image
               src="/building-bg.png"
-              width={2011}
-              height={1145}
               alt="ITS building"
               className="object-cover"
               layout="fill"
             />
             <div className="relative flex">
               <div className="px-4 md:px-28">
-                <div data-aos="fade-right">
+                <div data-aos="fade-right" data-aos-easing="ease-in-out">
                   <div className="flex">
                     <h1 className="text-4xl text-left uppercase">
                       {t("common:about-us")}
@@ -416,7 +408,11 @@ export default function Home() {
                     {t("common:about-text")}
                   </p>
                 </div>
-                <div data-aos="fade-up" className="gap-10 mt-7">
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-out"
+                  className="gap-10 mt-7"
+                >
                   <p className="mb-5 text-lg">{t("common:about-lower")}</p>
                   <div className="flex flex-col gap-6 md:flex-row">
                     <a
@@ -442,12 +438,17 @@ export default function Home() {
           <div className={styles.footer1}>
             <h1
               data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-out"
               className="text-2xl font-bold text-center text-white sm:text-3xl md:text-4xl lg:text-4xl"
             >
               ARE YOU READY TO #CreateTheChange?
             </h1>
           </div>
-          <div data-aos="fade-zoom-in" className={styles.footer2}>
+          <div
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            className={styles.footer2}
+          >
             <h1 className="-mb-2 text-2xl font-bold text-center md:text-3xl">
               Stay Connected!
             </h1>
