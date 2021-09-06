@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 import useTranslation from "next-translate/useTranslation";
 import { ReactYouTubeLite } from "react-youtube-lite";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   useEffect(() => {
@@ -33,11 +34,20 @@ export default function Home() {
         ></link>
       </Head>
       <main className="overflow-hidden">
-        <section id="home" className={`relative ${styles.firstSection}`}>
+        <section id="home" className={`relative`}>
           <article
             className={`flex justify-center pt-16 px-10 md:px-24 flex-col items-left gap-8 text-white py-6 md:pt-12 md:gap-12 min-h-screen layout`}
+            style={{ backgroundColor: "#333" }}
           >
-            <div>
+            <Image
+              layout="fill"
+              src="/main-bg.png"
+              width={1441}
+              height={1026}
+              alt="Hultprize"
+              className="object-cover"
+            />
+            <div className="z-40">
               <div className={`flex flex-col ${styles.anim1}`}>
                 <img
                   alt=""
@@ -70,7 +80,7 @@ export default function Home() {
                       : "px-7"
                   } truncate ${
                     styles.firstBtn
-                  } self-center text-lg text-black sm:self-start rounded-lg py-1`}
+                  } z-40 self-center text-lg text-black sm:self-start rounded-lg py-1`}
                 >
                   {t("common:register-button")}
                 </a>
@@ -80,7 +90,7 @@ export default function Home() {
                     t("common:submit-button") === "Kumpulkan Abstrak!"
                       ? "px-12"
                       : "px-6"
-                  } rounded-lg border-2 self-center sm:self-start py-1 bg-black text-white`}
+                  } z-40 rounded-lg border-2 self-center sm:self-start py-1 bg-black text-white`}
                 >
                   {t("common:submit-button")}
                 </a>
@@ -238,7 +248,10 @@ export default function Home() {
             >
               <div className="flex flex-row" style={{ height: "15vh" }}>
                 <div className="relative flex w-1/3 overflow-hidden">
-                  <img
+                  <Image
+                    width={322}
+                    height={120}
+                    layout="fill"
                     className="top-0 left-0 object-cover w-full select-none"
                     src="/hultprize1.jpg"
                     alt="hultprize1"
@@ -248,14 +261,19 @@ export default function Home() {
               </div>
               <div className="flex" style={{ height: "25vh" }}>
                 <div className="flex justify-center w-1/3 px-4 py-8 overflow-hidden align-center">
-                  <img
+                  <Image
+                    width={190}
+                    height={89}
                     src="/what.png"
                     alt="what will you get"
                     className="object-scale-down h-full select-none"
                   />
                 </div>
                 <div className="relative flex justify-center w-2/3 overflow-hidden align-center">
-                  <img
+                  <Image
+                    width={442}
+                    height={169}
+                    layout="fill"
                     className="object-cover w-full select-none "
                     src="/hultprize2.png"
                     alt="hultprize 2"
@@ -280,9 +298,12 @@ export default function Home() {
               </div>
               <div className="flex" style={{ height: "30vh" }}>
                 <div className="relative flex justify-center w-1/2 overflow-hidden sm:w-2/5 align-center">
-                  <img
+                  <Image
+                    width={331}
+                    height={176}
+                    layout="fill"
                     className="object-cover w-full select-none "
-                    src="hultprize3.png"
+                    src="/hultprize3.png"
                     alt="hultprize3"
                   />
                   <div
@@ -298,9 +319,12 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="relative flex justify-center w-1/2 sm:w-3/5 overlow-hidden align-center">
-                  <img
+                  <Image
+                    width={371}
+                    height={217}
+                    layout="fill"
                     className="object-cover w-full select-none"
-                    src="hultprize4.png"
+                    src="/hultprize4.png"
                     alt="hultprize3"
                   />
                   <div
@@ -323,9 +347,12 @@ export default function Home() {
               </div>
               <div className="flex" style={{ height: "30vh" }}>
                 <div className="relative flex justify-center w-1/2 overflow-hidden align-center">
-                  <img
+                  <Image
+                    width={388}
+                    height={248}
+                    layout="fill"
                     className="object-cover w-full select-none "
-                    src="hultprize5.png"
+                    src="/hultprize5.png"
                     alt="hultprize3"
                   />
                   <div
@@ -341,9 +368,12 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="relative flex justify-center w-1/2 overflow-hidden align-center">
-                  <img
+                  <Image
+                    width={327}
+                    height={248}
+                    layout="fill"
                     className="object-cover w-full select-none"
-                    src="hultprize6.png"
+                    src="/hultprize6.png"
                     alt="hultprize3"
                   />
                   <div
@@ -360,13 +390,15 @@ export default function Home() {
           </article>
         </section>
         <section id="about" className={styles.fifthSection}>
-          <article
-            style={{
-              backgroundImage: "url(/building-bg.png)",
-              backgroundRepeat: "no-repeat",
-            }}
-            className="relative flex flex-col justify-center min-h-screen gap-8 px-0 py-10 pt-20 pb-20 text-white bg-center bg-cover items-left md:gap-12 sm:py-0 layout"
-          >
+          <article className="relative flex flex-col justify-center min-h-screen gap-8 px-0 py-10 pt-20 pb-20 text-white bg-center bg-cover items-left md:gap-12 sm:py-0 layout">
+            <Image
+              src="/building-bg.png"
+              width={2011}
+              height={1145}
+              alt="ITS building"
+              className="object-cover"
+              layout="fill"
+            />
             <div className="relative flex">
               <div className="px-4 md:px-28">
                 <div data-aos="fade-right">
@@ -434,7 +466,7 @@ export default function Home() {
                   src="/linkedin.png"
                 />
               </UnstyledLink>
-              <Link href="/email-page">
+              <Link href="/email-page" passHref>
                 <img
                   alt=""
                   className="duration-200 transform cursor-pointer select-none hover:scale-125"
