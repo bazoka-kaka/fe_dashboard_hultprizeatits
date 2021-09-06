@@ -39,7 +39,7 @@ export default withRouter(
             <a href="#">
               <img
                 src="/hultprize-logo.png"
-                alt=""
+                alt="hultprize logo"
                 className="absolute w-10 cursor-pointer top-2 left-8 sm:left-24"
               ></img>
             </a>
