@@ -174,7 +174,7 @@ export default function Home() {
               </div>
             </div>
           </article>
-          <div className={`absolute bottom-3 ${styles.center}`}>
+          <div className={`absolute bottom-3 z-40 ${styles.center}`}>
             <ScrollDownArrow />
           </div>
         </section>
