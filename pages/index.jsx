@@ -11,8 +11,81 @@ import useTranslation from "next-translate/useTranslation";
 import { ReactYouTubeLite } from "react-youtube-lite";
 import Link from "next/link";
 import Image from "next/image";
+import buildUrl from "cloudinary-build-url";
 
 export default function Home() {
+  const mainBgBlurred = buildUrl("main-bg_a8s5hk", {
+    cloud: {
+      cloudName: "kaka777",
+    },
+    transformations: {
+      effect: "blur:1000",
+      quality: 1,
+    },
+  });
+  const hultprize1Blurred = buildUrl("hultprize1_ln1tna", {
+    cloud: {
+      cloudName: "kaka777",
+    },
+    transformations: {
+      effect: "blur:1000",
+      quality: 1,
+    },
+  });
+  const hultprize2Blurred = buildUrl("hultprize2_metvzz", {
+    cloud: {
+      cloudName: "kaka777",
+    },
+    transformations: {
+      effect: "blur:1000",
+      quality: 1,
+    },
+  });
+  const hultprize3Blurred = buildUrl("hultprize3_lmrohh", {
+    cloud: {
+      cloudName: "kaka777",
+    },
+    transformations: {
+      effect: "blur:1000",
+      quality: 1,
+    },
+  });
+  const hultprize4Blurred = buildUrl("hultprize4_aeeqlp", {
+    cloud: {
+      cloudName: "kaka777",
+    },
+    transformations: {
+      effect: "blur:1000",
+      quality: 1,
+    },
+  });
+  const hultprize5Blurred = buildUrl("hultprize5_il4q07", {
+    cloud: {
+      cloudName: "kaka777",
+    },
+    transformations: {
+      effect: "blur:1000",
+      quality: 1,
+    },
+  });
+  const hultprize6Blurred = buildUrl("hultprize6_eyiinw", {
+    cloud: {
+      cloudName: "kaka777",
+    },
+    transformations: {
+      effect: "blur:1000",
+      quality: 1,
+    },
+  });
+  const buildingBgBlurred = buildUrl("building-bg_ajkg4z", {
+    cloud: {
+      cloudName: "kaka777",
+    },
+    transformations: {
+      effect: "blur:1000",
+      quality: 1,
+    },
+  });
   useEffect(() => {
     Aos.init({ duration: 1000, once: true });
   }, []);
@@ -41,7 +114,13 @@ export default function Home() {
           >
             <Image
               layout="fill"
-              src="/main-bg.png"
+              src="https://res.cloudinary.com/kaka777/image/upload/v1630997243/main-bg_a8s5hk.png"
+              alt="Hultprize"
+              className="z-20 object-cover"
+            />
+            <Image
+              layout="fill"
+              src={mainBgBlurred}
               alt="Hultprize"
               className="object-cover"
             />
@@ -68,7 +147,7 @@ export default function Home() {
                 {t("common:subtitle3")}
               </p>
             </div>
-            <div className={`mt-1 md:-mt-4 ${styles.anim4}`}>
+            <div className={`mt-1 z-40 md:-mt-4 ${styles.anim4}`}>
               <div className="flex flex-col gap-4 md:flex-row md:gap-10">
                 <a
                   href="https://bit.ly/HPITS_RegisterTeam"
@@ -256,8 +335,14 @@ export default function Home() {
                 <div className="relative flex w-1/3 overflow-hidden">
                   <Image
                     layout="fill"
-                    className="top-0 left-0 object-cover w-full select-none"
+                    className="top-0 left-0 z-20 object-cover w-full select-none"
                     src="/hultprize1.png"
+                    alt="hultprize1"
+                  />
+                  <Image
+                    layout="fill"
+                    className="top-0 left-0 object-cover w-full select-none"
+                    src={hultprize1Blurred}
                     alt="hultprize1"
                   />
                 </div>
@@ -276,12 +361,18 @@ export default function Home() {
                 <div className="relative flex justify-center w-2/3 overflow-hidden align-center">
                   <Image
                     layout="fill"
-                    className="object-cover w-full select-none "
+                    className="z-10 object-cover w-full select-none "
                     src="/hultprize2.png"
                     alt="hultprize 2"
                   />
+                  <Image
+                    layout="fill"
+                    className="object-cover w-full select-none "
+                    src={hultprize2Blurred}
+                    alt="hultprize 2"
+                  />
                   <div
-                    className="absolute bottom-0 flex flex-col justify-center w-full h-12 px-4 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center"
+                    className="absolute bottom-0 z-20 flex flex-col justify-center w-full h-12 px-4 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center"
                     style={{
                       background:
                         "linear-gradient(270deg, rgba(219, 10, 127, 0) 1.02%, #BF1D76 100%)",
@@ -302,12 +393,18 @@ export default function Home() {
                 <div className="relative flex justify-center w-1/2 overflow-hidden sm:w-2/5 align-center">
                   <Image
                     layout="fill"
-                    className="object-cover w-full select-none "
+                    className="z-10 object-cover w-full select-none "
                     src="/hultprize3.png"
                     alt="hultprize3"
                   />
+                  <Image
+                    layout="fill"
+                    className="object-cover w-full select-none "
+                    src={hultprize3Blurred}
+                    alt="hultprize3"
+                  />
                   <div
-                    className="absolute bottom-0 flex flex-col justify-center w-full h-12 px-3 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center"
+                    className="absolute bottom-0 z-20 flex flex-col justify-center w-full h-12 px-3 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center"
                     style={{ background: "#C11873" }}
                   >
                     <h1
@@ -321,12 +418,18 @@ export default function Home() {
                 <div className="relative flex justify-center w-1/2 sm:w-3/5 overlow-hidden align-center">
                   <Image
                     layout="fill"
-                    className="object-cover w-full select-none"
+                    className="z-10 object-cover w-full select-none"
                     src="/hultprize4.png"
-                    alt="hultprize3"
+                    alt="hultprize4"
+                  />
+                  <Image
+                    layout="fill"
+                    className="object-cover w-full select-none"
+                    src={hultprize4Blurred}
+                    alt="hultprize4"
                   />
                   <div
-                    className="absolute bottom-0 flex flex-col justify-center w-full h-12 px-3 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center"
+                    className="absolute bottom-0 z-20 flex flex-col justify-center w-full h-12 px-3 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center"
                     style={{
                       background:
                         "linear-gradient(90deg, rgba(230, 92, 168, 0) 0%, #E65CA8 100%)",
@@ -347,12 +450,18 @@ export default function Home() {
                 <div className="relative flex justify-center w-1/2 overflow-hidden align-center">
                   <Image
                     layout="fill"
-                    className="object-cover w-full select-none "
+                    className="z-10 object-cover w-full select-none "
                     src="/hultprize5.png"
-                    alt="hultprize3"
+                    alt="hultprize5"
+                  />
+                  <Image
+                    layout="fill"
+                    className="object-cover w-full select-none "
+                    src={hultprize5Blurred}
+                    alt="hultprize5"
                   />
                   <div
-                    className="absolute bottom-0 flex flex-col justify-center w-full h-12 px-3 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center"
+                    className="absolute bottom-0 z-20 flex flex-col justify-center w-full h-12 px-3 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center"
                     style={{
                       background:
                         "linear-gradient(269.93deg, rgba(219, 10, 127, 0) 0.09%, #BF1D76 99.96%)",
@@ -366,12 +475,18 @@ export default function Home() {
                 <div className="relative flex justify-center w-1/2 overflow-hidden align-center">
                   <Image
                     layout="fill"
-                    className="object-cover w-full select-none"
+                    className="z-10 object-cover w-full select-none"
                     src="/hultprize6.png"
-                    alt="hultprize3"
+                    alt="hultprize6"
+                  />
+                  <Image
+                    layout="fill"
+                    className="object-cover w-full select-none"
+                    src={hultprize6Blurred}
+                    alt="hultprize6"
                   />
                   <div
-                    className="absolute bottom-0 flex flex-col justify-center w-full h-12 px-3 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center"
+                    className="absolute bottom-0 z-20 flex flex-col justify-center w-full h-12 px-3 py-1 font-light tracking-wider text-white sm:h-16 lg:h-12 align-center"
                     style={{ background: "#BF1D76" }}
                   >
                     <h1 className="text-xs leading-5 text-right sm:text-base">
@@ -388,10 +503,16 @@ export default function Home() {
             <Image
               src="/building-bg.png"
               alt="ITS building"
+              className="z-10 object-cover"
+              layout="fill"
+            />
+            <Image
+              src={buildingBgBlurred}
+              alt="ITS building"
               className="object-cover"
               layout="fill"
             />
-            <div className="relative flex">
+            <div className="relative z-20 flex">
               <div className="px-4 md:px-28">
                 <div data-aos="fade-right" data-aos-easing="ease-in-out">
                   <div className="flex">
