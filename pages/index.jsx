@@ -87,7 +87,7 @@ export default function Home() {
     },
   });
   useEffect(() => {
-    Aos.init({ duration: 1500, once: true });
+    Aos.init({ duration: 1200, once: true });
   }, []);
 
   let { t } = useTranslation();
@@ -590,7 +590,7 @@ export default function Home() {
                   src="/linkedin.png"
                 />
               </UnstyledLink>
-              <Link href="/email-page" passHref>
+              <Link href="/contact_form" passHref>
                 <img
                   alt=""
                   className="duration-200 transform cursor-pointer select-none hover:scale-125"
