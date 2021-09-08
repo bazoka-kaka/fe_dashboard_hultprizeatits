@@ -87,7 +87,7 @@ export default function Home() {
     },
   });
   useEffect(() => {
-    Aos.init({ duration: 1000, once: true });
+    Aos.init({ duration: 1500, once: true });
   }, []);
 
   let { t } = useTranslation();
@@ -312,9 +312,11 @@ export default function Home() {
                   </div>
                 </div>
                 <div data-aos="fade-right" data-aos-easing="ease-in-out">
-                  <p className="mt-5 text-lg leading-7 text-center sm:text-left sm:w-96">
-                    {t("common:impact-lower")}
-                  </p>
+                  <div>
+                    <p className="px-4 mt-5 text-lg leading-7 text-justify sm:px-0 sm:text-left w-80 sm:w-96">
+                      {t("common:impact-lower")}
+                    </p>
+                  </div>
                   <div className="flex justify-center w-full mt-12 sm:justify-start">
                     <a
                       href="https://bit.ly/HPITS_ImpactComm"
