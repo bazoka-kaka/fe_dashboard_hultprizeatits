@@ -154,6 +154,7 @@ export default function EmailPage() {
               {t("email:submit")}
             </button>
             <button
+              type="button"
               className="px-4 py-1 mt-4 duration-150 transform border-2 hover:scale-110 rounded-xl"
               style={{ borderColor: "#db0a7f" }}
             >
