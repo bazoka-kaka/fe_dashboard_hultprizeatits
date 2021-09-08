@@ -3,6 +3,7 @@ import { MenuItems } from "./MenuItems";
 import { withRouter } from "next/router";
 import Dropdown from "./Dropdown";
 import Link from "next/link";
+import Image from "next/image";
 
 export default withRouter(
   class Navbar extends React.Component {
@@ -36,13 +37,16 @@ export default withRouter(
       return (
         <nav className="relative flex items-center justify-center h-16 transform bg-white shadow-2xl">
           <div className="navbar-logo">
-            <a href="#">
-              <img
-                src="/hultprize-logo.png"
-                alt="hultprize logo"
-                className="absolute w-10 cursor-pointer top-2 left-8 sm:left-24"
-              ></img>
-            </a>
+            <Link href="/" passHref>
+              <div className="absolute w-10 cursor-pointer top-2 left-8 sm:left-24">
+                <Image
+                  src="/hultprize-logo.png"
+                  alt="hultprize logo"
+                  width={38}
+                  height={51}
+                />
+              </div>
+            </Link>
           </div>
           <div className="menu-icon" onClick={this.handleClick}>
             <i
@@ -93,7 +97,11 @@ export default withRouter(
                 {this.props.router.locales.map((locale) => {
                   if (locale !== this.props.router.locale) {
                     return (
-                      <Link href={this.props.router.asPath} locale={locale}>
+                      <Link
+                        key={locale}
+                        href={this.props.router.asPath}
+                        locale={locale}
+                      >
                         <a onClick={this.closeMobileMenu}>
                           <p className="inline sm:hidden">{locale}</p>
                           <p className="hidden sm:inline">
