@@ -94,7 +94,12 @@ export default withRouter(
                   if (locale !== this.props.router.locale) {
                     return (
                       <Link href={this.props.router.asPath} locale={locale}>
-                        <a onClick={this.closeMobileMenu}>{locale}</a>
+                        <a onClick={this.closeMobileMenu}>
+                          <p className="inline sm:hidden">{locale}</p>
+                          <p className="hidden sm:inline">
+                            {this.props.router.locale}
+                          </p>
+                        </a>
                       </Link>
                     );
                   }
