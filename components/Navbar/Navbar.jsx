@@ -69,6 +69,8 @@ export default withRouter(
                   <a
                     onClick={this.closeMobileMenu}
                     href={item.url}
+                    target={item.title === "Register" ? "_blank" : "_self"}
+                    rel="noreferrer"
                     className={`hover:text-gray-600 ${item.cName}
                                     sm:hover:bg-black sm:hover:text-white sm:px-3 sm:py-2 sm:rounded-3xl
                                         transform duration-150
