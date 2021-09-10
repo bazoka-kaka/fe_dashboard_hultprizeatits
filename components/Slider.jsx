@@ -39,7 +39,7 @@ function ImageSlider() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          centerPadding: "100",
+          centerPadding: "140",
         },
       },
       {
