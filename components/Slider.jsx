@@ -89,7 +89,7 @@ function ImageSlider() {
                     ? "25 Oktober - 12 November"
                     : date === "4 - 5 December"
                     ? "4 - 5 Desember"
-                    : ""}
+                    : date}
                 </h1>
                 <h1 className="text-lg font-semibold text-right">
                   {target}
@@ -135,7 +135,7 @@ function ImageSlider() {
                       ? "25 Oktober - 12 November"
                       : date === "4 - 5 December"
                       ? "4 - 5 Desember"
-                      : ""}
+                      : date}
                   </h1>
                   <h1 className="text-lg font-semibold text-right text-white">
                     {target}

@@ -21,10 +21,10 @@ export const MenuItems = [
     id: 3,
     target: "Road to Final",
     description: "Incubation Program",
-    date: "25 October - 12 November",
+    date: "26 - 28 November",
     // Month starts from 0
-    datetime: new Date(2021, 9, 25),
-    dateend: new Date(2021, 10, 12, 23, 59, 59),
+    datetime: new Date(2021, 10, 26),
+    dateend: new Date(2021, 10, 28, 23, 59, 59),
   },
   {
     id: 4,
