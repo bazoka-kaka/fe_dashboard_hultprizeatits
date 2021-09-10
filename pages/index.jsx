@@ -151,6 +151,8 @@ export default function Home() {
               <div className="flex flex-col gap-4 md:flex-row md:gap-10">
                 <a
                   href="https://bit.ly/HPITS_RegisterTeam"
+                  target="_blank"
+                  rel="noreferrer"
                   className={`${
                     t("common:register-button") === "Register Your Team!"
                       ? "px-8"
@@ -163,6 +165,8 @@ export default function Home() {
                 </a>
                 <a
                   href="https://bit.ly/HPITS_SubmitAbstract"
+                  target="_blank"
+                  rel="noreferrer"
                   className={`text-lg truncate ${styles.secondBtn} ${
                     t("common:submit-button") === "Kumpulkan Abstrak!"
                       ? "px-12"
@@ -213,6 +217,8 @@ export default function Home() {
                     <div className="z-50 flex flex-col w-full mt-10">
                       <a
                         href="https://bit.ly/HPITS_ChallengeGuide"
+                        target="_blank"
+                        rel="noreferrer"
                         className={`self-center truncate sm:self-start text-lg rounded-lg px-7 py-2 md:text-xl ${styles.thirdBtn}`}
                       >
                         {t("common:join-guidebook-button")}
@@ -320,6 +326,8 @@ export default function Home() {
                   <div className="flex justify-center w-full mt-12 sm:justify-start">
                     <a
                       href="https://bit.ly/HPITS_ImpactComm"
+                      target="_blank"
+                      rel="noreferrer"
                       className={`${styles.fifthBtn} truncate rounded-lg px-5 py-2`}
                     >
                       {t("common:join-button")}
