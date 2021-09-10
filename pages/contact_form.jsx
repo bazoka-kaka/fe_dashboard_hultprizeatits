@@ -14,9 +14,6 @@ export default function EmailPage() {
     setIsSubmitting(true);
   }
   async function handleOnSubmit(e) {
-    // console.log("test");
-    // e.preventDefault();
-
     emailjs
       .sendForm(
         "service_6jyr95q",
@@ -32,9 +29,8 @@ export default function EmailPage() {
           console.log(error.text);
         }
       );
-
-    alert("Email is sent!");
     e.target.reset();
+    alert("Email is sent!");
   }
 
   const { handleChange, values, handleSubmit, errors } = useForm(submitData);
