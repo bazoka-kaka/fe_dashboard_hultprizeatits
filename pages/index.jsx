@@ -23,6 +23,51 @@ export default function Home() {
       quality: 1,
     },
   });
+  const eventsBgBlurred = buildUrl("events-bg_rhme7l", {
+    cloud: {
+      cloudName: "kaka777",
+    },
+    transformations: {
+      effect: "blur:1000",
+      quality: 1,
+    },
+  });
+  const event1Blurred = buildUrl("events1_lpdbuf", {
+    cloud: {
+      cloudName: "kaka777",
+    },
+    transformations: {
+      effect: "blur:1000",
+      quality: 1,
+    },
+  });
+  const event2Blurred = buildUrl("events2_ovbqvl", {
+    cloud: {
+      cloudName: "kaka777",
+    },
+    transformations: {
+      effect: "blur:1000",
+      quality: 1,
+    },
+  });
+  const event3Blurred = buildUrl("events3_zkrs8q", {
+    cloud: {
+      cloudName: "kaka777",
+    },
+    transformations: {
+      effect: "blur:1000",
+      quality: 1,
+    },
+  });
+  const event4Blurred = buildUrl("events4_en7ckp", {
+    cloud: {
+      cloudName: "kaka777",
+    },
+    transformations: {
+      effect: "blur:1000",
+      quality: 1,
+    },
+  });
   const hultprize1Blurred = buildUrl("hultprize1_ln1tna", {
     cloud: {
       cloudName: "kaka777",
@@ -283,6 +328,231 @@ export default function Home() {
               >
                 {t("common:competition-guidebook")}
               </UnstyledLink>
+            </div>
+          </div>
+        </section>
+        <section
+          id="events"
+          className={`relative py-16 flex flex-col justify-center align-center ${styles.gradientbg} w-full min-h-screen`}
+        >
+          <Image
+            layout="fill"
+            src="https://res.cloudinary.com/kaka777/image/upload/v1631201303/events-bg_rhme7l.png"
+            alt="Hultprize"
+            className="z-20 object-cover"
+          />
+          <Image
+            layout="fill"
+            src={eventsBgBlurred}
+            alt="Hultprize"
+            className="z-10 object-cover"
+          />
+          <div
+            className="z-40 flex flex-col"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-out"
+          >
+            <div className="relative self-center mb-20 lg:ml-24 lg:self-start">
+              <h1 className="text-5xl font-semibold text-white ">OUR EVENTS</h1>
+              <div
+                className="absolute h-2 w-72 left-1 top-16"
+                style={{
+                  background:
+                    "linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.4) 100%)",
+                }}
+              ></div>
+            </div>
+            <div
+              className="flex flex-col justify-center gap-10 align-center"
+              style={{ width: "100vw" }}
+            >
+              <div className="flex flex-col justify-center gap-10 sm:flex-row lg:gap-1 xl:gap-16">
+                <div className="flex flex-col gap-5 lg:flex-row">
+                  <div
+                    className="relative z-20 self-center h-48 overflow-hidden bg-white md:self-start w-60"
+                    style={{
+                      boxShadow:
+                        "0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07)",
+                    }}
+                  >
+                    <Image
+                      layout="fill"
+                      className="top-0 left-0 z-20 object-cover w-full select-none"
+                      src="https://res.cloudinary.com/kaka777/image/upload/v1631201300/events1_lpdbuf.png"
+                      alt="hultprize1"
+                    />
+                    <Image
+                      layout="fill"
+                      className="top-0 left-0 z-10 object-cover w-full select-none"
+                      src={event1Blurred}
+                      alt="hultprize1"
+                    />
+                  </div>
+                  <div className="flex flex-col self-center gap-4 md:self-start">
+                    <h1 className="text-2xl font-bold leading-6 tracking-wide text-white">
+                      FIRESIDE
+                      <br />
+                      CHAT
+                    </h1>
+                    <div className="flex flex-col gap-3">
+                      <p className="text-sm leading-4 text-white w-60">
+                        Series of free national webinars with many experts
+                        bringing vast topics mainly about entrepreneurship and
+                        professional world.
+                      </p>
+                      <div>
+                        <div>
+                          <UnstyledLink
+                            className={`px-3 ${styles.eventsBtn} py-1 text-white duration-150 transform hover:scale-110`}
+                            href="/"
+                          >
+                            Click to register{" "}
+                            <span className="ml-2 fa fa-angle-right"></span>
+                          </UnstyledLink>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-5 lg:flex-row">
+                  <div
+                    className="relative z-20 self-center h-48 bg-white md:self-left w-60"
+                    style={{
+                      boxShadow:
+                        "0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07)",
+                    }}
+                  >
+                    <Image
+                      layout="fill"
+                      className="top-0 left-0 z-20 object-cover w-full select-none"
+                      src="https://res.cloudinary.com/kaka777/image/upload/v1631201310/events2_ovbqvl.png"
+                      alt="hultprize1"
+                    />
+                    <Image
+                      layout="fill"
+                      className="top-0 left-0 z-10 object-cover w-full select-none"
+                      src={event2Blurred}
+                      alt="hultprize1"
+                    />
+                  </div>
+                  <div className="flex flex-col self-center gap-4 md:self-start">
+                    <h1 className="text-2xl font-bold leading-6 tracking-wide text-white">
+                      GRAND
+                      <br />
+                      TALKSHOW
+                    </h1>
+                    <div className="flex flex-col gap-3">
+                      <p className="text-sm leading-4 text-white w-60">
+                        Series of exclusive workshops dedicated for the Impact
+                        Community members to enhance competencies in
+                        entrepreneurship and beyond.
+                      </p>
+                      <div>
+                        <UnstyledLink
+                          className={`px-3 ${styles.eventsBtn} py-1 text-white duration-150 transform hover:scale-110`}
+                          href="/"
+                        >
+                          Click to register{" "}
+                          <span className="ml-2 fa fa-angle-right"></span>
+                        </UnstyledLink>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col justify-center gap-10 sm:flex-row lg:gap-1 xl:gap-16">
+                <div className="flex flex-col gap-5 lg:flex-row">
+                  <div
+                    className="relative z-20 self-center h-48 bg-white shadow-2xl md:self-start w-60"
+                    style={{
+                      boxShadow:
+                        "0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07)",
+                    }}
+                  >
+                    <Image
+                      layout="fill"
+                      className="top-0 left-0 z-20 object-cover w-full select-none"
+                      src="https://res.cloudinary.com/kaka777/image/upload/v1631201310/events3_zkrs8q.png"
+                      alt="hultprize1"
+                    />
+                    <Image
+                      layout="fill"
+                      className="top-0 left-0 z-10 object-cover w-full select-none"
+                      src={event3Blurred}
+                      alt="hultprize1"
+                    />
+                  </div>
+                  <div className="flex flex-col self-center gap-4 md:self-start">
+                    <h1 className="text-2xl font-bold leading-6 tracking-wide text-white">
+                      EXCLUSIVE
+                      <br />
+                      TALKSHOW
+                    </h1>
+                    <div className="flex flex-col gap-3">
+                      <p className="text-sm leading-4 text-white w-60">
+                        Series of exclusive workshops dedicated for the Impact
+                        Community members to enhance competencies in
+                        entrepreneurship and beyond.
+                      </p>
+                      <div>
+                        <UnstyledLink
+                          className={`px-3 ${styles.eventsBtn} py-1 text-white duration-150 transform hover:scale-110`}
+                          href="/"
+                        >
+                          Click to register{" "}
+                          <span className="ml-2 fa fa-angle-right"></span>
+                        </UnstyledLink>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-5 lg:flex-row">
+                  <div
+                    className="relative z-20 self-center h-48 bg-white md:self-start w-60"
+                    style={{
+                      boxShadow:
+                        "0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07)",
+                    }}
+                  >
+                    <Image
+                      layout="fill"
+                      className="top-0 left-0 z-20 object-cover w-full select-none"
+                      src="https://res.cloudinary.com/kaka777/image/upload/v1631201309/events4_en7ckp.png"
+                      alt="hultprize1"
+                    />
+                    <Image
+                      layout="fill"
+                      className="top-0 left-0 z-10 object-cover w-full select-none"
+                      src={event4Blurred}
+                      alt="hultprize1"
+                    />
+                  </div>
+                  <div className="flex flex-col self-center gap-4 md:self-start">
+                    <h1 className="text-2xl font-bold leading-6 tracking-wide text-white">
+                      INTERNATIONAL
+                      <br />
+                      COLLAB
+                    </h1>
+                    <div className="flex flex-col gap-3">
+                      <p className="text-sm leading-4 text-white w-60">
+                        A collaboration program between Hult Prize at ITS with
+                        international Hult Prize on Campus partners, which
+                        provides opportunities for students to explore diverse
+                        perspective of culture in entrepreneurship.
+                      </p>
+                      <div>
+                        <UnstyledLink
+                          className={`px-3 ${styles.eventsBtn} py-1 text-white duration-150 transform hover:scale-110`}
+                          href="/"
+                        >
+                          Click to register{" "}
+                          <span className="ml-2 fa fa-angle-right"></span>
+                        </UnstyledLink>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
