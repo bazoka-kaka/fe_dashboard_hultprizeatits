@@ -333,7 +333,7 @@ export default function Home() {
         </section>
         <section
           id="events"
-          className={`relative py-16 flex flex-col justify-center align-center ${styles.gradientbg} w-full min-h-screen`}
+          className={`relative py-20 flex flex-col justify-center align-center ${styles.gradientbg} w-full min-h-screen`}
         >
           <Image
             layout="fill"
@@ -347,12 +347,12 @@ export default function Home() {
             alt="Hultprize"
             className="z-10 object-cover"
           />
-          <div
-            className="z-40 flex flex-col"
-            data-aos="fade-right"
-            data-aos-easing="ease-in-out"
-          >
-            <div className="relative self-center mb-20 lg:ml-24 lg:self-start">
+          <div className="z-40 flex flex-col">
+            <div
+              data-aos="fade-down"
+              data-aos-easing="ease-in-out"
+              className="relative self-center mb-20 lg:ml-24 lg:self-start"
+            >
               <h1 className="text-5xl font-semibold text-white ">OUR EVENTS</h1>
               <div
                 className="absolute h-2 w-72 left-1 top-16"
@@ -366,7 +366,11 @@ export default function Home() {
               className="flex flex-col justify-center gap-10 align-center"
               style={{ width: "100vw" }}
             >
-              <div className="flex flex-col justify-center gap-10 sm:flex-row lg:gap-1 xl:gap-16">
+              <div
+                data-aos="fade-right"
+                data-aos-easing="ease-in-out"
+                className="flex flex-col justify-center gap-10 sm:flex-row lg:gap-1 xl:gap-16"
+              >
                 <div className="flex flex-col gap-5 lg:flex-row">
                   <div
                     className="relative z-20 self-center h-48 overflow-hidden bg-white md:self-start w-60"
@@ -460,7 +464,11 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col justify-center gap-10 sm:flex-row lg:gap-1 xl:gap-16">
+              <div
+                data-aos="fade-left"
+                data-aos-easing="ease-in-out"
+                className="flex flex-col justify-center gap-10 sm:flex-row lg:gap-1 xl:gap-16"
+              >
                 <div className="flex flex-col gap-5 lg:flex-row">
                   <div
                     className="relative z-20 self-center h-48 bg-white shadow-2xl md:self-start w-60"
