@@ -15,6 +15,11 @@ export const MenuItems = [
     cName: "nav-links",
   },
   {
+    title: "Community",
+    url: "#community",
+    cName: "nav-links",
+  },
+  {
     title: "About",
     url: "#about",
     cName: "nav-links",

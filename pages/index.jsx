@@ -564,7 +564,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="register" className={styles.fourthSection}>
+        <section id="community" className={styles.fourthSection}>
           <article className="relative flex flex-col justify-between px-0 text-black lg:flex-row lg:items-center lg:h-screen layout">
             <div className="flex flex-col self-center justify-center py-20 lg:w-1/2 lg:py-0">
               <div className="flex flex-col self-center justify-center px-0 w-80 sm:w-auto sm:px-8 lg:px-0 ">
