@@ -375,8 +375,7 @@ export default function Home() {
                   <div
                     className="relative z-20 self-center h-48 overflow-hidden bg-white md:self-start w-60"
                     style={{
-                      boxShadow:
-                        "0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07)",
+                      boxShadow: "5px 5px 5px 1px rgba(0, 0, 0, .4)",
                     }}
                   >
                     <Image
@@ -422,8 +421,7 @@ export default function Home() {
                   <div
                     className="relative z-20 self-center h-48 bg-white md:self-left w-60"
                     style={{
-                      boxShadow:
-                        "0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07)",
+                      boxShadow: "5px 5px 5px 1px rgba(0, 0, 0, .4)",
                     }}
                   >
                     <Image
@@ -473,8 +471,7 @@ export default function Home() {
                   <div
                     className="relative z-20 self-center h-48 bg-white shadow-2xl md:self-start w-60"
                     style={{
-                      boxShadow:
-                        "0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07)",
+                      boxShadow: "5px 5px 5px 1px rgba(0, 0, 0, .4)",
                     }}
                   >
                     <Image
@@ -518,8 +515,7 @@ export default function Home() {
                   <div
                     className="relative z-20 self-center h-48 bg-white md:self-start w-60"
                     style={{
-                      boxShadow:
-                        "0 1px 2px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.07), 0 4px 8px rgba(0,0,0,0.07), 0 8px 16px rgba(0,0,0,0.07), 0 16px 32px rgba(0,0,0,0.07), 0 32px 64px rgba(0,0,0,0.07)",
+                      boxShadow: "5px 5px 5px 1px rgba(0, 0, 0, .4)",
                     }}
                   >
                     <Image
