@@ -349,7 +349,7 @@ export default function Home() {
           />
           <div className="z-40 flex flex-col">
             <div
-              className="flex flex-col justify-center gap-10 align-center"
+              className="flex flex-col justify-center gap-5 align-center"
               style={{ width: "100vw" }}
             >
               <div
@@ -411,7 +411,7 @@ export default function Home() {
                         <div>
                           <UnstyledLink
                             className={`px-3 ${styles.eventsBtn} py-1 text-white duration-150 transform hover:scale-110`}
-                            href="/"
+                            href="/event_registration"
                           >
                             Click to register{" "}
                             <span className="ml-2 fa fa-angle-right"></span>
@@ -462,7 +462,7 @@ export default function Home() {
                       <div>
                         <UnstyledLink
                           className={`px-3 ${styles.eventsBtn} py-1 text-white duration-150 transform hover:scale-110`}
-                          href="/"
+                          href="/event_registration"
                         >
                           Click to register{" "}
                           <span className="ml-2 fa fa-angle-right"></span>
@@ -512,7 +512,7 @@ export default function Home() {
                       <div>
                         <UnstyledLink
                           className={`px-3 ${styles.eventsBtn} py-1 text-white duration-150 transform hover:scale-110`}
-                          href="/"
+                          href="/event_registration"
                         >
                           Click to register{" "}
                           <span className="ml-2 fa fa-angle-right"></span>
