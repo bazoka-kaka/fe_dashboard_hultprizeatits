@@ -356,13 +356,13 @@ export default function Home() {
                 data-aos="fade-down"
                 data-aos-easing="ease-in-out"
                 data-aos-duration="1200"
-                className="relative self-center mb-10"
+                className="relative flex flex-col self-center gap-2 mb-10"
               >
-                <h1 className="text-5xl font-semibold text-white ">
+                <h1 className="text-5xl font-semibold text-center text-white ">
                   {t("common:our-events")}
                 </h1>
                 <div
-                  className="absolute h-2 w-72 left-1 top-16"
+                  className="h-2 w-72"
                   style={{
                     background:
                       "linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.4) 100%)",
