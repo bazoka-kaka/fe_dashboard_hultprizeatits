@@ -355,7 +355,7 @@ export default function Home() {
               <div
                 data-aos="fade-down"
                 data-aos-easing="ease-in-out"
-                data-aos-duration="700"
+                data-aos-duration="1200"
                 className="relative self-center mb-10"
               >
                 <h1 className="text-5xl font-semibold text-white ">
@@ -373,7 +373,7 @@ export default function Home() {
                 <div
                   data-aos="fade-up"
                   data-aos-easing="ease-in-out"
-                  data-aos-duration="500"
+                  data-aos-duration="1000"
                   className="flex flex-col self-center gap-5 lg:self-start lg:flex-col sm:flex-row"
                 >
                   <div
@@ -424,7 +424,7 @@ export default function Home() {
                 <div
                   data-aos="fade-up"
                   data-aos-easing="ease-in-out"
-                  data-aos-duration="700"
+                  data-aos-duration="1200"
                   className="flex flex-col self-center gap-5 lg:self-start lg:flex-col sm:flex-row"
                 >
                   <div
@@ -474,7 +474,7 @@ export default function Home() {
                 <div
                   data-aos="fade-up"
                   data-aos-easing="ease-in-out"
-                  data-aos-duration="900"
+                  data-aos-duration="1400"
                   className="flex flex-col self-center gap-5 lg:self-start lg:flex-col sm:flex-row"
                 >
                   <div
