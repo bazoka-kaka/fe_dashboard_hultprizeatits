@@ -83,7 +83,7 @@ export default withRouter(
                       : item.title === "Timeline"
                       ? "Lini masa"
                       : item.title === "Events"
-                      ? "Events"
+                      ? "Acara"
                       : item.title === "Community"
                       ? "Komunitas"
                       : item.title === "About"

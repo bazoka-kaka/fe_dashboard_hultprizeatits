@@ -50,15 +50,15 @@ export default function Home() {
       quality: 1,
     },
   });
-  const event3Blurred = buildUrl("events3_zkrs8q", {
-    cloud: {
-      cloudName: "kaka777",
-    },
-    transformations: {
-      effect: "blur:1000",
-      quality: 1,
-    },
-  });
+  // const event3Blurred = buildUrl("events3_zkrs8q", {
+  //   cloud: {
+  //     cloudName: "kaka777",
+  //   },
+  //   transformations: {
+  //     effect: "blur:1000",
+  //     quality: 1,
+  //   },
+  // });
   const event4Blurred = buildUrl("events4_en7ckp", {
     cloud: {
       cloudName: "kaka777",
@@ -349,31 +349,35 @@ export default function Home() {
           />
           <div className="z-40 flex flex-col">
             <div
-              data-aos="fade-down"
-              data-aos-easing="ease-in-out"
-              className="relative self-center mb-20 lg:ml-24 lg:self-start"
-            >
-              <h1 className="text-5xl font-semibold text-white ">OUR EVENTS</h1>
-              <div
-                className="absolute h-2 w-72 left-1 top-16"
-                style={{
-                  background:
-                    "linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.4) 100%)",
-                }}
-              ></div>
-            </div>
-            <div
               className="flex flex-col justify-center gap-10 align-center"
               style={{ width: "100vw" }}
             >
               <div
-                data-aos="fade-right"
+                data-aos="fade-down"
                 data-aos-easing="ease-in-out"
-                className="flex flex-col justify-center gap-10 sm:flex-row lg:gap-1 xl:gap-16"
+                data-aos-duration="700"
+                className="relative self-center mb-10"
               >
-                <div className="flex flex-col gap-5 lg:flex-row">
+                <h1 className="text-5xl font-semibold text-white ">
+                  {t("common:our-events")}
+                </h1>
+                <div
+                  className="absolute h-2 w-72 left-1 top-16"
+                  style={{
+                    background:
+                      "linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.4) 100%)",
+                  }}
+                ></div>
+              </div>
+              <div className="flex flex-col justify-center gap-10 md:justify-center lg:flex-row">
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-out"
+                  data-aos-duration="500"
+                  className="flex flex-col self-center gap-5 lg:self-start lg:flex-col sm:flex-row"
+                >
                   <div
-                    className="relative z-20 self-center h-48 overflow-hidden bg-white md:self-start w-60"
+                    className="relative z-20 self-center h-48 overflow-hidden bg-white w-72 lg:self-start"
                     style={{
                       boxShadow: "5px 5px 5px 1px rgba(0, 0, 0, .4)",
                     }}
@@ -391,7 +395,7 @@ export default function Home() {
                       alt="hultprize1"
                     />
                   </div>
-                  <div className="flex flex-col self-center gap-4 md:self-start">
+                  <div className="flex flex-col gap-4">
                     <h1 className="text-2xl font-bold leading-6 tracking-wide text-white">
                       FIRESIDE
                       <br />
@@ -417,9 +421,14 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col gap-5 lg:flex-row">
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-out"
+                  data-aos-duration="700"
+                  className="flex flex-col self-center gap-5 lg:self-start lg:flex-col sm:flex-row"
+                >
                   <div
-                    className="relative z-20 self-center h-48 bg-white md:self-left w-60"
+                    className="relative z-20 self-center h-48 bg-white lg:self-left w-72"
                     style={{
                       boxShadow: "5px 5px 5px 1px rgba(0, 0, 0, .4)",
                     }}
@@ -437,7 +446,7 @@ export default function Home() {
                       alt="hultprize1"
                     />
                   </div>
-                  <div className="flex flex-col self-center gap-4 md:self-start">
+                  <div className="flex flex-col gap-4">
                     <h1 className="text-2xl font-bold leading-6 tracking-wide text-white">
                       GRAND
                       <br />
@@ -445,9 +454,10 @@ export default function Home() {
                     </h1>
                     <div className="flex flex-col gap-3">
                       <p className="text-sm leading-4 text-white w-60">
-                        Series of exclusive workshops dedicated for the Impact
-                        Community members to enhance competencies in
-                        entrepreneurship and beyond.
+                        The final and peak event of Hult Prize at ITS OnCampus
+                        Program. This talkshow will feature impressive speakers
+                        and followed by the awarding of Hult Prize at ITS
+                        winners.
                       </p>
                       <div>
                         <UnstyledLink
@@ -461,59 +471,14 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
-                data-aos="fade-left"
-                data-aos-easing="ease-in-out"
-                className="flex flex-col justify-center gap-10 sm:flex-row lg:gap-1 xl:gap-16"
-              >
-                <div className="flex flex-col gap-5 lg:flex-row">
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-out"
+                  data-aos-duration="900"
+                  className="flex flex-col self-center gap-5 lg:self-start lg:flex-col sm:flex-row"
+                >
                   <div
-                    className="relative z-20 self-center h-48 bg-white shadow-2xl md:self-start w-60"
-                    style={{
-                      boxShadow: "5px 5px 5px 1px rgba(0, 0, 0, .4)",
-                    }}
-                  >
-                    <Image
-                      layout="fill"
-                      className="top-0 left-0 z-20 object-cover w-full select-none"
-                      src="https://res.cloudinary.com/kaka777/image/upload/v1631201310/events3_zkrs8q.png"
-                      alt="hultprize1"
-                    />
-                    <Image
-                      layout="fill"
-                      className="top-0 left-0 z-10 object-cover w-full select-none"
-                      src={event3Blurred}
-                      alt="hultprize1"
-                    />
-                  </div>
-                  <div className="flex flex-col self-center gap-4 md:self-start">
-                    <h1 className="text-2xl font-bold leading-6 tracking-wide text-white">
-                      EXCLUSIVE
-                      <br />
-                      TALKSHOW
-                    </h1>
-                    <div className="flex flex-col gap-3">
-                      <p className="text-sm leading-4 text-white w-60">
-                        Series of exclusive workshops dedicated for the Impact
-                        Community members to enhance competencies in
-                        entrepreneurship and beyond.
-                      </p>
-                      <div>
-                        <UnstyledLink
-                          className={`px-3 ${styles.eventsBtn} py-1 text-white duration-150 transform hover:scale-110`}
-                          href="/"
-                        >
-                          Click to register{" "}
-                          <span className="ml-2 fa fa-angle-right"></span>
-                        </UnstyledLink>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-5 lg:flex-row">
-                  <div
-                    className="relative z-20 self-center h-48 bg-white md:self-start w-60"
+                    className="relative z-20 self-center h-48 bg-white lg:self-start w-72"
                     style={{
                       boxShadow: "5px 5px 5px 1px rgba(0, 0, 0, .4)",
                     }}
@@ -531,7 +496,7 @@ export default function Home() {
                       alt="hultprize1"
                     />
                   </div>
-                  <div className="flex flex-col self-center gap-4 md:self-start">
+                  <div className="flex flex-col gap-4">
                     <h1 className="text-2xl font-bold leading-6 tracking-wide text-white">
                       INTERNATIONAL
                       <br />
@@ -557,6 +522,11 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+              {/* <div
+                data-aos="fade-left"
+                data-aos-easing="ease-in-out"
+                className="flex flex-col justify-center gap-10 sm:justify-start sm:flex-row lg:gap-1 xl:gap-16"
+              ></div> */}
             </div>
           </div>
         </section>
