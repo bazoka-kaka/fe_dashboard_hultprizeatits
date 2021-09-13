@@ -23,6 +23,51 @@ export default function Home() {
       quality: 1,
     },
   });
+  const eventsBgBlurred = buildUrl("events-bg_rhme7l", {
+    cloud: {
+      cloudName: "kaka777",
+    },
+    transformations: {
+      effect: "blur:1000",
+      quality: 1,
+    },
+  });
+  const event1Blurred = buildUrl("events1_lpdbuf", {
+    cloud: {
+      cloudName: "kaka777",
+    },
+    transformations: {
+      effect: "blur:1000",
+      quality: 1,
+    },
+  });
+  const event2Blurred = buildUrl("events2_ovbqvl", {
+    cloud: {
+      cloudName: "kaka777",
+    },
+    transformations: {
+      effect: "blur:1000",
+      quality: 1,
+    },
+  });
+  // const event3Blurred = buildUrl("events3_zkrs8q", {
+  //   cloud: {
+  //     cloudName: "kaka777",
+  //   },
+  //   transformations: {
+  //     effect: "blur:1000",
+  //     quality: 1,
+  //   },
+  // });
+  const event4Blurred = buildUrl("events4_en7ckp", {
+    cloud: {
+      cloudName: "kaka777",
+    },
+    transformations: {
+      effect: "blur:1000",
+      quality: 1,
+    },
+  });
   const hultprize1Blurred = buildUrl("hultprize1_ln1tna", {
     cloud: {
       cloudName: "kaka777",
@@ -286,7 +331,206 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="register" className={styles.fourthSection}>
+        <section
+          id="events"
+          className={`relative py-20 flex flex-col justify-center align-center ${styles.gradientbg} w-full min-h-screen`}
+        >
+          <Image
+            layout="fill"
+            src="https://res.cloudinary.com/kaka777/image/upload/v1631201303/events-bg_rhme7l.png"
+            alt="Hultprize"
+            className="z-20 object-cover"
+          />
+          <Image
+            layout="fill"
+            src={eventsBgBlurred}
+            alt="Hultprize"
+            className="z-10 object-cover"
+          />
+          <div className="z-40 flex flex-col">
+            <div
+              className="flex flex-col justify-center gap-5 align-center"
+              style={{ width: "100vw" }}
+            >
+              <div
+                data-aos="fade-down"
+                data-aos-easing="ease-in-out"
+                data-aos-duration="1200"
+                className="relative flex flex-col self-center gap-2 mb-10"
+              >
+                <h1 className="text-5xl font-semibold text-center text-white ">
+                  {t("common:our-events")}
+                </h1>
+                <div
+                  className="h-2 w-72"
+                  style={{
+                    background:
+                      "linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.4) 100%)",
+                  }}
+                ></div>
+              </div>
+              <div className="flex flex-col justify-center gap-10 md:justify-center lg:flex-row">
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-out"
+                  data-aos-duration="1000"
+                  className="flex flex-col self-center gap-5 lg:self-start lg:flex-col sm:flex-row"
+                >
+                  <div
+                    className="relative z-20 self-center h-48 overflow-hidden bg-white w-72 lg:self-start"
+                    style={{
+                      boxShadow: "5px 5px 5px 1px rgba(0, 0, 0, .4)",
+                    }}
+                  >
+                    <Image
+                      layout="fill"
+                      className="top-0 left-0 z-20 object-cover w-full select-none"
+                      src="https://res.cloudinary.com/kaka777/image/upload/v1631201300/events1_lpdbuf.png"
+                      alt="hultprize1"
+                    />
+                    <Image
+                      layout="fill"
+                      className="top-0 left-0 z-10 object-cover w-full select-none"
+                      src={event1Blurred}
+                      alt="hultprize1"
+                    />
+                  </div>
+                  <div className="flex flex-col gap-4">
+                    <h1 className="text-2xl font-bold leading-6 tracking-wide text-white">
+                      FIRESIDE
+                      <br />
+                      CHAT
+                    </h1>
+                    <div className="flex flex-col gap-3">
+                      <p className="text-sm leading-4 text-white w-60">
+                        Series of free national webinars with many experts
+                        bringing vast topics mainly about entrepreneurship and
+                        professional world.
+                      </p>
+                      <div>
+                        <div>
+                          <UnstyledLink
+                            className={`px-3 ${styles.eventsBtn} py-1 text-white duration-150 transform hover:scale-110`}
+                            href="/event_registration"
+                          >
+                            Click to register{" "}
+                            <span className="ml-2 fa fa-angle-right"></span>
+                          </UnstyledLink>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-out"
+                  data-aos-duration="1200"
+                  className="flex flex-col self-center gap-5 lg:self-start lg:flex-col sm:flex-row"
+                >
+                  <div
+                    className="relative z-20 self-center h-48 bg-white lg:self-left w-72"
+                    style={{
+                      boxShadow: "5px 5px 5px 1px rgba(0, 0, 0, .4)",
+                    }}
+                  >
+                    <Image
+                      layout="fill"
+                      className="top-0 left-0 z-20 object-cover w-full select-none"
+                      src="https://res.cloudinary.com/kaka777/image/upload/v1631201310/events2_ovbqvl.png"
+                      alt="hultprize1"
+                    />
+                    <Image
+                      layout="fill"
+                      className="top-0 left-0 z-10 object-cover w-full select-none"
+                      src={event2Blurred}
+                      alt="hultprize1"
+                    />
+                  </div>
+                  <div className="flex flex-col gap-4">
+                    <h1 className="text-2xl font-bold leading-6 tracking-wide text-white">
+                      GRAND
+                      <br />
+                      TALKSHOW
+                    </h1>
+                    <div className="flex flex-col gap-3">
+                      <p className="text-sm leading-4 text-white w-60">
+                        The final and peak event of Hult Prize at ITS OnCampus
+                        Program. This talkshow will feature impressive speakers
+                        and followed by the awarding of Hult Prize at ITS
+                        winners.
+                      </p>
+                      <div>
+                        <UnstyledLink
+                          className={`px-3 ${styles.eventsBtn} py-1 text-white duration-150 transform hover:scale-110`}
+                          href="/event_registration"
+                        >
+                          Click to register{" "}
+                          <span className="ml-2 fa fa-angle-right"></span>
+                        </UnstyledLink>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-out"
+                  data-aos-duration="1400"
+                  className="flex flex-col self-center gap-5 lg:self-start lg:flex-col sm:flex-row"
+                >
+                  <div
+                    className="relative z-20 self-center h-48 bg-white lg:self-start w-72"
+                    style={{
+                      boxShadow: "5px 5px 5px 1px rgba(0, 0, 0, .4)",
+                    }}
+                  >
+                    <Image
+                      layout="fill"
+                      className="top-0 left-0 z-20 object-cover w-full select-none"
+                      src="https://res.cloudinary.com/kaka777/image/upload/v1631201309/events4_en7ckp.png"
+                      alt="hultprize1"
+                    />
+                    <Image
+                      layout="fill"
+                      className="top-0 left-0 z-10 object-cover w-full select-none"
+                      src={event4Blurred}
+                      alt="hultprize1"
+                    />
+                  </div>
+                  <div className="flex flex-col gap-4">
+                    <h1 className="text-2xl font-bold leading-6 tracking-wide text-white">
+                      INTERNATIONAL
+                      <br />
+                      COLLAB
+                    </h1>
+                    <div className="flex flex-col gap-3">
+                      <p className="text-sm leading-4 text-white w-60">
+                        A collaboration program between Hult Prize at ITS with
+                        international Hult Prize on Campus partners, which
+                        provides opportunities for students to explore diverse
+                        perspective of culture in entrepreneurship.
+                      </p>
+                      <div>
+                        <UnstyledLink
+                          className={`px-3 ${styles.eventsBtn} py-1 text-white duration-150 transform hover:scale-110`}
+                          href="/event_registration"
+                        >
+                          Click to register{" "}
+                          <span className="ml-2 fa fa-angle-right"></span>
+                        </UnstyledLink>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* <div
+                data-aos="fade-left"
+                data-aos-easing="ease-in-out"
+                className="flex flex-col justify-center gap-10 sm:justify-start sm:flex-row lg:gap-1 xl:gap-16"
+              ></div> */}
+            </div>
+          </div>
+        </section>
+        <section id="community" className={styles.fourthSection}>
           <article className="relative flex flex-col justify-between px-0 text-black lg:flex-row lg:items-center lg:h-screen layout">
             <div className="flex flex-col self-center justify-center py-20 lg:w-1/2 lg:py-0">
               <div className="flex flex-col self-center justify-center px-0 w-80 sm:w-auto sm:px-8 lg:px-0 ">
@@ -300,7 +544,7 @@ export default function Home() {
                     <br />
                     {t("common:impact-upper1")}
                   </h1>
-                  <div className={`self-center sm:self-start ${styles.boxed}`}>
+                  <div className={`self-center sm:self-start w-72 sm:w-96`}>
                     <div className="flex gap-3">
                       <h1 className="text-4xl font-bold sm:text-5xl">IMPACT</h1>
                       <div
@@ -319,11 +563,11 @@ export default function Home() {
                 </div>
                 <div data-aos="fade-right" data-aos-easing="ease-in-out">
                   <div>
-                    <p className="px-4 mt-5 text-lg leading-7 text-justify sm:px-0 sm:text-left w-80 sm:w-96">
+                    <p className="px-4 mt-5 text-lg leading-7 text-justify sm:px-0 w-80 sm:w-96">
                       {t("common:impact-lower")}
                     </p>
                   </div>
-                  <div className="flex justify-center w-full mt-12 sm:justify-start">
+                  <div className="flex justify-center w-full mt-7 sm:justify-start">
                     <a
                       href="https://bit.ly/HPITS_ImpactComm"
                       target="_blank"

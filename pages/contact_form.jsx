@@ -91,7 +91,7 @@ export default function EmailPage() {
               <label htmlFor="name">{t("email:name")}</label>
               <input
                 id="name"
-                className="text-black"
+                className="text-black rounded-md"
                 type="text"
                 name="name"
                 value={values.name}
@@ -105,7 +105,7 @@ export default function EmailPage() {
               <label htmlFor="subject">{t("email:subject")}</label>
               <input
                 id="subject"
-                className="text-black text-md"
+                className="text-black rounded-md text-md"
                 type="text"
                 name="subject"
                 value={values.subject}
@@ -119,7 +119,7 @@ export default function EmailPage() {
               <label htmlFor="email">{t("email:user-mail")}</label>
               <input
                 id="email"
-                className="text-black text-md"
+                className="text-black rounded-md text-md"
                 type="email"
                 name="email"
                 value={values.email}
@@ -133,7 +133,7 @@ export default function EmailPage() {
               <label htmlFor="comment">{t("email:message")}</label>
               <textarea
                 id="comment"
-                className="w-64 text-black resize text-md"
+                className="w-64 text-black rounded-md resize text-md"
                 name="comment"
                 value={values.comment}
                 onChange={handleChange}

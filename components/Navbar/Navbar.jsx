@@ -35,7 +35,7 @@ export default withRouter(
 
     render() {
       return (
-        <nav className="relative flex items-center justify-center h-16 transform bg-white shadow-2xl">
+        <nav className="relative flex items-center justify-center h-16 transform bg-white shadow-xl">
           <div className="navbar-logo">
             <Link href="/" passHref>
               <div className="absolute w-10 cursor-pointer top-2 left-8 sm:left-24">
@@ -50,7 +50,7 @@ export default withRouter(
           </div>
           <div className="menu-icon" onClick={this.handleClick}>
             <i
-              className={`right-8 block sm:hidden top-4 absolute text-3xl  ${
+              className={`right-8 block lg:hidden top-4 absolute text-3xl  ${
                 this.state.clicked ? "fa fa-times" : "fa fa-bars"
               }`}
             ></i>
@@ -61,7 +61,7 @@ export default withRouter(
                 ? "flex opacity-100 transform duration-500 right-0 flex-col justify-center text-center py-5 self-center bg-black text-white w-full top-16"
                 : "flex transform right-full text-white bg-black py-5 justify-center self-center flex-col top-16 opacity-0 w-full text-center duration-500"
             }
-            h-screen sm:h-auto justify-evenly pb-20 sm:pb-0 sm:flex sm:flex-row sm:bg-transparent sm:top-0 sm:text-black sm:justify-end sm:opacity-100 gap-10 sm:gap-5 sm:right-10 sm:justify-self-end absolute uppercase`}
+            h-screen lg:h-auto justify-evenly pb-20 lg:pb-0 lg:flex lg:flex-row lg:bg-transparent lg:top-0 lg:text-black lg:justify-end lg:opacity-100 gap-10 lg:gap-5 lg:right-10 lg:justify-self-end absolute uppercase`}
           >
             {MenuItems.map((item, index) => {
               return (
@@ -72,7 +72,7 @@ export default withRouter(
                     target={item.title === "Register" ? "_blank" : "_self"}
                     rel="noreferrer"
                     className={`hover:text-gray-600 ${item.cName}
-                                    sm:hover:bg-black sm:hover:text-white sm:px-3 sm:py-2 sm:rounded-3xl
+                                    lg:hover:bg-black lg:hover:text-white lg:px-3 lg:py-2 lg:rounded-3xl
                                         transform duration-150
                                     `}
                   >
@@ -82,6 +82,10 @@ export default withRouter(
                       ? "Beranda"
                       : item.title === "Timeline"
                       ? "Lini masa"
+                      : item.title === "Events"
+                      ? "Acara"
+                      : item.title === "Community"
+                      ? "Komunitas"
                       : item.title === "About"
                       ? "Tentang"
                       : item.title === "Register"
@@ -105,8 +109,8 @@ export default withRouter(
                         locale={locale}
                       >
                         <a onClick={this.closeMobileMenu}>
-                          <p className="inline sm:hidden">{locale}</p>
-                          <p className="hidden sm:inline">
+                          <p className="inline md:hidden">{locale}</p>
+                          <p className="hidden md:inline">
                             {this.props.router.locale}
                           </p>
                         </a>
@@ -114,7 +118,7 @@ export default withRouter(
                     );
                   }
                 })}{" "}
-                <i className="hidden fa fa-caret-down sm:inline" />
+                <i className="hidden fa fa-caret-down lg:inline" />
               </div>
               {this.state.dropdown && <Dropdown />}
             </li>

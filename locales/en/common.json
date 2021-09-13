@@ -16,11 +16,8 @@
   "competition-guidebook": "Competition Guidebook",
   "impact-upper": "Elevate your experience by joining the",
   "impact-upper1": "",
-  "impact-lower": "A platform for ITS students who are highly motivated in making an impact through Hult Prize and beyond.",
+  "impact-lower": "A platform for ITS students who are highly motivated in making an impact through Hult Prize and beyond. Be a member to register for exclusive workshop and sharing sessions.",
   "join-community": "Gabung Komunitas!",
-  "about-us": "About",
-  "about-text": "Hult Prize at ITS is part of the OnCampus Program of Hult Prize where ITS students (of ALL study programs) are given the chance to tackle the world&apos;s problems in the form of a startup competition. You will get to ideate your own business for a better world (in accordance to the case given) and receive exclusive training and incubation from professionals to develop it.",
-  "about-lower": "Spread the word about Hult Prize at ITS!",
   "join-button": "Join the Community!",
   "about-us": "About",
   "about-text": "Hult Prize at ITS is part of the OnCampus Program of Hult Prize where ITS students (of ALL study programs) are given the chance to tackle the world's problems in the form of a startup competition. You will get to ideate your own business for a better world (in accordance to the case given) and receive exclusive training and incubation from professionals to develop it.",
@@ -40,5 +37,6 @@
   "home-nav": "HOME",
   "about-nav": "ABOUT",
   "timeline-nav": "TIMELINE",
-  "register-nav": "REGISTER"
+  "register-nav": "REGISTER",
+  "our-events": "OUR EVENTS"
 }
