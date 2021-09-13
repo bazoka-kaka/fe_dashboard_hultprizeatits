@@ -35,7 +35,7 @@ export default withRouter(
 
     render() {
       return (
-        <nav className="relative flex items-center justify-center h-16 transform bg-white shadow-2xl">
+        <nav className="relative flex items-center justify-center h-16 transform bg-white shadow-xl">
           <div className="navbar-logo">
             <Link href="/" passHref>
               <div className="absolute w-10 cursor-pointer top-2 left-8 sm:left-24">
