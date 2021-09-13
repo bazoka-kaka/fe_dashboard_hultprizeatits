@@ -544,7 +544,7 @@ export default function Home() {
                     <br />
                     {t("common:impact-upper1")}
                   </h1>
-                  <div className={`self-center sm:self-start ${styles.boxed}`}>
+                  <div className={`self-center sm:self-start w-72 sm:w-96`}>
                     <div className="flex gap-3">
                       <h1 className="text-4xl font-bold sm:text-5xl">IMPACT</h1>
                       <div
@@ -563,11 +563,11 @@ export default function Home() {
                 </div>
                 <div data-aos="fade-right" data-aos-easing="ease-in-out">
                   <div>
-                    <p className="px-4 mt-5 text-lg leading-7 text-justify sm:px-0 sm:text-left w-80 sm:w-96">
+                    <p className="px-4 mt-5 text-lg leading-7 text-justify sm:px-0 w-80 sm:w-96">
                       {t("common:impact-lower")}
                     </p>
                   </div>
-                  <div className="flex justify-center w-full mt-12 sm:justify-start">
+                  <div className="flex justify-center w-full mt-7 sm:justify-start">
                     <a
                       href="https://bit.ly/HPITS_ImpactComm"
                       target="_blank"
