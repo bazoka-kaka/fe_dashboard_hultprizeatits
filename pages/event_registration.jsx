@@ -3,6 +3,11 @@ import Link from "next/link";
 const EventRegistration = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-white bg-black px-36">
+      <Head>
+        <title>Event Registration</title>
+        <meta name="description" content="event registration" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="flex flex-col items-center justify-center gap-10">
         <h1 className="text-4xl text-center md:text-left">
           Coming soon. Please stay tune to Hult Prize at ITS social medias for
