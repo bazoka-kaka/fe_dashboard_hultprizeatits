@@ -184,39 +184,41 @@ export default function Home() {
                 <br />
                 {t("common:title2")}
               </h1>
-              <p
+              {/* <p
                 className={`text-xl ${styles.anim3} text-center sm:text-left md:text-2xl ${styles.firstP}`}
               >
                 {t("common:subtitle1")}{" "}
                 <span className="font-bold">{t("common:subtitle2")}</span>{" "}
                 {t("common:subtitle3")}
-              </p>
+              </p> */}
             </div>
-            <div className={`mt-1 z-40 md:-mt-4 ${styles.anim4}`}>
+            <div className={`-mt-1 z-40 md:-mt-8 ${styles.anim4}`}>
               <div className="flex flex-col gap-4 md:flex-row md:gap-10">
                 <a
                   href="https://bit.ly/HPITS_RegisterTeam"
                   target="_blank"
                   rel="noreferrer"
-                  className={`${
+                  className={`px-4 truncate ${
                     t("common:register-button") === "Register Your Team!"
-                      ? "px-8"
-                      : "px-7"
-                  } truncate ${
+                      ? "px-10"
+                      : "px-2"
+                  } ${
                     styles.firstBtn
                   } z-40 self-center text-lg text-black sm:self-start rounded-lg py-1`}
                 >
                   {t("common:register-button")}
                 </a>
                 <a
-                  href="https://bit.ly/HPITS_SubmitAbstract"
+                  href="https://bit.ly/HPITS_FSC2"
                   target="_blank"
                   rel="noreferrer"
-                  className={`text-lg truncate ${styles.secondBtn} ${
-                    t("common:submit-button") === "Kumpulkan Abstrak!"
-                      ? "px-12"
-                      : "px-6"
-                  } z-40 rounded-lg border-2 self-center sm:self-start py-1 bg-black text-white`}
+                  className={`text-lg animate-pulse truncate ${
+                    styles.secondBtn
+                  } ${
+                    t("common:submit-button") === "Daftar Fireside Chat!"
+                      ? "px-9"
+                      : "px-3"
+                  } z-40 rounded-lg border-2 self-center sm:self-start py-1 bg-black hover:bg-gray-900 text-white`}
                 >
                   {t("common:submit-button")}
                 </a>
@@ -385,7 +387,7 @@ export default function Home() {
                     <Image
                       layout="fill"
                       className="top-0 left-0 z-20 object-cover w-full select-none"
-                      src="https://res.cloudinary.com/kaka777/image/upload/v1631201300/events1_lpdbuf.png"
+                      src="https://res.cloudinary.com/kaka777/image/upload/v1632023123/events1_lpdbuf.png"
                       alt="hultprize1"
                     />
                     <Image
@@ -411,7 +413,7 @@ export default function Home() {
                         <div>
                           <UnstyledLink
                             className={`px-3 ${styles.eventsBtn} py-1 text-white duration-150 transform hover:scale-110`}
-                            href="/event_registration"
+                            href="https://bit.ly/HPITS_FSC2"
                           >
                             Click to register{" "}
                             <span className="ml-2 fa fa-angle-right"></span>
