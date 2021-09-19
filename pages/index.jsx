@@ -195,7 +195,7 @@ export default function Home() {
               </p> */}
             </div>
             <div className={`-mt-1 z-40 md:-mt-8 ${styles.anim4}`}>
-              <div className="flex flex-col gap-4 md:flex-row md:gap-10">
+              <div className="flex flex-col gap-4 sm:flex-row md:gap-10">
                 <a
                   href="https://bit.ly/HPITS_RegisterTeam"
                   target="_blank"
@@ -210,23 +210,23 @@ export default function Home() {
                 >
                   {t("common:register-button")}
                 </a>
-                <a
-                  href="https://bit.ly/HPITS_FSC2"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={`text-lg animate-pulse truncate ${
-                    styles.secondBtn
-                  } ${
-                    t("common:submit-button") === "Daftar Fireside Chat!"
-                      ? "px-9"
-                      : "px-3"
-                  } z-40 rounded-lg border-2 self-center sm:self-start py-1 bg-black hover:bg-gray-900 text-white`}
-                >
-                  {t("common:submit-button")}
-                </a>
-                <div className="flex flex-col justify-center -ml-10 align-center">
+                <div className="relative flex self-center sm:self-start">
+                  <a
+                    href="https://bit.ly/HPITS_FSC2"
+                    target="_blank"
+                    rel="noreferrer"
+                    className={`text-lg animate-pulse truncate ${
+                      styles.secondBtn
+                    } ${
+                      t("common:submit-button") === "Daftar Fireside Chat!"
+                        ? "px-9"
+                        : "px-3"
+                    } z-40 rounded-lg border-2 self-center sm:self-start py-1 bg-black hover:bg-gray-900 text-white`}
+                  >
+                    {t("common:submit-button")}
+                  </a>
                   <FontAwesomeIcon
-                    className="ml-3 text-red-600"
+                    className="absolute text-red-600 transform translate-y-3 -right-6"
                     icon={faFire}
                   />
                 </div>
