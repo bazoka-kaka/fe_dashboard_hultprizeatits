@@ -198,7 +198,13 @@ export default function Home() {
                   href="https://bit.ly/HPITS_RegisterTeam"
                   target="_blank"
                   rel="noreferrer"
-                  className={` px-4 truncate ${styles.firstBtn} z-40 self-center text-lg text-black sm:self-start rounded-lg py-1`}
+                  className={`px-4 truncate ${
+                    t("common:register-button") === "Register Your Team!"
+                      ? "px-10"
+                      : "px-2"
+                  } ${
+                    styles.firstBtn
+                  } z-40 self-center text-lg text-black sm:self-start rounded-lg py-1`}
                 >
                   {t("common:register-button")}
                 </a>
@@ -207,9 +213,9 @@ export default function Home() {
                   target="_blank"
                   rel="noreferrer"
                   className={`text-lg truncate ${styles.secondBtn} ${
-                    t("common:submit-button") === "Kumpulkan Abstrak!"
-                      ? "px-4"
-                      : "px-8"
+                    t("common:submit-button") === "Daftar Fireside Chat!"
+                      ? "px-9"
+                      : "px-3"
                   } z-40 rounded-lg border-2 self-center sm:self-start py-1 bg-black text-white`}
                 >
                   {t("common:submit-button")}
