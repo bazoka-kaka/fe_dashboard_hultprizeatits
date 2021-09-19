@@ -184,15 +184,15 @@ export default function Home() {
                 <br />
                 {t("common:title2")}
               </h1>
-              <p
+              {/* <p
                 className={`text-xl ${styles.anim3} text-center sm:text-left md:text-2xl ${styles.firstP}`}
               >
                 {t("common:subtitle1")}{" "}
                 <span className="font-bold">{t("common:subtitle2")}</span>{" "}
                 {t("common:subtitle3")}
-              </p>
+              </p> */}
             </div>
-            <div className={`mt-1 z-40 md:-mt-4 ${styles.anim4}`}>
+            <div className={`-mt-1 z-40 md:-mt-8 ${styles.anim4}`}>
               <div className="flex flex-col gap-4 md:flex-row md:gap-10">
                 <a
                   href="https://bit.ly/HPITS_RegisterTeam"
