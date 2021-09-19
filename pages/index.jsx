@@ -12,6 +12,8 @@ import { ReactYouTubeLite } from "react-youtube-lite";
 import Link from "next/link";
 import Image from "next/image";
 import buildUrl from "cloudinary-build-url";
+import { faFire } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Home() {
   const mainBgBlurred = buildUrl("main-bg_a8s5hk", {
@@ -222,6 +224,12 @@ export default function Home() {
                 >
                   {t("common:submit-button")}
                 </a>
+                <div className="flex flex-col justify-center -ml-10 align-center">
+                  <FontAwesomeIcon
+                    className="ml-3 text-red-600"
+                    icon={faFire}
+                  />
+                </div>
               </div>
             </div>
           </article>
