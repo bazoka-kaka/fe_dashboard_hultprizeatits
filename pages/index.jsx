@@ -12,6 +12,8 @@ import { ReactYouTubeLite } from "react-youtube-lite";
 import Link from "next/link";
 import Image from "next/image";
 import buildUrl from "cloudinary-build-url";
+import { faFire } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Home() {
   const mainBgBlurred = buildUrl("main-bg_a8s5hk", {
@@ -208,20 +210,26 @@ export default function Home() {
                 >
                   {t("common:register-button")}
                 </a>
-                <a
-                  href="https://bit.ly/HPITS_FSC2"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={`text-lg animate-pulse truncate ${
-                    styles.secondBtn
-                  } ${
-                    t("common:submit-button") === "Daftar Fireside Chat!"
-                      ? "px-9"
-                      : "px-3"
-                  } z-40 rounded-lg border-2 self-center sm:self-start py-1 bg-black hover:bg-gray-900 text-white`}
-                >
-                  {t("common:submit-button")}
-                </a>
+                <div>
+                  <a
+                    href="https://bit.ly/HPITS_FSC2"
+                    target="_blank"
+                    rel="noreferrer"
+                    className={`text-lg animate-pulse truncate ${
+                      styles.secondBtn
+                    } ${
+                      t("common:submit-button") === "Daftar Fireside Chat!"
+                        ? "px-9"
+                        : "px-3"
+                    } z-40 rounded-lg border-2 self-center sm:self-start py-1 bg-black hover:bg-gray-900 text-white`}
+                  >
+                    {t("common:submit-button")}
+                  </a>
+                  <FontAwesomeIcon
+                    className="ml-3 text-red-600"
+                    icon={faFire}
+                  />
+                </div>
               </div>
             </div>
           </article>
