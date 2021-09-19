@@ -209,14 +209,16 @@ export default function Home() {
                   {t("common:register-button")}
                 </a>
                 <a
-                  href="https://bit.ly/HPITS_SubmitAbstract"
+                  href="https://bit.ly/HPITS_FSC2"
                   target="_blank"
                   rel="noreferrer"
-                  className={`text-lg truncate ${styles.secondBtn} ${
+                  className={`text-lg animate-pulse truncate ${
+                    styles.secondBtn
+                  } ${
                     t("common:submit-button") === "Daftar Fireside Chat!"
                       ? "px-9"
                       : "px-3"
-                  } z-40 rounded-lg border-2 self-center sm:self-start py-1 bg-black text-white`}
+                  } z-40 rounded-lg border-2 self-center sm:self-start py-1 bg-black hover:bg-gray-900 text-white`}
                 >
                   {t("common:submit-button")}
                 </a>
@@ -411,7 +413,7 @@ export default function Home() {
                         <div>
                           <UnstyledLink
                             className={`px-3 ${styles.eventsBtn} py-1 text-white duration-150 transform hover:scale-110`}
-                            href="/event_registration"
+                            href="https://bit.ly/HPITS_FSC2"
                           >
                             Click to register{" "}
                             <span className="ml-2 fa fa-angle-right"></span>
