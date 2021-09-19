@@ -198,13 +198,7 @@ export default function Home() {
                   href="https://bit.ly/HPITS_RegisterTeam"
                   target="_blank"
                   rel="noreferrer"
-                  className={`${
-                    t("common:register-button") === "Register Your Team!"
-                      ? "px-8"
-                      : "px-7"
-                  } truncate ${
-                    styles.firstBtn
-                  } z-40 self-center text-lg text-black sm:self-start rounded-lg py-1`}
+                  className={` px-4 truncate ${styles.firstBtn} z-40 self-center text-lg text-black sm:self-start rounded-lg py-1`}
                 >
                   {t("common:register-button")}
                 </a>
@@ -214,8 +208,8 @@ export default function Home() {
                   rel="noreferrer"
                   className={`text-lg truncate ${styles.secondBtn} ${
                     t("common:submit-button") === "Kumpulkan Abstrak!"
-                      ? "px-12"
-                      : "px-6"
+                      ? "px-4"
+                      : "px-8"
                   } z-40 rounded-lg border-2 self-center sm:self-start py-1 bg-black text-white`}
                 >
                   {t("common:submit-button")}
@@ -385,7 +379,7 @@ export default function Home() {
                     <Image
                       layout="fill"
                       className="top-0 left-0 z-20 object-cover w-full select-none"
-                      src="https://res.cloudinary.com/kaka777/image/upload/v1631201300/events1_lpdbuf.png"
+                      src="https://res.cloudinary.com/kaka777/image/upload/v1632023123/events1_lpdbuf.png"
                       alt="hultprize1"
                     />
                     <Image
