@@ -202,34 +202,33 @@ export default function Home() {
                   rel="noreferrer"
                   className={`px-4 truncate ${
                     t("common:register-button") === "Register Your Team!"
-                      ? "px-10"
-                      : "px-2"
+                      ? "px-12"
+                      : "px-7"
                   } ${
                     styles.firstBtn
                   } z-40 self-center text-lg text-black sm:self-start rounded-lg py-1`}
                 >
                   {t("common:register-button")}
                 </a>
-                <div className="relative flex self-center sm:self-start">
-                  <a
-                    href="https://bit.ly/HPITS_FSC2"
-                    target="_blank"
-                    rel="noreferrer"
-                    className={`text-lg animate-pulse truncate ${
-                      styles.secondBtn
-                    } ${
-                      t("common:submit-button") === "Daftar Fireside Chat!"
-                        ? "px-9"
-                        : "px-3"
-                    } z-40 rounded-lg border-2 self-center sm:self-start py-1 bg-black hover:bg-gray-900 text-white`}
-                  >
-                    {t("common:submit-button")}
-                  </a>
+                <a
+                  href="https://bit.ly/HPITS_FSC2"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`text-lg animate-pulse truncate ${
+                    styles.secondBtn
+                  } ${
+                    t("common:submit-button") === "Daftar Fireside Chat!"
+                      ? "px-10"
+                      : "px-3"
+                  } z-40 rounded-lg border-2 self-center sm:self-start py-1 bg-black hover:bg-gray-900 text-white`}
+                >
+                  {t("common:submit-button")}
+                  {"  "}
                   <FontAwesomeIcon
-                    className="absolute text-red-600 transform translate-y-3 -right-6"
+                    className="ml-1 text-red-600"
                     icon={faFire}
                   />
-                </div>
+                </a>
               </div>
             </div>
           </article>
