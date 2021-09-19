@@ -210,21 +210,21 @@ export default function Home() {
                 >
                   {t("common:register-button")}
                 </a>
-                <div>
-                  <a
-                    href="https://bit.ly/HPITS_FSC2"
-                    target="_blank"
-                    rel="noreferrer"
-                    className={`text-lg animate-pulse truncate ${
-                      styles.secondBtn
-                    } ${
-                      t("common:submit-button") === "Daftar Fireside Chat!"
-                        ? "px-9"
-                        : "px-3"
-                    } z-40 rounded-lg border-2 self-center sm:self-start py-1 bg-black hover:bg-gray-900 text-white`}
-                  >
-                    {t("common:submit-button")}
-                  </a>
+                <a
+                  href="https://bit.ly/HPITS_FSC2"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`text-lg animate-pulse truncate ${
+                    styles.secondBtn
+                  } ${
+                    t("common:submit-button") === "Daftar Fireside Chat!"
+                      ? "px-9"
+                      : "px-3"
+                  } z-40 rounded-lg border-2 self-center sm:self-start py-1 bg-black hover:bg-gray-900 text-white`}
+                >
+                  {t("common:submit-button")}
+                </a>
+                <div className="flex flex-col justify-center -ml-10 align-center">
                   <FontAwesomeIcon
                     className="ml-3 text-red-600"
                     icon={faFire}
